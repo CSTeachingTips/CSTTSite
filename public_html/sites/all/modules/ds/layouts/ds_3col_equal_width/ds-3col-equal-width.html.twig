@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Display Suite 3 column template.
+ *
+ * Available variables:
+ * - layout_wrapper: @todo
+ * - left_wrapper: @todo
+ * - middle_wrapper: @todo
+ * - right_wrapper: @todo
+ * - attributes: @todo
+ * - left_classes: @todo
+ * - middle_classes: @todo
+ * - right_classes: @todo
+ * - left: @todo
+ * - middle: @todo
+ * - right: @todo
+ */
+#}
+<{{ layout_wrapper }} class="ds-3col-equal {{ attributes.class }} clearfix" {{ attributes }}>
+
+  {% if title_suffix.contextual_links is not null %}
+    {{ title_suffix.contextual_links }}
+  {% endif %}
+
+  <{{ left_wrapper }} class="group-left{{ left_classes }}">
+    {% if left is not null %}
+      {{ left }}
+    {% endif %}
+  </{{ left_wrapper }}>
+
+  <{{ middle_wrapper }} class="group-middle{{ middle_classes }}">
+    {% if middle is not null %}
+      {{ middle }}
+    {% endif %}
+  </{{ middle_wrapper }}>
+
+  <{{ right_wrapper }} class="group-right{{ right_classes }}">
+    {% if right is not null %}
+      {{ right }}
+    {% endif %}
+  </{{ right_wrapper }}>
+
+</{{ layout_wrapper }}>
+
+{% if drupal_render_children is not null %}
+  {{ drupal_render_children }}
+{% endif %}

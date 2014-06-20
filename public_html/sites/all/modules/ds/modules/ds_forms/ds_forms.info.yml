@@ -1,0 +1,7 @@
+name: 'Display Suite Forms'
+description: 'Manage the layout of forms in Display Suite.'
+core: 8.x
+type: module
+package: 'Display Suite'
+dependencies:
+  - ds

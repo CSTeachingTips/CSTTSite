@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: @todo
+ * - attributes: @todo
+ * - ds_content: @todo
+ */
+#}
+<{{ ds_content_wrapper }} class="ds-1col {{ attributes.class }} clearfix" {{ attributes }} >
+
+  {% if title_suffix.contextual_links is not null %}
+    {{ title_suffix.contextual_links }}
+  {% endif %}
+
+  {{ ds_content }}
+</{{ ds_content_wrapper }}>
+
+{% if drupal_render_children is not null %}
+  {{ drupal_render_children }}
+{% endif %}

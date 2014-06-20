@@ -1,0 +1,67 @@
+ds_ui.classes:
+  path: 'admin/structure/ds/classes'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\ClassesForm'
+  requirements:
+    _permission: 'admin classes'
+ds_ui.fields_list:
+  path: 'admin/structure/ds/fields'
+  defaults:
+    _content: 'Drupal\ds_ui\Controller\FieldController::fieldList'
+    _title: 'Fields'
+  requirements:
+    _permission: 'admin fields'
+ds_ui.manage_field:
+  path: 'admin/structure/ds/fields/manage/{field_key}'
+  defaults:
+    _content: 'Drupal\ds_ui\Controller\FieldController::manageRedirect'
+  requirements:
+    _permission: 'admin fields'
+ds_ui.delete_field:
+  path: 'admin/structure/ds/fields/delete/{field}'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\FieldDeleteForm'
+  requirements:
+    _permission: 'admin fields'
+ds_ui.manage_token_field:
+  path: 'admin/structure/ds/fields/manage_token/{field_key}'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\TokenFieldForm'
+    _title: 'Edit a token field'
+  requirements:
+    _permission: 'admin fields'
+ds_ui.add_token_field:
+  path: 'admin/structure/ds/fields/manage_token'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\TokenFieldForm'
+    _title: 'Add a token field'
+  requirements:
+    _permission: 'admin fields'
+ds_ui.manage_block_field:
+  path: 'admin/structure/ds/fields/manage_block/{field_key}'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\BlockFieldForm'
+    _title: 'Edit a block field'
+  requirements:
+    _permission: 'admin fields'
+ds_ui.add_block_field:
+  path: 'admin/structure/ds/fields/manage_block'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\BlockFieldForm'
+    _title: 'Add a block field'
+  requirements:
+    _permission: 'admin fields'
+manage_copy_field:
+  path: 'admin/structure/ds/fields/manage_copy/{field_key}'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\CopyFieldForm'
+    _title: 'Edit a copy of a Display Suite field'
+  requirements:
+    _permission: 'admin fields'
+add_copy_field:
+  path: 'admin/structure/ds/fields/manage_copy'
+  defaults:
+    _form: '\Drupal\ds_ui\Form\CopyFieldForm'
+    _title: 'Add a copy of a Display Suite field'
+  requirements:
+    _permission: 'admin fields'

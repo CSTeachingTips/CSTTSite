@@ -1,0 +1,57 @@
+ds.structure:
+  path: 'admin/structure/ds'
+  defaults:
+    _content: '\Drupal\ds\Controller\DsController::listDisplays'
+    _title: 'Displays'
+  requirements:
+    _permission: 'admin display suite'
+ds.list:
+  path: 'admin/structure/ds/list'
+  defaults:
+    _content: '\Drupal\ds\Controller\DsController::listDisplays'
+    _title: 'Displays'
+  requirements:
+    _permission: 'admin display suite'
+ds.admin_settings:
+  path: 'admin/structure/ds/settings'
+  defaults:
+    _form: '\Drupal\ds\Form\SettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'admin display suite'
+ds.admin_emergency:
+  path: 'admin/structure/ds/emergency'
+  defaults:
+    _form: '\Drupal\ds\Form\EmergencyForm'
+    _title: 'Emergency settings'
+  requirements:
+    _permission: 'admin display suite'
+ds.change_layout:
+  path: 'admin/structure/ds/change-layout/{entity_type}/{bundle}/{display_mode}/{new_layout}'
+  defaults:
+    _form: '\Drupal\ds\Form\ChangeLayoutForm'
+    _title: 'Change layout'
+  requirements:
+    _permission: 'admin display suite'
+
+ds.contextual_tab_node:
+  path: '/node/{node}/display'
+  defaults:
+    _controller: '\Drupal\ds\Controller\DsController::contextualNodeTab'
+  requirements:
+    _permission: 'administer content'
+    _access_ds_contextual_tab: 'TRUE'
+ds.contextual_tab_user:
+  path: '/user/{user}/display'
+  defaults:
+    _controller: '\Drupal\ds\Controller\DsController::contextualUserTab'
+  requirements:
+    _permission: 'administer users'
+    _access_ds_contextual_tab: 'TRUE'
+ds.contextual_tab_taxonomy_term:
+  path: '/taxonomy/term/{taxonomy_term}/display'
+  defaults:
+    _controller: '\Drupal\ds\Controller\DsController::contextualTaxonomyTermTab'
+  requirements:
+    _permission: 'administer taxonomy'
+    _access_ds_contextual_tab: 'TRUE'
