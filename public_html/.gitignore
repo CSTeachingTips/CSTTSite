@@ -12,3 +12,5 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
+# Ignore DS_Store
+*.DS_Store
