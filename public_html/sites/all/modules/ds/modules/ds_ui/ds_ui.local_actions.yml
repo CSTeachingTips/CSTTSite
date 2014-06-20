@@ -1,0 +1,15 @@
+ds_ui.block_field_add_local_action:
+  route_name: ds_ui.add_block_field
+  title: 'Add a block field'
+  appears_on:
+    - ds_ui.fields_list
+ds_ui.token_field_add_local_action:
+  route_name: ds_ui.add_token_field
+  title: 'Add a token field'
+  appears_on:
+    - ds_ui.fields_list
+ds_ui.copy_field_add_local_action:
+  route_name: add_copy_field
+  title: 'Create a copy of a Display Suite field'
+  appears_on:
+    - ds_ui.fields_list

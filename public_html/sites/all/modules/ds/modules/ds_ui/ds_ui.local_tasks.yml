@@ -1,0 +1,10 @@
+ds_ui.classes_task:
+  route_name: ds_ui.classes
+  title: Classes
+  base_route: ds.display_task
+  weight: 1
+ds_ui.fields_task:
+  route_name: ds_ui.fields_list
+  title: Fields
+  base_route: ds.display_task
+  weight: 2

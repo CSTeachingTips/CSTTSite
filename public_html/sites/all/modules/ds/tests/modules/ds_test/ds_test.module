@@ -1,0 +1,163 @@
+<?php
+
+/**
+ * @file
+ * Display Suite test module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Render\Element;
+use Drupal\entity\Entity\EntityViewDisplay;
+
+/**
+ * Implements hook_install().
+ */
+function ds_test_install() {
+
+  \Drupal::config('ds.settings')
+    ->set('field_template', TRUE)
+    ->save();
+
+  \Drupal::config('ds.extras')
+    ->set('region_to_block', TRUE)
+    ->set('switch_view_mode', TRUE)
+    ->set('fields_extra', TRUE)
+    ->set('fields_extra_list', array('node|article|ds_extras_extra_test_field', 'node|article|ds_extras_second_field'))
+    ->save();
+
+  module_set_weight('ds_test', 2);
+}
+
+/**
+ * Helper function to return the tag name basid on tid.
+ */
+function ds_test_get_tag_name($raw_value, $object) {
+  $term = entity_load('taxonomy_term', $raw_value);
+  return $term->name->value;
+}
+
+/**
+ * Helper function to return advanced view mode.
+ */
+function ds_views_row_adv_ds_testing($entity, $view_mode, $load_comments) {
+  return 'Advanced display for id ' . $entity->id();
+}
+
+/**
+ * Implements hook_field_extra_fields().
+ */
+function ds_test_field_extra_fields() {
+  $extra = array();
+
+  // Register a single field to test that
+  // extra fields in the hidden region are really hidden.
+  $extra['node']['article']['display']['heavy_field'] = array(
+   'label' => t('Heavy extra test field'),
+   'weight' => 10,
+  );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function ds_test_node_view(EntityInterface $node, EntityViewDisplay $display, $view_mode, $langcode) {
+  $node->content['ds_extras_extra_test_field'] = array(
+    '#markup' => 'This is an extra field made available through "Extra fields" functionality.',
+    '#weight' => 10,
+  );
+
+  // Check whether the heavy extra field is rendered or not.
+  if ($node->bundle() == 'article') {
+    $heavy_field = $display->getComponent('heavy_field');
+    if ($heavy_field) {
+      $node->content['heavy_field'] = array(
+        '#markup' => 'Heavy field',
+        '#weight' => $heavy_field['weight'],
+      );
+    }
+  }
+}
+
+/**
+ * Implements hook_ds_layout_info_alter().
+ */
+function ds_test_ds_layout_info_alter(&$layouts) {
+  unset($layouts['ds_3col_stacked_equal_width']);
+}
+
+/**
+ * Implements hook_ds_field_theme_functions_info().
+ */
+function ds_test_ds_field_theme_functions_info() {
+  return array('ds_test_theming_function' => t('Field test function'));
+}
+
+/**
+ * Theme field test function.
+ */
+function ds_test_theming_function($variables) {
+  return 'Testing field output through custom function';
+}
+
+/**
+ * Implements hook_ds_fields_info_alter().
+ */
+function ds_test_ds_fields_info_alter(&$definitions) {
+  if (isset($definitions['test_field_2'])) {
+    $definitions['test_field_2']['title'] = 'Field altered';
+  }
+}
+
+/**
+ * Implements hook_ds_layouts_info().
+ */
+function ds_test_ds_layout_info() {
+  $path = drupal_get_path('module', 'ds_test');
+  $layouts = array(
+    'dstest_1col' => array(
+      'label' => t('Test One column'),
+      'path' => $path . '/dstest_1col',
+      'regions' => array(
+        'ds_content' => t('Content'),
+      ),
+    ),
+    'dstest_2col' => array(
+      'label' => t('Test Two column'),
+      'path' => $path . '/dstest_2col',
+      'regions' => array(
+        'left' => t('Left'),
+        'right' => t('Right')
+      ),
+      'css' => TRUE,
+    ),
+  );
+
+  return $layouts;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ds_test_form_field_ui_display_overview_form_alter(&$form, &$form_state) {
+  foreach (Element::children($form['fields']) as $key) {
+    if (isset($form['fields'][$key]['settings_edit'])) {
+      $settings = $form['fields'][$key]['settings_edit'];
+      if (!empty($settings)) {
+        $form['fields'][$key]['settings_edit']['#type'] = 'submit';
+        $form['fields'][$key]['settings_edit']['#value'] = 'edit ' . $key;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_ds_pre_render_alter().
+ */
+function ds_test_ds_pre_render_alter(&$layout_render_array, $context) {
+  $entity = $context['entity'];
+  if (isset($entity->title->value) && $entity->title->value === 'Alter me!') {
+    $layout_render_array['left'][] = array('#markup' => 'cool!', '#weight' => 20);
+  }
+}

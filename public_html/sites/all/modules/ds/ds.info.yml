@@ -1,0 +1,6 @@
+name: 'Display Suite'
+description: 'Extend the display options for every entity type.'
+type: module
+core: 8.x
+package: 'Display Suite'
+configure: admin/structure/ds

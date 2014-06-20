@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Display Suite 4 column template.
+ *
+ * Available variables:
+ * - layout_wrapper: @todo
+ * - first_wrapper: @todo
+ * - second_wrapper: @todo
+ * - third_wrapper: @todo
+ * - fourth_wrapper: @todo
+ * - attributes: @todo
+ * - first_classes: @todo
+ * - second_classes: @todo
+ * - third_classes: @todo
+ * - fourth_classes: @todo
+ * - first: @todo
+ * - second: @todo
+ * - third: @todo
+ * - fourth: @todo
+ */
+#}
+<{{ layout_wrapper }} class="ds-4col {{ attributes.class }} clearfix" {{ attributes }}>
+
+  {% if title_suffix.contextual_links is not null %}
+    {{ title_suffix.contextual_links }}
+  {% endif %}
+
+  <{{ first_wrapper }} class="group-first{{ first_classes }}">
+    {% if first is not null %}
+      {{ first }}
+    {% endif %}
+  </{{ first_wrapper }}>
+
+  <{{ second_wrapper }} class="group-second{{ second_classes }}">
+    {% if second is not null %}
+      {{ second }}
+    {% endif %}
+  </{{ second_wrapper }}>
+
+  <{{ third_wrapper }} class="group-third{{ third_classes }}">
+    {% if third is not null %}
+      {{ third }}
+    {% endif %}
+  </{{ third_wrapper }}>
+
+  <{{ fourth_wrapper }} class="group-fourth{{ fourth_classes }}">
+    {% if fourth is not null %}
+      {{ fourth }}
+    {% endif %}
+  </{{ fourth_wrapper }}>
+
+</{{ layout_wrapper }}>
+
+{% if drupal_render_children is not null %}
+  {{ drupal_render_children }}
+{% endif %}
+

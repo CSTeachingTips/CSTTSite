@@ -1,0 +1,7 @@
+name: 'Display Suite UI'
+description: 'User interface for managing fields and classes.'
+core: 8.x
+package: 'Display Suite'
+type: module
+dependencies:
+  - ds
