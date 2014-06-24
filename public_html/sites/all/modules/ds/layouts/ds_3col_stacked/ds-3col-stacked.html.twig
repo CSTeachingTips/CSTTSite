@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Display Suite 3 column stacked template.
+ *
+ * Available variables:
+ * - layout_wrapper: @todo
+ * - header_wrapper: @todo
+ * - left_wrapper: @todo
+ * - middle_wrapper: @todo
+ * - right_wrapper: @todo
+ * - footer_Wrapper: @todo
+ * - attributes: @todo
+ * - header_classes: @todo
+ * - left_classes: @todo
+ * - middle_classes: @todo
+ * - right_classes: @todo
+ * - footer_classes: @todo
+ * - header: @todo
+ * - left: @todo
+ * - middle: @todo
+ * - right: @todo
+ * - footer: @todo
+ */
+#}
+<{{ layout_wrapper }} class="ds-3col-stacked {{ attributes.class }} clearfix" {{ attributes }}>
+
+  {% if title_suffix.contextual_links is not null %}
+    {{ title_suffix.contextual_links }}
+  {% endif %}
+
+  <{{ header_wrapper }} class="group-header{{ header_classes }}">
+    {% if header is not null %}
+      {{ header }}
+    {% endif %}
+  </{{ header_wrapper }}>
+
+  <{{ left_wrapper }} class="group-left{{ left_classes }}">
+    {% if left is not null %}
+      {{ left }}
+    {% endif %}
+  </{{ left_wrapper }}>
+
+  <{{ middle_wrapper }} class="group-middle{{ middle_classes }}">
+    {% if middle is not null %}
+      {{ middle }}
+    {% endif %}
+  </{{ middle_wrapper }}>
+
+  <{{ right_wrapper }} class="group-right{{ right_classes }}">
+    {% if right is not null %}
+      {{ right }}
+    {% endif %}
+  </{{ right_wrapper }}>
+
+  <{{ footer_wrapper }} class="group-footer{{ footer_classes }}">
+    {% if footer is not null %}
+      {{ footer }}
+    {% endif %}
+  </{{ footer_wrapper }}>
+
+</{{ layout_wrapper }}>
+
+{% if drupal_render_children is not null %}
+  {{ drupal_render_children }}
+{% endif %}

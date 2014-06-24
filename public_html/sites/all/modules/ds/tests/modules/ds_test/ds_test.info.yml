@@ -1,0 +1,8 @@
+name: 'Display Suite Test'
+description: 'Test module for Display Suite'
+core: 7.x
+package: 'Display Suite'
+type: module
+dependencies:
+  - ds_extras
+hidden: TRUE

@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Display Suite example layout template.
+ *
+ * Available variables:
+ * - layout_wrapper: @todo
+ * - left_wrapper: @todo
+ * - right_wrapper: @todo
+ * - layout_attributes: @todo
+ * - attributes: @todo
+ * - left_classes: @todo
+ * - right_classes: @todo
+ * - left: @todo
+ * - right: @todo
+ */
+#}
+<{{ layout_wrapper }} {{ layout_attributes }} class="ds-2col {{ attributes.class }} clearfix">
+
+  {# Needed to activate contextual links #}
+  {% if title_suffix.contextual_links is not null %}
+    {{ title_suffix.contextual_links }}
+  {% endif %}
+
+  {# regions #}
+
+  <{{ left_wrapper }} class="group-left{{ left_classes }}">
+    {% if left is not null %}
+      {{ left }}
+    {% endif %}
+  </{{ left_wrapper }}>
+
+  <{{ right_wrapper }} class="group-right{{ right_classes }}">
+    {% if right is not null %}
+      {{ right }}
+    {% endif %}
+  </{{ right_wrapper }}>
+
+  {# These comments are required for the Drush command. You can remove them in your own copy #}
+  {# /regions #}
+
+</{{ layout_wrapper }}>
+
+{# Needed to activate display suite support on forms #}
+{% if drupal_render_children is not null %}
+  {{ drupal_render_children }}
+{% endif %}

@@ -1,0 +1,6 @@
+ds_extras.switch_view_mode:
+  path: 'ds-switch-view-mode'
+  defaults:
+    _controller: '\Drupal\ds_extras\Controller\DsExtrasController::switchViewModeInline'
+  requirements:
+    _custom_access: '\Drupal\ds_extras\Controller\DsExtrasController::accessSwitchViewMode'

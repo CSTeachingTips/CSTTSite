@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column wrapper template.
+ *
+ * Available variables:
+ * - layout_wrapper: @todo
+ * - ds_content_wrapper: @todo
+ * - attributes: @todo
+ * - ds_content_classes: @todo
+ * - ds_content: @todo
+ */
+#}
+<{{ layout_wrapper }} class="ds-1col {{ attributes.class }} clearfix" {{ attributes }}>
+
+  {% if title_suffix.contextual_links is not null %}
+    {{ title_suffix.contextual_links }}
+  {% endif %}
+
+  <{{ ds_content_wrapper }} class="{{ ds_content_classes }}">
+    {% if ds_content is not null %}
+      {{ ds_content }}
+    {% endif %}
+  </{{ ds_content_wrapper }}>
+
+
+</{{ layout_wrapper }}>
+
+{% if drupal_render_children is not null %}
+  {{ drupal_render_children }}
+{% endif %}

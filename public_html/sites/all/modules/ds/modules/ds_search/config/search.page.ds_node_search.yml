@@ -1,0 +1,17 @@
+id: ds_node_search
+label: Content (Display Suite)
+uuid: 2bf67070-7912-11e3-981f-0800200c9a66
+status: true
+langcode: en
+path: content
+weight: -5
+plugin: ds_node_search
+configuration:
+  rankings: {  }
+  view_mode: search_result
+  advanced_search: false
+  limit: 10
+  search_variables: none
+  show_title: true
+  highlight: true
+  highlight_selector: .view-mode-search_result

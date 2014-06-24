@@ -1,0 +1,24 @@
+bundle: article
+entity_type: node
+id: node.article.default
+layout: ds_2col
+settings:
+  classes: {  }
+  fields:
+    body: right
+    node_link: left
+    title: left
+  layout_attributes: ''
+  layout_attributes_merge: 1
+  layout_wrapper: div
+  regions:
+    left:
+      - title
+      - node_link
+    right:
+      2: body
+  wrappers:
+    ds_hidden: div
+    left: div
+    right: div
+view_mode: default

@@ -1,0 +1,8 @@
+services:
+  plugin.manager.ds:
+    class: Drupal\ds\Plugin\DsPluginManager
+    arguments: ['@container.namespaces', '@cache.block', '@language_manager', '@module_handler']
+  access_check.ds.contextual_tab:
+    class: Drupal\ds\Access\ContextualTabAccessCheck
+    tags:
+      - { name: access_check, applies_to: _access_ds_contextual_tab }
