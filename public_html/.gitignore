@@ -16,3 +16,6 @@ sites/*/private
 .DS_Store
 sites/.DS_Store
 sites/all/.DS_Store
+
+# Ignore the default settings
+sites/*/default.settings.php
