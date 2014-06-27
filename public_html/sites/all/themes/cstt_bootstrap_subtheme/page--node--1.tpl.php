@@ -111,7 +111,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="images/CS-teaching-tips-01.png"/></a>
+          <a class="navbar-brand" href="#"><img src="http://csteachingtips.org/images/CS-teaching-tips-01.png"/></a>
       </div>
 
       <!-- NAV BAR -->
@@ -254,13 +254,13 @@
         <div align="center" style="display:block;">
           <p class="text-muted">Powered by:</p>
           <a href="http://www.nsf.gov/">
-            <img src="images/nsf_logo.png">
+            <img src="http://csteachingtips.org/images/nsf_logo.png">
           </a>
           <a href="http://www.sagefoxgroup.com/" style="margin-left:13px;">
-            <img src="images/sagefoxlogo_75tall.png">
+            <img src="http://csteachingtips.org/images/sagefoxlogo_75tall.png">
           </a>
           <a href="http://www.hmc.edu">
-            <img src="images/HMClogo_75sq.png" style="margin-left:13px;">
+            <img src="http://csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
           </a>
         </div>
       </div>
