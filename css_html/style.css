@@ -10,6 +10,74 @@ body {
 	margin: auto;
 }
 
+#cstt-icon {
+	position: relative;
+	top: -5px;
+}
+
+#navlist {
+	position: absolute;
+	width: 115px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.social {
+	max-width: 122px;
+	margin: 0 auto;
+}
+
+#navlist li {
+	list-style: none;
+	position: absolute;
+	top: 0;
+	zoom: 1;
+	transition: all 0.3s;
+	display: inline;
+}
+
+#navlist li, #navlist a {
+	height: 35px;
+	display: block;
+}
+
+#facebook {
+	left: 0px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') 0 0;
+}
+
+#twitter {
+	left: 43px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') -36px 0;
+}
+
+#google {
+	left: 86px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') -144px 0;
+}
+
+#facebook:hover {
+	left: 0px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') 0 0;
+}
+
+#twitter:hover {
+	left: 43px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') -36px 0;
+}
+
+#google:hover {
+	left: 86px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') -144px 0;
+}
+
 
 
 
