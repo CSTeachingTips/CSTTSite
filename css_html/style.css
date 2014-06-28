@@ -10,6 +10,15 @@ body {
 	margin: auto;
 }
 
+#navbar {
+	height: 50px;
+}
+
+#cstt-logo {
+	position: relative;
+	top: -4px;
+}
+
 #cstt-icon {
 	position: relative;
 	top: -5px;
