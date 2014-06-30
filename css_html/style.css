@@ -21,7 +21,7 @@ body {
 
 #cstt-icon {
 	position: relative;
-	top: -5px;
+	top: -6px;
 }
 
 #navlist {
@@ -87,6 +87,33 @@ body {
 	background: url('images/social_media_sprite_dark.png') -144px 0;
 }
 
+.thumbnail>img {
+	display:block;
+	max-width:100%;
+	height:auto
+}
+
+.thumbnail {
+	display:block;
+	padding:4px;
+	margin-bottom:20px;
+	line-height:1.42857143;
+	background-color: #eee;
+	border:1px solid #ffffff;
+	border-radius:4px;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+a.thumbnail:hover {
+	border-color:#ddd;
+	text-decoration: none;
+}
+
+.thumbnail .caption {
+	padding:9px;
+	color:#333
+}
 
 
 
