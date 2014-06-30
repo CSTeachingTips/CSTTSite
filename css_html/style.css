@@ -16,7 +16,7 @@ body {
 
 #cstt-logo {
 	position: relative;
-	top: -4px;
+	top: -3px;
 }
 
 #cstt-icon {
@@ -94,13 +94,9 @@ body {
 }
 
 .thumbnail {
-	display:block;
-	padding:4px;
-	margin-bottom:20px;
-	line-height:1.42857143;
 	background-color: #eee;
 	border:1px solid #ffffff;
-	border-radius:4px;
+	border-radius:3px;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 }
@@ -115,7 +111,32 @@ a.thumbnail:hover {
 	color:#333
 }
 
+.carousel-control {
+  	padding-top:6%;
+  	width:5%;
+}
 
+#tip {
+	padding-bottom: 15px;
+}
+
+#tag {
+	font-size: 150%;
+}
+
+#category {
+	font-size: 100%;
+}
+
+#extra-tip {
+	min-height: 150px;
+	max-height: 200px;
+	margin: auto;
+}
+
+.extra-tip {
+	padding: auto;
+}
 
 
 
