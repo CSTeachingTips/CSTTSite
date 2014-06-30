@@ -7,9 +7,6 @@ public_html/testing
 # Ignore configuration files that may contain sensitive information.
 public_html/sites/*/settings*.php
 
-# Ignore paths that contain user-generated content.
-public_html/sites/*/files
-public_html/sites/*/private
 
 # Ignore DS_Store
 public_html/.DS_Store
