@@ -124,6 +124,15 @@ a.thumbnail:hover {
 	color:#333;
 }
 
+.well {
+	color: #eee;
+	background-color: #eee;
+}
+
+.carousel-inner {
+	background-color: #eee;
+}
+
 .carousel-control.left, .carousel-control.right {
   	padding-top:6%;
   	width:3%;
@@ -156,6 +165,7 @@ a.thumbnail:hover {
 	max-height: 200px;
 	margin: auto;
 	border-color: #eee;
+	background-color: #fff;
 }
 
 #extra-tip:hover {
