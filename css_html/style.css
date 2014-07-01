@@ -117,12 +117,22 @@ a.thumbnail:hover {
 
 .thumbnail .caption {
 	padding:9px;
-	color:#333
+	color:#333;
 }
 
-.carousel-control {
+.carousel-control.left, .carousel-control.right {
   	padding-top:6%;
-  	width:5%;
+  	width:3%;
+  	background-color:#BDBDBD;
+  	border:1px solid white;
+
+  	/* Remove gradient */
+  	background-image:none;
+}
+
+.carousel-control:hover {
+	-webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;
 }
 
 #tip {
@@ -141,6 +151,11 @@ a.thumbnail:hover {
 	min-height: 150px;
 	max-height: 200px;
 	margin: auto;
+	border-color: #eee;
+}
+
+#extra-tip:hover {
+	border-color:#ddd;
 }
 
 .extra-tip {
