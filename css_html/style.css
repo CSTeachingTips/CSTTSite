@@ -111,9 +111,14 @@ a.thumbnail:hover {
 	color:#333
 }
 
-.carousel-control {
+.carousel-control.left, .carousel-control.right {
   	padding-top:6%;
-  	width:5%;
+  	width:3%;
+  	background-color:#BDBDBD;
+  	border:1px solid white;
+
+  	/* Remove gradient */
+  	background-image:none;
 }
 
 #tip {
