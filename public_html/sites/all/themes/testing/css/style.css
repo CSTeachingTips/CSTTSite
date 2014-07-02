@@ -2,7 +2,7 @@
  .navbar #block-search-form {
  	margin-left: 5px;
  	margin-right: 5px;
- 	margin-top: 10px;
+ 	margin-top: 0px;
  	margin-bottom: 0px;
  	max-width: 200px;
  }
@@ -10,11 +10,6 @@
 body {
 	position: relative;
 } 
-
-.jumbotron {
-	background-color: #eee;
-}
-
 .main {
 	position: absolute;
 	left: 0;
@@ -26,10 +21,6 @@ body {
 
 #navbar {
 	height: 50px;
-}
-
-.navbar-brand {
-	margin-top: 1px;
 }
 
 #cstt-logo {
@@ -117,8 +108,6 @@ body {
 	border-radius:3px;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 a.thumbnail:hover {
@@ -126,16 +115,14 @@ a.thumbnail:hover {
 	text-decoration: none;
 }
 
-.caption {
-	height:auto;
-	/*display:table-cell;*/
-    vertical-align:middle;
-    float:none;
-}
-
 .thumbnail .caption {
 	padding:9px;
-	color:#333;
+	color:#333
+}
+
+.carousel-control {
+  	padding-top:6%;
+  	width:5%;
 }
 
 #tip {
@@ -154,35 +141,11 @@ a.thumbnail:hover {
 	min-height: 150px;
 	max-height: 200px;
 	margin: auto;
-	border-color: #fff;
-	background-color: #eee;
-}
-
-#extra-tip:hover {
-	border-color:#ddd;
 }
 
 .extra-tip {
 	padding: auto;
 }
-
-.panel {
-	margin-top: 15px;
-	margin-right: 0px;
-	margin-left: 10px;
-}
-
-.col-xs-2,.col-md-2,.col-xs-3,.col-md-3,.col-xs-4,.col-md-4,.col-xs-5,.col-md-5,.col-xs-10,.col-md-10 {
-	position:relative;
-	min-height:1px;
-	padding-left:7px;
-	padding-right:7px;
-}
-
-.btn, .btn-default {
-	height: 34px;
-}
-
 
 
 

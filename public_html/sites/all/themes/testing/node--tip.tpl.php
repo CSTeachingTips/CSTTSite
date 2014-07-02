@@ -109,56 +109,14 @@
 
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="http://csteachingtips.org/images/CS-teaching-tips-01.png"/></a>
-      </div>
-
-      <!-- NAV BAR -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tips<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                      <li><a href="#">Delivering Content</a></li>
-                      <li><a href="#">Managing & Assessing</a></li>
-                      <li><a href="#">Organizing Curriculum</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Browse All</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contribute</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Login</a></li>
-          </ul>
-          
-             <?php $block = block_load('search','form');
-              $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
-              print drupal_render($dummysearch); 
-              ?>
-              
-        
-      </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
+  
   <div class="jumbotron" id="tip">
     <h1> <?php print $title; ?> </h1>
     <h6><br></h6>
     <p class="text-muted" id="category">
-      Category:
-      <?php print render($terms); ?>
-       <?php print render($content['field_categories']); ?>
+      
+       <!-- Printing the category attached to the tip -->      
+       <?php print render($content['field_category']); ?>
 
     </p>
   </div>
@@ -166,7 +124,9 @@
   <div class="container">
     <div class="col-xs-8 col-md-8">
       <ul class="extra-info">
-        <?php print render($page['content']); ?>
+
+        <!-- Printing the body/additional info for the tip -->
+        <?php print render($content['body']); ?>
       </ul>
     </div>
 
@@ -175,7 +135,7 @@
         Source: <a href="#">Source</a>
       </p>
       <p class="text-muted" id="tag">
-        Tags: <a href="#">#tag</a> <a href="#">#tag</a> <a href="#">#tag</a>
+        <?php print render($content['field_tags']); ?>
       </p>  
     </div>
   </div>
@@ -303,34 +263,7 @@
 
   <br> <br> <br>
 
-<div id="footer">
-    <div class="container">  
-        
-        <div class="social" align="center">
-          <p class="text-muted">Connect:</p>
-            <ul id="navlist">
-              <li id="facebook"><a href="https://www.facebook.com/csteachingtips"></a> </li>
-              <li id="twitter"><a href="https://twitter.com/CSTeachingTips"></a> </li>
-              <li id="google"><a href="https://plus.google.com/u/0/103378302928119467203/"></a> </li>
-            </ul>
-        </div>
-        
-        <h3> <br> </h3>
-        
-        <div align="center">
-          <p class="text-muted">Powered by:</p>
-          <a href="http://www.nsf.gov/">
-            <img src="images/nsf_logo.png">
-          </a>
-          <a href="http://www.sagefoxgroup.com/" style="margin-left:13px;">
-            <img src="images/sagefoxlogo_75tall.png">
-          </a>
-          <a href="http://www.hmc.edu">
-            <img src="images/HMClogo_75sq.png" style="margin-left:13px;">
-          </a>
-        </div>
-    </div>      
-</div>
+
 
 <br>
 
