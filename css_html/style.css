@@ -179,6 +179,10 @@ a.thumbnail:hover {
 	padding-right:7px;
 }
 
+.btn, .btn-default {
+	height: 34px;
+}
+
 
 
 
