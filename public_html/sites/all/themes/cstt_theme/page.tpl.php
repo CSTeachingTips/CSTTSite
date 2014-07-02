@@ -102,11 +102,9 @@
               <li><a href="#">About</a></li>
               <li><a href="#">Contribute</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Login</a></li>
-          </ul>
           
-              <!-- Printing a useable navbar -->
+          
+              <!-- Printing a useable searchform -->
               <?php $block = block_load('search','form');
               $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummysearch); 
