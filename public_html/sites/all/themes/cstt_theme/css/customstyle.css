@@ -1,0 +1,166 @@
+/* Modifying the display of the search bar in the main menu */
+ .navbar #block-search-form {
+ 	margin-left: 5px;
+ 	margin-right: 5px;
+ 	margin-top: 8px;
+ 	margin-bottom: 0px;
+ 	max-width: 200px;
+ }
+
+body {
+	position: relative;
+} 
+.main {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#navbar {
+	height: 50px;
+}
+
+#cstt-logo {
+	position: relative;
+	top: -3px;
+}
+
+#cstt-icon {
+	position: relative;
+	top: -6px;
+}
+
+#navlist {
+	position: absolute;
+	width: 115px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.social {
+	max-width: 122px;
+	margin: 0 auto;
+}
+
+#navlist li {
+	list-style: none;
+	position: absolute;
+	top: 0;
+	zoom: 1;
+	transition: all 0.3s;
+	display: inline;
+}
+
+#navlist li, #navlist a {
+	height: 35px;
+	display: block;
+}
+
+#facebook {
+	left: 0px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') 0 0;
+}
+
+#twitter {
+	left: 43px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') -36px 0;
+}
+
+#google {
+	left: 86px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') -144px 0;
+}
+
+#facebook:hover {
+	left: 0px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') 0 0;
+}
+
+#twitter:hover {
+	left: 43px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') -36px 0;
+}
+
+#google:hover {
+	left: 86px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') -144px 0;
+}
+
+.thumbnail>img {
+	display:block;
+	max-width:100%;
+	height:auto
+}
+
+.thumbnail {
+	background-color: #eee;
+	border:1px solid #ffffff;
+	border-radius:3px;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+a.thumbnail:hover {
+	border-color:#ddd;
+	text-decoration: none;
+}
+
+.thumbnail .caption {
+	padding:9px;
+	color:#333;
+}
+
+.carousel-control.left, .carousel-control.right {
+  	padding-top:6%;
+  	width:3%;
+  	background-color:#BDBDBD;
+  	border:1px solid white;
+
+  	/* Remove gradient */
+  	background-image:none;
+}
+
+.carousel-control:hover {
+	-webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;
+}
+
+#tip {
+	padding-bottom: 15px;
+}
+
+#tag {
+	font-size: 150%;
+}
+
+#category {
+	font-size: 100%;
+}
+
+#extra-tip {
+	min-height: 150px;
+	max-height: 200px;
+	margin: auto;
+	border-color: #eee;
+}
+
+#extra-tip:hover {
+	border-color:#ddd;
+}
+
+.extra-tip {
+	padding: auto;
+}
+
+
+
