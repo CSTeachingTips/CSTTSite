@@ -16,3 +16,5 @@ public_html/sites/all/.DS_Store
 # Ignore the default settings
 public_html/sites/*/default.settings.php
 
+#ignore .htaccess
+public_html/sites/default/.htaccess
