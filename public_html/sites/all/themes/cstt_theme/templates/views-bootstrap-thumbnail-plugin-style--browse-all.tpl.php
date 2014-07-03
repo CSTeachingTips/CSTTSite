@@ -11,6 +11,16 @@
  */
 ?>
 
+
+<?php 
+  $block = block_load('views','-exp-browse_all-page_1');
+  $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
+  print drupal_render($dummyblock);
+  ?>
+
+
+
+<div class="col-xs-9 col-md-9">
 <div id="views-bootstrap-thumbnail-<?php print $id ?>" class="<?php print $classes ?>">
   <?php if ($options['alignment'] == 'horizontal'): ?>
 
@@ -42,3 +52,7 @@
 
   <?php endif ?>
 </div>
+</div>
+
+
+<br> <br> <br>
