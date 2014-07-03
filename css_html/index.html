@@ -68,13 +68,24 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:50px">
-    <br>
-    <center>
-      <span class="glyphicon glyphicon-chevron-down text-muted" style="font-size: 2em"></span>
-    </center>
-    <br> <br> <br> <br> <br> <br> <br>
-  </p>
+  <p style="font-size:50px"> <br> </p>
+
+
+  <!-- Down Arrow (for jumping to category panels) -->
+
+  <center>
+    <a href="#category-panels">
+      <span class="glyphicon glyphicon-chevron-down text-muted" style="font-size: 2em">
+    </a>
+    </span>
+  </center>
+
+  <!-- End Down Arrow -->
+
+
+  <!-- Whitespace -->
+  <p style="font-size:100px"> <br> </p>
+
 
   <!-- Category Panels --> 
 
@@ -89,7 +100,7 @@
           <br>
           <img src="http://i1273.photobucket.com/albums/y403/dylankbaker/forcedlaugh_150sq_zpse6ca30f9.jpg">
           <div class="caption">
-            <h3> Organizing Curriculum </h3>
+            <h3> Organizing <br> Curriculum </h3>
           </div>
         </center> 
       </a>
@@ -104,7 +115,7 @@
           <br>
           <img src="http://i1273.photobucket.com/albums/y403/dylankbaker/forcedlaugh_150sq_zpse6ca30f9.jpg">
             <div class="caption"> 
-              <h3> Delivering Content </h3> 
+              <h3> Delivering <br> Content </h3> 
             </div>
         </center> 
       </a> 
@@ -119,7 +130,7 @@
           <br>
           <img src="http://i1273.photobucket.com/albums/y403/dylankbaker/forcedlaugh_150sq_zpse6ca30f9.jpg">  
             <div class="caption">
-              <h3> Managing and Assessing </h3>
+              <h3> <span class="nobr"> Managing and </span> <br> Assessing </h3>
             </div>
         </center> 
       </a>
@@ -142,6 +153,74 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
+  <!-- !!!! We should put this in a separate file and link to it  like the others !!!! -->
+  <script>
+    $(function() {
+
+        function filterPath(string) {
+            return string
+            .replace(/^\//,'')
+            .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+            .replace(/\/$/,'');
+        }
+
+        var locationPath = filterPath(location.pathname);
+        var scrollElem = scrollableElement('html', 'body');
+
+        // Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
+        $('a[href*=#]').each(function() {
+
+            // Ensure it's a same-page link
+            var thisPath = filterPath(this.pathname) || locationPath;
+            if (  locationPath == thisPath
+                && (location.hostname == this.hostname || !this.hostname)
+                && this.hash.replace(/#/,'') ) {
+
+                    // Ensure target exists
+                    var $target = $(this.hash), target = this.hash;
+                    if (target) {
+
+                        // Find location of target
+                        var targetOffset = $target.offset().top;
+                        $(this).click(function(event) {
+
+                            // Prevent jump-down
+                            event.preventDefault();
+
+                            // Animate to target
+                            $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+
+                                // Set hash in URL after animation successful
+                                location.hash = target;
+
+                            });
+                        });
+                    }
+            }
+
+        });
+
+        // Use the first element that is "scrollable"  (cross-browser fix?)
+        function scrollableElement(els) {
+            for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+                var el = arguments[i],
+                $scrollElement = $(el);
+                if ($scrollElement.scrollTop()> 0) {
+                    return el;
+                } else {
+                    $scrollElement.scrollTop(1);
+                    var isScrollable = $scrollElement.scrollTop()> 0;
+                    $scrollElement.scrollTop(0);
+                    if (isScrollable) {
+                        return el;
+                    }
+                }
+            }
+            return [];
+        }
+
+    });
+  </script>
 
 </body>
 
