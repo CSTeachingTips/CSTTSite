@@ -9,6 +9,7 @@
 
 body {
 	position: relative;
+	color: #495966;
 } 
 
 .jumbotron {
@@ -128,14 +129,13 @@ a.thumbnail:hover {
 
 .caption {
 	height:auto;
-	/*display:table-cell;*/
     vertical-align:middle;
     float:none;
 }
 
 .thumbnail .caption {
 	padding:9px;
-	color:#333;
+	color: #495966;
 }
 
 #tip {
@@ -168,8 +168,10 @@ a.thumbnail:hover {
 
 .panel {
 	margin-top: 15px;
-	margin-right: 0px;
+	margin-right: 15px;
 	margin-left: 10px;
+	width: 15%;
+	position: fixed;
 }
 
 .col-xs-2,.col-md-2,.col-xs-3,.col-md-3,.col-xs-4,.col-md-4,.col-xs-5,.col-md-5,.col-xs-10,.col-md-10 {
@@ -179,9 +181,15 @@ a.thumbnail:hover {
 	padding-right:7px;
 }
 
-.btn, .btn-default {
+.btn-default {
 	height: 34px;
 }
+
+.panel-title {
+	color: #495966;
+}
+
+
 
 
 
