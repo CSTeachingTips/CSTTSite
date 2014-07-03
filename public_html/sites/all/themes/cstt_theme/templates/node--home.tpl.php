@@ -68,7 +68,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:50px"> <br> </p>
+  <p style="font-size:40px"> <br> </p>
 
 
   <!-- Down Arrow (for jumping to category panels) -->
@@ -84,7 +84,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:100px"> <br> </p>
+  <p style="font-size:110px"> <br> </p>
 
 
   <!-- Category Panels --> 
