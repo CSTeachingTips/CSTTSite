@@ -189,7 +189,9 @@ a.thumbnail:hover {
 	color: #495966;
 }
 
-
+.nobr {
+	white-space:nowrap;
+}
 
 
 
