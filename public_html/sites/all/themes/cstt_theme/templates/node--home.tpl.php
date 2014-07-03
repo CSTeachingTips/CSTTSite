@@ -142,7 +142,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:201px"> <br> <br> </p>
+  <p style="font-size:190px"> <br> <br> </p>
 
 
   <!-- Footer -->
