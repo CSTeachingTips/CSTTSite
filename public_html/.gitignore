@@ -11,3 +11,6 @@ sites/all/.DS_Store
 
 # Ignore the default settings
 sites/*/default.settings.php
+
+# Ignore the default folder
+sites/default
