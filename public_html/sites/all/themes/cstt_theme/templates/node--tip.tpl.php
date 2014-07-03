@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Default theme implementation to display a node.
+ * Tip profile page default format.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -110,7 +110,7 @@
 <body>
   
   <div class="jumbotron" id="tip">
-    <h1> <?php print $title; ?> </h1>
+    <h2> <?php print $title; ?> </h2>
     <h6><br></h6>
     <p class="text-muted" id="category">
       
@@ -131,7 +131,7 @@
 
     <div class="col-xs-4 col-md-4">
       <p class="text-muted">
-        Source: <a href="#">Source</a>
+        <?php print render($content['field_source']); ?>
       </p>
       <p class="text-muted" id="tag">
         <?php print render($content['field_tags']); ?>
