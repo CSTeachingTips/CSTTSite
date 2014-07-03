@@ -10,13 +10,25 @@
  * @ingroup views_templates
  */
 ?>
+<div class="col-xs-2 col-md-2">
+<div class="panel panel-default">
+
+  <div class="panel-heading">
+    <h3 class="panel-body">
+      
+      <?php 
+      $block = block_load('views','-exp-browse_all-page_1');
+      $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
+      print drupal_render($dummyblock);
+      ?>
+
+    </h3>
+    
+  </div>
+</div>
+</div>
 
 
-<?php 
-  $block = block_load('views','-exp-browse_all-page_1');
-  $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
-  print drupal_render($dummyblock);
-  ?>
 
 
 
