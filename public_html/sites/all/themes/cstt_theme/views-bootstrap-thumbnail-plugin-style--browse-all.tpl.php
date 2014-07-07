@@ -15,13 +15,13 @@
   <?php if ($options['alignment'] == 'horizontal'): ?>
 
     <?php foreach ($items as $row): ?>
-      <div class="col-xs-5 col-md-5">
+      <div class="row">
         <?php foreach ($row['content'] as $column): ?>
-  
+          <div class="col col-lg-<?php print $column_type ?>">
             <div class="thumbnail">
               <?php print $column['content'] ?>
             </div>
-          
+          </div>
         <?php endforeach ?>
       </div>
     <?php endforeach ?>

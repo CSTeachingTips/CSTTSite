@@ -174,7 +174,7 @@ a.thumbnail:hover {
 	position: fixed;
 }
 
-.col-xs-2,.col-md-2,.col-xs-3,.col-md-3,.col-xs-4,.col-md-4,.col-xs-5,.col-md-5,.col-xs-10,.col-md-10 {
+.col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
 	position:relative;
 	min-height:1px;
 	padding-left:7px;
@@ -234,6 +234,14 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 
 #more_tags {
 	margin-left: -15px;
+}
+
+.category {
+<<<<<<< HEAD
+	min-height: 200px;
+=======
+>>>>>>> Marisol
+	min-width: 180px;
 }
 
 

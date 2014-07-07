@@ -98,7 +98,7 @@
       <a href="#" class="thumbnail">
         <center>
           <br>
-          <img src="http://i1273.photobucket.com/albums/y403/dylankbaker/forcedlaugh_150sq_zpse6ca30f9.jpg">
+          <img src="http://csteachingtips.org/images/placeholder.png">
           <div class="caption">
             <h3> Organizing <br> Curriculum </h3>
           </div>
@@ -113,7 +113,7 @@
       <a href="#" class="thumbnail">
         <center>
           <br>
-          <img src="http://i1273.photobucket.com/albums/y403/dylankbaker/forcedlaugh_150sq_zpse6ca30f9.jpg">
+          <img src="http://csteachingtips.org/images/placeholder.png">
             <div class="caption"> 
               <h3> Delivering <br> Content </h3> 
             </div>
@@ -128,7 +128,7 @@
       <a href="#" class="thumbnail">
         <center>
           <br>
-          <img src="http://i1273.photobucket.com/albums/y403/dylankbaker/forcedlaugh_150sq_zpse6ca30f9.jpg">  
+          <img src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
               <h3> <span class="nobr"> Managing and </span> <br> Assessing </h3>
             </div>

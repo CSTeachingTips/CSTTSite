@@ -83,7 +83,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="http://csteachingtips.org/css_html/images/csteachingtips.png" id="cstt-logo"/></a>
+          <a class="navbar-brand" href="#"><img src="http://www.csteachingtips.org/images/csteachingtips.png" id="cstt-logo"/></a>
       </div>
 
       <!-- NAV BAR -->
@@ -141,13 +141,13 @@
         <div align="center">
           <p class="text-muted">Powered by:</p>
           <a href="http://www.nsf.gov/">
-            <img src="http://www.csteachingtips.org/css_html/images/nsf_logo.png">
+            <img src="http://www.csteachingtips.org/images/nsf_logo.png">
           </a>
           <a href="http://www.sagefoxgroup.com/" style="margin-left:13px;">
-            <img src="http://wwww.csteachingtips.org/css_html/images/sagefoxlogo_75tall.png">
+            <img src="http://www.csteachingtips.org/images/sagefoxlogo_75tall.png">
           </a>
           <a href="http://www.hmc.edu">
-            <img src="http://wwww.csteachingtips.org/css_html/images/HMClogo_75sq.png" style="margin-left:13px;">
+            <img src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
           </a>
         </div>
     </div>  
