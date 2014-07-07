@@ -1,12 +1,3 @@
-/* Modifying the display of the search bar in the main menu */
- .navbar #block-search-form {
- 	margin-left: 5px;
- 	margin-right: 5px;
- 	margin-top: 10px;
- 	margin-bottom: 0px;
- 	max-width: 200px;
- }
-
 body {
 	position: relative;
 	color: #495966;

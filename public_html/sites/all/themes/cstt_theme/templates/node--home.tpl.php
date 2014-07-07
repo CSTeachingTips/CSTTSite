@@ -84,7 +84,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:110px"> <br> </p>
+  <p style="font-size:150px"> <br> </p>
 
 
   <!-- Category Panels --> 
@@ -142,7 +142,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:201px"> <br> <br> </p>
+  <p style="font-size:150px"> <br> <br> </p>
 
 
   <!-- Footer -->
