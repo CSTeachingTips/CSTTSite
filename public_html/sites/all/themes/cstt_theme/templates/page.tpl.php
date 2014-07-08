@@ -115,7 +115,7 @@
     </nav>
 
 
-    <h1> <br>  </h1>
+  
 
 <!-- CONTENT -->
 
@@ -123,6 +123,7 @@
 
 <!-- END CONTENT -->
     
+<h3> <br> </h3>
 
 <div id="footer">
     <div class="container">  
@@ -151,5 +152,5 @@
           </a>
         </div>
     </div>  
-      
+      <h3> <br> </h3>
 </div>
