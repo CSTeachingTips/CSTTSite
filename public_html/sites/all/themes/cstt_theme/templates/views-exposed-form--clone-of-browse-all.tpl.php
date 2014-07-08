@@ -4,8 +4,9 @@
  * @file
  * This template handles the layout of a custom views exposed filter form.
  *
- * Specifically, it formats the sidebar on the browse all page for tips.
+ * Specifically, it handles the layout of the search bar in the main nav bar.
  *
+ * 
  * Variables available:
  * - $widgets: An array of exposed form widgets. Each widget contains:
  * - $widget->label: The visible label to print. May be optional.
@@ -21,7 +22,7 @@
  * @ingroup views_templates
  */
 ?>
-
+ 
 
 <?php if (!empty($q)): ?>
   <?php
@@ -67,18 +68,14 @@
         <?php print $items_per_page; ?>
       </div>
     <?php endif; ?>
-    <?php if (!empty($offset)): ?>
-      <div class="views-exposed-widget views-widget-offset">
-        <?php print $offset; ?>
-      </div>
-    <?php endif; ?>
+    
     <div class="views-exposed-widget views-submit-button">
       <?php print $button; ?>
     </div>
+
     <?php if (!empty($reset_button)): ?>
       <div class="views-exposed-widget views-reset-button">
         <?php print $reset_button; ?>
       </div>
     <?php endif; ?>
   </div>
-</div>
