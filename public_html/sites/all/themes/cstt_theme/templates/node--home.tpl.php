@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="style.css">
         
 </head>
-	
+  
 <body>
 
 
@@ -68,7 +68,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:50px"> <br> </p>
+  <p style="font-size:40px"> <br> </p>
 
 
   <!-- Down Arrow (for jumping to category panels) -->
@@ -84,23 +84,23 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:100px"> <br> </p>
+  <p style="font-size:150px"> <br> </p>
 
 
   <!-- Category Panels --> 
-  <p id="category-panels"><br></p>
+
   <!-- id useful for bookmark & anchoring -->
-  <div>
+  <div id="category-panels">
 
     <!-- Organizing Curriculum--> 
 
-    <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+    <div class="col-xs-4 col-md-4">
+      <a href="#" class="thumbnail">
         <center>
           <br>
-          <img src="http://csteachingtips.org/css_html/images/placeholder.png">
+          <img src="http://csteachingtips.org/images/placeholder.png">
           <div class="caption">
-            <h3>Organizing<br>Curriculum</h3>
+            <h3> Organizing <br> Curriculum </h3>
           </div>
         </center> 
       </a>
@@ -109,27 +109,28 @@
 
     <!-- Delivering Content --> 
 
-    <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+    <div class="col-xs-4 col-md-4">
+      <a href="#" class="thumbnail">
         <center>
           <br>
-          <img src="http://csteachingtips.org/css_html/images/placeholder.png">
+          <img src="http://csteachingtips.org/images/placeholder.png">
             <div class="caption"> 
-              <h3>Delivering<br>Content</h3> 
+              <h3> Delivering <br> Content </h3> 
             </div>
         </center> 
       </a> 
     </div>
 
-    <!-- Managing and Assessing--> 
 
-    <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+    <!-- Managing and Assessing--> 
+    
+    <div class="col-xs-4 col-md-4">
+      <a href="#" class="thumbnail">
         <center>
           <br>
-          <img src="http://csteachingtips.org/css_html/images/placeholder.png">  
+          <img src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
-              <h3> <span class="nobr">Managing and</span><br>Assessing</h3>
+              <h3> <span class="nobr"> Managing and </span> <br> Assessing </h3>
             </div>
         </center> 
       </a>
@@ -141,7 +142,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:201px"> <br> <br> </p>
+  <p style="font-size:150px"> <br> <br> </p>
 
 
   <!-- Footer -->
