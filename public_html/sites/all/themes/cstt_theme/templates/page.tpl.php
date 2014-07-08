@@ -83,7 +83,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="http://www.csteachingtips.org/images/csteachingtips.png" id="cstt-logo"/></a>
+          <a class="navbar-brand" href="http://csteachingtips.org"><img src="http://www.csteachingtips.org/images/csteachingtips.png" id="cstt-logo"/></a>
       </div>
 
       <!-- NAV BAR -->
@@ -96,7 +96,7 @@
                       <li><a href="#">Managing & Assessing</a></li>
                       <li><a href="#">Organizing Curriculum</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Browse All</a></li>
+                      <li><a href="http://csteachingtips.org/node/3">Browse All</a></li>
                   </ul>
               </li>
               <li><a href="#">About</a></li>
