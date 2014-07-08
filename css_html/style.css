@@ -237,11 +237,46 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 
 .category {
-<<<<<<< HEAD
 	min-height: 200px;
-=======
->>>>>>> Marisol
 	min-width: 180px;
+}
+
+#about-side {
+	border:0px solid transparent;
+	box-shadow:none;
+	margin-top:5px;
+	position:fixed;
+	clear:right;
+	width:15%;
+}
+
+.tables {
+	margin-left:15%;
+	margin-right: 10%;
+	clear:left;
+}
+
+td {
+	padding:10px;
+	vertical-align: top;
+}
+
+a {
+	color:#495966;
+}
+
+a:hover {
+	color:#495966;
+}
+
+#summer-research img {
+	padding:7px;
+}
+
+#summer-research p {
+	padding-top: 10px;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
 
