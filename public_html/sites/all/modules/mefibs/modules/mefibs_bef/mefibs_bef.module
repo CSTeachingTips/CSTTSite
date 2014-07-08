@@ -1,0 +1,102 @@
+<?php
+
+/**
+ * @file
+ * Primarily Drupal hooks and global API functions to add support for the
+ * Better Exposed Filters module.
+ */
+
+/**
+ * Implements hook_mefibs_elements_alter().
+ */
+function mefibs_bef_mefibs_elements_alter(&$elements, $context) {
+  $view = $context['view'];
+  $display_id = $view->current_display;
+  $bef_settings = $view->display[$display_id]->handler->get_option('exposed_form');
+  $mefibs = $view->display_handler->get_option('mefibs');
+
+  if ($bef_settings['type'] != 'better_exposed_filters') {
+    return;
+  }
+
+  // Add needed javascript support for sliders and select links.
+  drupal_add_js(drupal_get_path('module', 'mefibs_bef') . '/mefibs_bef.js');
+
+  if (!isset($bef_settings['options']['bef']['sort']['advanced']['combine'])) {
+    return;
+  }
+  if (!$bef_settings['options']['bef']['sort']['advanced']['combine']) {
+    return;
+  }
+
+  $sort_block = isset($mefibs[$display_id]['sort_block']) && $mefibs[$display_id]['sort_block'] == $context['block_id'];
+  if ($context['type'] == 'expected_items' && $sort_block) {
+    $elements['sort'][] = 'sort_bef_combine';
+  }
+  if ($context['type'] == 'hide_items') {
+    if ($sort_block) {
+      $elements[] = 'sort_bef_combine';
+    }
+  }
+}
+
+/**
+ * Implements hook_mefibs_filter_alter().
+ */
+function mefibs_bef_mefibs_filter_alter(&$filters) {
+  // Look for the correct key in the request parameters.
+  foreach ($_REQUEST as $key => $block_id) {
+    if (!is_string($block_id)) {
+      continue;
+    }
+    $prefix = mefibs_get_element_name_prefix($block_id);
+    if ($key == $prefix . '-mefibs_block_id') {
+      if (isset($_REQUEST[$prefix . '-sort_bef_combine'])) {
+        $sort_bef_combine = $_REQUEST[$prefix . '-sort_bef_combine'];
+        $filters['sort_bef_combine'] = $sort_bef_combine;
+        list($filters['sort_by'], $filters['sort_order']) = explode(' ', $filters['sort_bef_combine']);
+        return;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hool_FORM_ID_alter().
+ * 
+ * Change position of the block selector for exposed sort items.
+ */
+function mefibs_bef_form_views_ui_edit_display_form_alter(&$form, $form_state) {
+  $view = $form_state['view'];
+  $display_id = $form_state['display_id'];
+  $section = $form_state['section'];
+  if ($section != 'exposed_form_options') {
+    return;
+  }
+  if (!$view->display_handler->get_option('exposed_block')) {
+    return;
+  }
+  
+  $mefibs = $view->display_handler->get_option('mefibs');
+
+  $blocks = $view->display_handler->extender['mefibs_blocks']->get_enabled_blocks();
+  $sort_options = &$form['options']['exposed_form_options']['bef']['sort'];
+  $sort_options['bef_format']['#weight'] = 0;
+  $sort_options['advanced']['#weight'] = 2;
+  $sort_options['mefibs_block_sort_bef'] = $form['options']['mefibs_block_sort'];
+  $sort_options['mefibs_block_sort_bef']['#weight'] = 1;
+  $form['options']['mefibs_block_sort']['#access'] = FALSE;
+  $form['buttons']['submit']['#validate'][] = 'mefibs_bef_form_views_ui_edit_display_form_validate';
+}
+
+/**
+ * Custom validate handler for the ui_edit_display form.
+ */
+function mefibs_bef_form_views_ui_edit_display_form_validate($form, &$form_state) {
+  $values = $form_state['values'];
+  if (!isset($values['exposed_form_options']['bef']['sort']['mefibs_block_sort_bef'])) {
+    return;
+  }
+  $block_id = $values['exposed_form_options']['bef']['sort']['mefibs_block_sort_bef'];
+  form_set_value($form['options']['mefibs_block_sort'], $block_id, $form_state);
+}
