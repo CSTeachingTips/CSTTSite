@@ -1,0 +1,14 @@
+name = More exposed forms in blocks (MEFIBS)
+description = Provide additional blocks with exposed view forms.
+package = Views
+core = 7.x
+dependencies[] = views
+dependencies[] = views_ui
+files[] = mefibs_display_extender_plugin_blocks.inc
+
+; Information added by Drupal.org packaging script on 2014-06-09
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "mefibs"
+datestamp = "1402348428"
+
