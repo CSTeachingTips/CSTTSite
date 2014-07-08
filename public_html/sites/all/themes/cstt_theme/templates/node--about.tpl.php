@@ -163,24 +163,11 @@
     </table>
   </div>
 
-<<<<<<< HEAD
-  <div class="col-xs-12 col-sm-9 tables" id="summer-research">
 
-    <h3>Summer Researchers</h3>
-    <center>
-      <img src="images/team-google.png" />
-      <p>From left-to right: Back: Dylan Baker, Marisol Beck, Linnea Nelson, Arielle Schlesinger, Neftali Dominguez, Justis Allen; Front: Vidushi Ojha, Colleen Lewis, Samantha Stilson, Nava Dallal.</p>
-    </center>
-
-  </div>
-
-
-=======
   <!-- space for footer -->
   <div class="col-xs-12 col-sm-9">
   <p style="font-size:50px;"> <br> </p>
   </div>
->>>>>>> master
 
 </div>
 
