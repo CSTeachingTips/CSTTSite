@@ -27,8 +27,8 @@
     <div class="panel-body">
       <a href="#project-summary">Project Summary</a> <br>
       <a href="#team">Team</a> <br>
-      <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
       <a href="#summer-research">Summer Researchers</a> <br>
+      <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
     </div>
   </div>
 
@@ -70,6 +70,16 @@
         <p>Tiffany Berry is a Research Associate Professor in the Division of Behavioral and Organizational Sciences. She is a Core Faculty member in Positive Developmental Psychology, regularly teaching and providing research supervision to masters and doctoral developmental students. In addition, she is an active educational program evaluator at the Claremont Evaluation Center (CEC) at CGU. Dr. Berry&#8217;s research focuses primarily on evaluating educational programs, including K-12 educational curricula, early childhood education programs, after school programs, and comprehensive school reform initiatives.</p></td>
       </tr>
     </table>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 tables" id="summer-research">
+
+    <h3>Summer Researchers</h3>
+    <center>
+      <img src="images/team-google.png" />
+      <p>From left-to right: Back: Dylan Baker, Marisol Beck, Linnea Nelson, Arielle Schlesinger, Neftali Dominguez, Justis Allen; Front: Vidushi Ojha, Colleen Lewis, Samantha Stilson, Nava Dallal.</p>
+    </center>
+
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="advisory-board">
@@ -122,7 +132,7 @@
       </tr>
       <tr>
         <td><img class="alignnone size-full wp-image-214" alt="RiaGalanos_Square" src="http://blogs.hmc.edu/csteachingtips/wp-content/uploads/sites/6/2013/11/RiaGalanos_Square1.jpg" width="100" height="100" /></td>
-        <td><strong><a href="http://cscheerleader.com/">Ria Galanos &#8211; Thomas Jefferson High School for science and technology</a></strong>
+        <td><strong><a href="http://cscheerleader.com/">Ria Galanos &#8211; Thomas Jefferson High School for Science and Technology</a></strong>
         <h6></h6>
         <p>Ria Galanos teaches computer science full time at the Thomas Jefferson High School for Science and Technology, serves on the Board of Directors of the National Consortium of Specialized Secondary Schools for Math, Science, and Technology, is an educational consultant with Google, and serves as a reader for the Advanced Placement Computer Science A exam.</p></td>
       </tr>
@@ -153,6 +163,7 @@
     </table>
   </div>
 
+<<<<<<< HEAD
   <div class="col-xs-12 col-sm-9 tables" id="summer-research">
 
     <h3>Summer Researchers</h3>
@@ -164,6 +175,12 @@
   </div>
 
 
+=======
+  <!-- space for footer -->
+  <div class="col-xs-12 col-sm-9">
+  <p style="font-size:50px;"> <br> </p>
+  </div>
+>>>>>>> master
 
 </div>
 
