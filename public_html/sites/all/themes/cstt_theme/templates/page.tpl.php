@@ -102,13 +102,13 @@
               <li><a href="#">About</a></li>
               <li><a href="#">Contribute</a></li>
           </ul>
+              <?php 
+  $block = block_load('views','-exp-clone_of_browse_all-page');
+  $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
+  print drupal_render($dummyblock);
+  ?>
           
-          
-              <!-- Printing a useable searchform -->
-              <?php $block = block_load('search','form');
-              $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
-              print drupal_render($dummysearch); 
-              ?>
+             
           
       </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
