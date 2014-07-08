@@ -20,8 +20,8 @@
 
 <body>
 
+<h1> <br>  </h1>
 
-<br> <br> <br> <br>
 <div>
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
@@ -163,10 +163,7 @@
 
   </div>
 
-  <!-- space for footer -->
-  <div class="col-xs-12 col-sm-9">
-  <p style="font-size:175px;"> <br> </p>
-  </div>
+
 
 </div>
 
