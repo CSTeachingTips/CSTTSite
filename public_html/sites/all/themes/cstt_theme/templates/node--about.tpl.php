@@ -76,7 +76,7 @@
 
     <h3>Summer Researchers</h3>
     <center>
-      <img src="http://www.csteachingtips.org/images/team-google.png" width="400" height="300" />
+      <img src="http://www.csteachingtips.org/images/team-google.png" width="500" height="400" />
       <p>From left-to right: Back: Dylan Baker, Marisol Beck, Linnea Nelson, Arielle Schlesinger, Neftali Dominguez, Justis Allen; Front: Vidushi Ojha, Colleen Lewis, Samantha Stilson, Nava Dallal.</p>
     </center>
 
