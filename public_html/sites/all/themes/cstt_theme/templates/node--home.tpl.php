@@ -84,7 +84,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:100px"> <br> </p>
+  <p style="font-size:180px"> <br> </p>
 
 
   <!-- Category Panels --> 
@@ -141,7 +141,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:201px"> <br> <br> </p>
+  <p style="font-size:120px"> <br> <br> </p>
 
 
   <!-- Footer -->
@@ -152,7 +152,7 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <!-- !!!! We should put this in a separate file and link to it  like the others !!!! -->
+  <!-- Javascript for arrow -->
   <script>
     $(function() {
 
