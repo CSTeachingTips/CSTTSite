@@ -4,6 +4,3 @@
  * @file
  * template.php
  */
-
-
-
