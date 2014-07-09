@@ -287,3 +287,7 @@ a:hover {
 .contribute {
 	margin-left: 5%;
 }
+
+.navbar-collapse {
+	background: #ffffff; 
+}
