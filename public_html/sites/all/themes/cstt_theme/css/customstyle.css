@@ -64,37 +64,37 @@ body {
 #facebook {
 	left: 0px;
 	width: 35px;
-	background: url('http://www.csteachingtips.org/images/social_media_sprite_light.png') 0 0;
+	background: url('images/social_media_sprite_light.png') 0 0;
 }
 
 #twitter {
 	left: 43px;
 	width: 35px;
-	background: url('http://www.csteachingtips.org/images/social_media_sprite_light.png') -36px 0;
+	background: url('images/social_media_sprite_light.png') -36px 0;
 }
 
 #google {
 	left: 86px;
 	width: 35px;
-	background: url('http://www.csteachingtips.org/images/social_media_sprite_light.png') -144px 0;
+	background: url('images/social_media_sprite_light.png') -144px 0;
 }
 
 #facebook:hover {
 	left: 0px;
 	width: 35px;
-	background: url('http://www.csteachingtips.org/images/social_media_sprite_dark.png') 0 0;
+	background: url('images/social_media_sprite_dark.png') 0 0;
 }
 
 #twitter:hover {
 	left: 43px;
 	width: 35px;
-	background: url('http://www.csteachingtips.org/images/social_media_sprite_dark.png') -36px 0;
+	background: url('images/social_media_sprite_dark.png') -36px 0;
 }
 
 #google:hover {
 	left: 86px;
 	width: 35px;
-	background: url('http://www.csteachingtips.org/images/social_media_sprite_dark.png') -144px 0;
+	background: url('images/social_media_sprite_dark.png') -144px 0;
 }
 
 .thumbnail>img {
@@ -161,7 +161,7 @@ a.thumbnail:hover {
 	margin-top: 15px;
 	margin-right: 15px;
 	margin-left: 10px;
-	width: 20%;
+	width: 15%;
 	position: fixed;
 }
 
@@ -287,5 +287,3 @@ a:hover {
 .contribute {
 	margin-left: 5%;
 }
-
-
