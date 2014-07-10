@@ -18,6 +18,7 @@ body {
 
 #navbar {
 	height: 50px;
+	z-index: 4000;
 }
 
 .navbar-brand {
