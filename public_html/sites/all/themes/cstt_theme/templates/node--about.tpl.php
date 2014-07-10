@@ -24,12 +24,12 @@
 
 <div>
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
-    <div class="panel-body">
+    <!-- <div class="panel-body"> -->
       <a href="#project-summary">Project Summary</a> <br>
       <a href="#team">Team</a> <br>
       <a href="#summer-research">Summer Researchers</a> <br>
       <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
-    </div>
+      <!-- </div> -->
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="project-summary">
