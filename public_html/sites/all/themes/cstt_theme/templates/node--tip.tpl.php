@@ -120,6 +120,7 @@
   <br>
   <div class="container">
     <div class="col-xs-12">
+    <h4> Similar Tips </h4>
 
  <?php $block = block_load('views','similar_tips-block');
               $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
