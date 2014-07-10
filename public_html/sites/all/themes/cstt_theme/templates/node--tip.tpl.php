@@ -83,29 +83,7 @@
 
 
 
-
-<html>
-
-<head>
-
-  <title>
-
-    </title>
-        
-        <meta name="description" content="CS Teaching Tips does things">
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="m" />
-        <meta property="og:image" content="m" />
-        <meta property="og:title" content="!"/>
-        <meta property="og:site_name" content="hi!" />
-        <meta property="og:description" content="hi!" />
-        <meta property="fb:app_id" content="560604524019670"/>
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta charset="utf-8">
- 
-
-</head>
-
+<h4> <br> </h4>
 
 <body>
   
@@ -140,11 +118,16 @@
   </div>
 
   <br>
+  <div class="container">
+    <div class="col-xs-12">
 
  <?php $block = block_load('views','similar_tips-block');
               $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummysearch); 
               ?>
+
+  </div>
+  </div>
 
   <br> <br> <br>
 
@@ -152,5 +135,3 @@
 <br>
 
 </body>
-
-</html>
