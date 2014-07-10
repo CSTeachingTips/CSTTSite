@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="style.css">
         
 </head>
-	
+  
 <body>
 
 
@@ -55,7 +55,7 @@
     <p style="font-size:15px"> <br> </p>
 
     <p>
-      <a class="btn btn-primary btn-lg" role="button">Start Browsing Tips <span class="glyphicon glyphicon-chevron-right"> </span>
+      <a href="http://www.csteachingtips.org/browse-all" class="btn btn-primary btn-lg" role="button">Start Browsing Tips <span class="glyphicon glyphicon-chevron-right"> </span>
       </a>
     </p>
     
@@ -67,8 +67,8 @@
   <!-- End center button and mission statement -->
 
 
-  <!-- Whitespace -->
-  <p style="font-size:50px"> <br> </p>
+  <!-- Whitespace
+  <p id="white" style="font-size:50px"> <br> </p> -->
 
 
   <!-- Down Arrow (for jumping to category panels) -->
@@ -84,7 +84,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:180px"> <br> </p>
+  <p style="font-size:230px"> <br> </p>
 
 
   <!-- Category Panels --> 
@@ -98,7 +98,7 @@
       <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img src="http://www.csteachingtips.org/images/placeholder.png">
+          <img src="http://csteachingtips.org/css_html/images/placeholder.png">
           <div class="caption">
             <h3>Organizing<br>Curriculum</h3>
           </div>
@@ -113,7 +113,7 @@
       <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img src="http://www.csteachingtips.org/images/placeholder.png">
+          <img src="http://csteachingtips.org/css_html/images/placeholder.png">
             <div class="caption"> 
               <h3>Delivering<br>Content</h3> 
             </div>
@@ -127,7 +127,7 @@
       <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img src="http://www.csteachingtips.org/images/placeholder.png">  
+          <img src="http://csteachingtips.org/css_html/images/placeholder.png">  
             <div class="caption">
               <h3> <span class="nobr">Managing and</span><br>Assessing</h3>
             </div>
@@ -152,7 +152,7 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <!-- Javascript for arrow -->
+  <!-- !!!! We should put this in a separate file and link to it  like the others !!!! -->
   <script>
     $(function() {
 
