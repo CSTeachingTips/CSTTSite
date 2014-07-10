@@ -203,7 +203,7 @@ background-color: white;
 /* Fixing the display of the search button */
 .buttonplacementfix {
 position: relative;
-top: -10px;
+top: 10px;
 }
 
 
