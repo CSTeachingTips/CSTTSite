@@ -290,6 +290,12 @@ a:hover {
 
 .contribute {
 	margin-left: 5%;
+	overflow: hidden;
+}
+
+.contribute iframe {
+	width: 100%;
+	height: 100%;
 }
 
 
