@@ -37,8 +37,6 @@
 	float: right;
 }
 
-/* End modifying the default display of the search bar and button in the main menu */
-
 
 
 /* Fixing the display of the exposed form on the browse-all page */
@@ -200,6 +198,12 @@ display: list-item;
 color: #ccc;
 cursor: default;
 background-color: white;
+}
+
+/* Fixing the display of the search button */
+.buttonplacementfix {
+	float: left;
+	margin-top: 1.6em;
 }
 
 
