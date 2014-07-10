@@ -253,15 +253,11 @@ td {
 }
 
 a {
-	color:#495966;
+	color:#000000;
 }
 
 a:hover {
-	color:#495966;
-}
-
-.panel-body {
-	color: #000000;
+	color:#000000;
 }
 
 #summer-research img {
