@@ -281,7 +281,11 @@ a:hover {
 	margin-left:5%;
 	margin-right: 10%;
 	clear:left;
-}
+  }
+  .panel {
+	width: 95%;
+	position: relative;
+  }
 }
 
 .contribute {
