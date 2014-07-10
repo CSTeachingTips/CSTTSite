@@ -184,10 +184,12 @@
                         $(this).click(function(event) {
 
                             // Prevent jump-down
-                            event.preventDefault();
+                            // event.preventDefault();
 
                             // Animate to target
-                            $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+                            $(scrollElem).animate({scrollTop: targetOffset}, 400, function(e) {
+                                // Prevent jump-down
+                                e.preventDefault();
 
                                 // Set hash in URL after animation successful
                                 location.hash = target;
