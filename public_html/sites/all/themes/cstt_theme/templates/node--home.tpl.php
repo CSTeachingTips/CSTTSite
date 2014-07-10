@@ -95,7 +95,7 @@
     <!-- Organizing Curriculum--> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+      <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=" class="thumbnail category">
         <center>
           <br>
           <img src="http://csteachingtips.org/images/placeholder.png">
@@ -110,7 +110,7 @@
     <!-- Delivering Content --> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+      <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=" class="thumbnail category">
         <center>
           <br>
           <img src="http://csteachingtips.org/images/placeholder.png">
@@ -124,7 +124,7 @@
     <!-- Managing and Assessing--> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+      <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=" class="thumbnail category">
         <center>
           <br>
           <img src="http://csteachingtips.org/images/placeholder.png">  

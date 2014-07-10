@@ -99,8 +99,8 @@
                       <li><a href="http://csteachingtips.org/browse-all">Browse All</a></li>
                   </ul>
               </li>
-              <li><a href="http://csteachingtips.org/node/22">About</a></li>
-              <li><a href="http://csteachingtips.org/node/23">Contribute</a></li>
+              <li><a href="http://csteachingtips.org/about">About</a></li>
+              <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
           </ul>
               
             <div id = "fixingsearchform">

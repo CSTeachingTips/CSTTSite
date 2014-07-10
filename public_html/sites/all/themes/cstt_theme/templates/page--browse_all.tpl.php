@@ -25,8 +25,8 @@
                       <li><a href="http://www.csteachingtips.org/browse-all">Browse All</a></li>
                   </ul>
               </li>
-              <li><a href="http://www.csteachingtips.org/node/22">About</a></li>
-              <li><a href="http://www.csteachingtips.org/node/23">Contribute</a></li>
+              <li><a href="http://www.csteachingtips.org/about">About</a></li>
+              <li><a href="http://www.csteachingtips.org/contribute">Contribute</a></li>
           </ul>
               
             <div id = "fixingsearchform">
