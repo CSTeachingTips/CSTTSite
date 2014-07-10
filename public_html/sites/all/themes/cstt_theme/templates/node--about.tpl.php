@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <a <div class="col-xs-12 col-sm-9 tables" id="project-summary">
+  <div class="col-xs-12 col-sm-9 tables" id="project-summary">
 
     <h3 style="position:relative;clear:both;">Project Summary</h3>
 
@@ -43,7 +43,7 @@
       <br>
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
-  </div> </a>
+  </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="team">
 
