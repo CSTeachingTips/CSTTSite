@@ -22,11 +22,11 @@
                       <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=">Delivering Content</a></li>
                       <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=">Managing & Assessing</a></li>
                       <li class="divider"></li>
-                      <li><a href="http://www.csteachingtips.org/browse-all">Browse All</a></li>
+                      <li><a href="http://csteachingtips.org/browse-all">Browse All</a></li>
                   </ul>
               </li>
-              <li><a href="http://www.csteachingtips.org/about">About</a></li>
-              <li><a href="http://www.csteachingtips.org/contribute">Contribute</a></li>
+              <li><a href="http://csteachingtips.org/about">About</a></li>
+              <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
           </ul>
               
             <div id = "fixingsearchform">
