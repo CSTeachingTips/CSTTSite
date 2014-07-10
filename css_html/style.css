@@ -271,7 +271,7 @@ a:hover {
 	padding-left: 10%;
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 768px) {
   #about-side {
   	position:relative;
   	margin-left: 4%;
@@ -282,5 +282,11 @@ a:hover {
 	margin-left:5%;
 	margin-right: 10%;
 	clear:left;
+  }
+  .panel {
+	width: 95%;
+	position: relative;
+  }
 }
-}
+
+
