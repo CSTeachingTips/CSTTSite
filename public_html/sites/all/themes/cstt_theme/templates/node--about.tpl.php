@@ -25,14 +25,14 @@
 <div>
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
-      <a href="http://www.csteachingtips.org/node/22#project-summary">Project Summary</a> <br>
-      <a href="http://www.csteachingtips.org/node/22#team">Team</a> <br>
-      <a href="http://www.csteachingtips.org/node/22#summer-research">Summer Researchers</a> <br>
-      <a href="http://www.csteachingtips.org/node/22#advisory-board">Advisory Board & Expert Coordinators</a> <br>
+      <a href="#project-summary">Project Summary</a> <br>
+      <a href="#team">Team</a> <br>
+      <a href="#summer-research">Summer Researchers</a> <br>
+      <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="project-summary">
+  <a <div class="col-xs-12 col-sm-9 tables" id="project-summary">
 
     <h3 style="position:relative;clear:both;">Project Summary</h3>
 
@@ -43,7 +43,7 @@
       <br>
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
-  </div>
+  </div> </a>
 
   <div class="col-xs-12 col-sm-9 tables" id="team">
 
