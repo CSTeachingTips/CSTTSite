@@ -202,8 +202,9 @@ background-color: white;
 
 /* Fixing the display of the search button */
 .buttonplacementfix {
+	margin: 10px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 	float: left;
-	margin-top: 1.6em;
 }
 
 
