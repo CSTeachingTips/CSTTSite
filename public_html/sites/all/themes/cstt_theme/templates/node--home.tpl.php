@@ -98,7 +98,7 @@
       <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/css_html/images/placeholder.png">
+          <img src="http://csteachingtips.org/public_html/images/placeholder.png">
           <div class="caption">
             <h3>Organizing<br>Curriculum</h3>
           </div>
@@ -113,7 +113,7 @@
       <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/css_html/images/placeholder.png">
+          <img src="http://csteachingtips.org/public_html/images/placeholder.png">
             <div class="caption"> 
               <h3>Delivering<br>Content</h3> 
             </div>
@@ -127,7 +127,7 @@
       <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/css_html/images/placeholder.png">  
+          <img src="http://csteachingtips.org/public_html/images/placeholder.png">  
             <div class="caption">
               <h3> <span class="nobr">Managing and</span><br>Assessing</h3>
             </div>
