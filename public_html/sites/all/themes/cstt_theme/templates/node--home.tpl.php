@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="style.css">
         
 </head>
-	
+  
 <body>
 
 
@@ -55,7 +55,7 @@
     <p style="font-size:15px"> <br> </p>
 
     <p>
-      <a class="btn btn-primary btn-lg" role="button">Start Browsing Tips <span class="glyphicon glyphicon-chevron-right"> </span>
+      <a href="http://www.csteachingtips.org/browse-all" class="btn btn-primary btn-lg" role="button">Start Browsing Tips <span class="glyphicon glyphicon-chevron-right"> </span>
       </a>
     </p>
     
@@ -67,8 +67,8 @@
   <!-- End center button and mission statement -->
 
 
-  <!-- Whitespace -->
-  <p style="font-size:50px"> <br> </p>
+  <!-- Whitespace
+  <p id="white" style="font-size:50px"> <br> </p> -->
 
 
   <!-- Down Arrow (for jumping to category panels) -->
@@ -84,7 +84,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:100px"> <br> </p>
+  <p style="font-size:230px"> <br> </p>
 
 
   <!-- Category Panels --> 
@@ -141,7 +141,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:201px"> <br> <br> </p>
+  <p style="font-size:120px"> <br> <br> </p>
 
 
   <!-- Footer -->
