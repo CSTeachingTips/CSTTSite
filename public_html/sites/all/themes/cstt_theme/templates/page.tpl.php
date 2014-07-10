@@ -96,7 +96,7 @@
                       <li><a href="#">Managing & Assessing</a></li>
                       <li><a href="#">Organizing Curriculum</a></li>
                       <li class="divider"></li>
-                      <li><a href="http://csteachingtips.org/node/3">Browse All</a></li>
+                      <li><a href="http://csteachingtips.org/browse-all">Browse All</a></li>
                   </ul>
               </li>
               <li><a href="http://csteachingtips.org/node/22">About</a></li>
