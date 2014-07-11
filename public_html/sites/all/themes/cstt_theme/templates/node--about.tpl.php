@@ -44,11 +44,10 @@
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
   </div>
-  <a id="team">
+  <p id="team"><br></p>
   <div class="col-xs-12 col-sm-9 tables" id="team">
 
     <h3>Team</h3>
-</a>
     <table class="team-table">
       <tr>
         <td><img class="alignnone size-full wp-image-209" alt="Colleen" src="http://blogs.hmc.edu/csteachingtips/wp-content/uploads/sites/6/2013/11/Colleen1.jpg" width="100" height="100" /></td>
