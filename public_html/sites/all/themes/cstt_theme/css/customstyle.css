@@ -260,18 +260,6 @@ a:hover {
 	color:black;
 }
 
-#colorblack {
-	color:black;
-}
-
-#team-table {
-	color:black;
-}
-
-#advisory-table {
-	color:black;
-}
-
 #summer-research img {
 	padding:7px;
 }
@@ -298,6 +286,17 @@ a:hover {
 	width: 95%;
 	position: relative;
   }
+  #summer-research img {
+  	width:550;
+  	height:362;
+  }
+}
+
+@media all and (max-width: 900px) {
+	#summer-research img {
+		width:640;
+		height:421;
+	}
 }
 
 .contribute {

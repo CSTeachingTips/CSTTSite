@@ -13,7 +13,6 @@
     <meta property="fb:app_id" content="560604524019670"/>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <meta charset="utf-8">
-    <link rel = "stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
         
 </head>
@@ -22,7 +21,6 @@
 
 <h1> <br>  </h1>
 
-<div id = "colorblack">
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
       <a href="#project-summary">Project Summary</a> <br>
