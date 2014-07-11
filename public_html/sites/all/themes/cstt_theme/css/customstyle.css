@@ -253,11 +253,27 @@ td {
 }
 
 a {
-	color:#000000;
+	color:black;
 }
 
 a:hover {
-	color:#000000;
+	color:black;
+}
+
+#colorblack {
+	color:black;
+}
+
+#panel-body {
+	color:black;
+}
+
+#team {
+	color:black;
+}
+
+#advisory-board {
+	color:black;
 }
 
 #summer-research img {
