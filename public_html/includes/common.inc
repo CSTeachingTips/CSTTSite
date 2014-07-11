@@ -635,9 +635,13 @@ function drupal_parse_url($url) {
  *
  * @param $path
  *   The Drupal path to encode.
+ *
+ * EDITED: Original code can be found in a clean drupal installation
+ *
+ *
  */
 function drupal_encode_path($path) {
-  return str_replace('%2F', '/', rawurlencode($path));
+  return str_replace(array('%2F','%2C','%3D','%3F','%26'),array('/',',','=','?','&'), rawurlencode($path));
 }
 
 /**

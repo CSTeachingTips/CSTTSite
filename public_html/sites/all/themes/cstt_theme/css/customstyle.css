@@ -253,11 +253,11 @@ td {
 }
 
 a {
-	color:#000000;
+	color:black;
 }
 
 a:hover {
-	color:#000000;
+	color:black;
 }
 
 #summer-research img {
@@ -286,6 +286,17 @@ a:hover {
 	width: 95%;
 	position: relative;
   }
+  #summer-research img {
+  	width:550;
+  	height:362;
+  }
+}
+
+@media all and (max-width: 900px) {
+	#summer-research img {
+		width:640;
+		height:421;
+	}
 }
 
 .contribute {
