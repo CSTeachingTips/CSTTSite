@@ -253,14 +253,22 @@ td {
 }
 
 a {
-	color:#000000;
+	color:black;
 }
 
 a:hover {
-	color:#000000;
+	color:black;
 }
 
 #colorblack {
+	color:black;
+}
+
+#team-table {
+	color:black;
+}
+
+#advisory-table {
 	color:black;
 }
 
