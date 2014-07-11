@@ -102,9 +102,18 @@
           <a href="http://www.hmc.edu">
             <img src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
           </a>
+
+        <h6> <br> </h6>
+          <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>. 
+                                 Icons from <a href = "http://glyphicons.com/">Glyphicons</a>. 
+                                 Powered by <a href = "http://drupal.org/">Drupal</a>. 
+          </p>
+
         </div>
     </div>  
       <h3> <br> </h3>
 </div>
+
+
 
 
