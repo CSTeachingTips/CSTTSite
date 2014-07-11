@@ -1,0 +1,217 @@
+<?php
+
+/**
+ * Implementation of hook_views_api().
+ */
+function views_tpo_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'views_tpo') . '/includes',
+  );
+}
+
+/**
+ * Implementation of hook_term_path().
+ */
+function views_tpo_term_path($term) {
+  static $handlers;
+  $settings = variable_get('views_term_path_override', _views_tpo_empty_settings());
+
+  if (!isset($settings->settings) || empty($settings->settings[$term->vid])) {
+    return FALSE;
+  }
+  else {
+    $data = $settings->settings[$term->vid]; 
+  }
+
+  if (!isset($handlers[$term->vid])) {
+    $view = views_get_view($data->view);
+    $handlers[$term->vid] = _views_tpo_get_handler($view, $data->display, $data->field);
+  }
+
+  return $handlers[$term->vid]->path($term, $data->display);
+}
+
+/**
+ * Implementation of hook_form_FORM_ID_alter().
+ */
+function views_tpo_form_views_ui_edit_view_form_alter(&$form, &$form_state) {
+  $form['buttons']['save']['#submit'][] = 'views_tpo_save';
+}
+
+/**
+ * Implementation of hook_form_FORM_ID_alter().
+ */
+function views_tpo_form_views_ui_delete_confirm_alter(&$form, &$form_state) {
+  $form['#submit'][] = 'views_tpo_remove_view';
+}
+
+/**
+ * Implementation of hook_form_FORM_ID_alter().
+ */
+function views_tpo_form_views_ui_config_item_form_alter(&$form, &$form_state) {
+  if ($form_state['type'] == 'argument' && _views_tpo_supported_handler($form_state['handler'])) {
+    $form['buttons']['remove']['#submit'][] = 'views_tpo_remove_argument';
+  }
+}
+
+/**
+ * Implementation of hook_form_FORM_ID_alter().
+ */
+function views_tpo_form_views_ui_rearrange_form_alter(&$form, &$form_state) {
+  if ($form_state['type'] == 'argument') {
+    array_unshift($form['buttons']['submit']['#submit'], 'views_tpo_remove_argument_multiple');
+  }
+}
+
+/**
+ * Submit handler. Acts on the view argument rearrange form.
+ */
+function views_tpo_remove_argument_multiple($form, &$form_state) {
+  $view = $form_state['view'];
+  $display = $form_state['display_id'];
+  $settings = _views_tpo_view_settings($view);
+
+  foreach ($form_state['values'] as $field => $info) {
+    if (is_array($info) && $info['removed']) {
+      $handler = _views_tpo_get_handler($view, $display, $field);
+      if (_views_tpo_supported_handler($handler)) {
+        views_tpo_purge($settings, $view->name, $display, $field);
+      }
+    }
+  }
+}
+
+/**
+ * Submit handler. Acts on the view argument deletion.
+ */
+function views_tpo_remove_argument($form, &$form_state) {
+  $view = $form_state['view'];
+  $settings = _views_tpo_view_settings($view);
+  views_tpo_purge($settings, $view->name, $form_state['display_id'], $form_state['id']);
+}
+
+/**
+ * Submit handler. Acts on the view delete confirmation form.
+ */
+function views_tpo_remove_view($form, &$form_state) {
+  $view = $form_state['view'];
+  $settings = _views_tpo_view_settings($view);
+  views_tpo_purge($settings, $view->name);
+  views_tpo_save_settings($settings);
+}
+
+/**
+ * Submit handler. Acts on the view edit form save.
+ */
+function views_tpo_save($form, &$form_state) {
+  $view = $form_state['view'];
+  $settings = _views_tpo_view_settings($view);
+  views_tpo_save_settings($settings);
+}
+
+/**
+ * Save taxonomy term path override settings.
+ */
+function views_tpo_save_settings($settings) {
+  // Purge passed settings.
+  views_tpo_purge_missing($settings);
+
+  // Store the updated settings.
+  variable_set('views_term_path_override', $settings);
+
+  // Restore non-overridden vocabularies.
+  foreach ($settings->restore as $vid => $module) {
+    if (!isset($settings->settings[$vid])) {
+      db_query("UPDATE {vocabulary} SET module = '%s' WHERE vid = %d", $module, $vid);
+    }
+  }
+
+  // Update overrides with the stored settings if any.
+  if (!empty($settings->settings)) {
+    $module = 'views_tpo';
+    $args = array_keys($settings->settings);
+    $ph = implode(',', array_fill(0, count($args), '%d'));
+    array_unshift($args, $module);
+    db_query("UPDATE {vocabulary} SET module = '%s' WHERE vid IN ($ph)", $args);
+  }
+}
+
+/**
+ * Delete data associated to missing elements from the given settings.
+ */
+function views_tpo_purge_missing(&$settings) {
+  $types = views_object_types();
+  $type = $types['argument']['plural'];
+
+  foreach (array_keys($settings->settings) as $vid) {
+    $data = $settings->settings[$vid];
+    $view = views_get_view($data->view);
+
+    // Missing views.    
+    if (empty($view)) {
+      unset($settings->settings[$vid]);
+    }
+    // Missing displays.
+    elseif (!isset($view->display[$data->display])) {
+      unset($settings->settings[$vid]);
+    }
+    else {
+      $view->set_display($data->display);
+      $arguments = $view->display[$data->display]->handler->get_option($type);
+      // Missing argument handlers.
+      if (!isset($arguments[$data->field])) {
+        unset($settings->settings[$vid]);
+      }
+    }
+  }
+}
+
+/**
+ * Delete data associated to removed views/displays/arguments from the given
+ * settings.
+ */
+function views_tpo_purge(&$settings, $view, $display = NULL, $field = NULL) {
+  foreach (array_keys($settings->settings) as $vid) {
+    $data = $settings->settings[$vid];
+    if ($data->view == $view && (empty($display) || $data->display == $display) && (empty($field) || $data->field == $field)) {
+      unset($settings->settings[$vid]);
+    }
+  }
+}
+
+/**
+ * Return and initialize the view being edited with the taxonomy path override
+ * settings.
+ */
+function& _views_tpo_view_settings(&$view) {
+  if (!isset($view->views_term_path_override)) {
+    $view->views_term_path_override = variable_get('views_term_path_override', _views_tpo_empty_settings());
+  }
+  return $view->views_term_path_override;
+}
+
+/**
+ * Return an empty settings data structure.
+ */
+function _views_tpo_empty_settings() {
+  return (object) array('settings' => array(), 'restore' => array());
+}
+
+/**
+ * Retrieves an argument handler.
+ */
+function _views_tpo_get_handler($view, $display, $field) {
+  $type = 'argument';
+  $info = $view->get_item($display, $type, $field);
+  $handler = views_get_handler($info['table'], $info['field'], $type);
+  $handler->init($view, $info);
+  return $handler;
+}
+
+/**
+ * Check if a handler belongs to the correct class hierarchy.
+ */
+function _views_tpo_supported_handler($handler) {
+  return $handler instanceof views_tpo_handler_taxonomy_term_name;
+}

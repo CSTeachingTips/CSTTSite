@@ -25,10 +25,10 @@
 <div>
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
-      <a href="#project-summary">Project Summary</a> <br>
-      <a href="#team">Team</a> <br>
-      <a href="#summer-research">Summer Researchers</a> <br>
-      <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
+      <a href="http://csteachingtips.org/about/#project-summary">Project Summary</a> <br>
+      <a href="http://csteachingtips.org/about/#team">Team</a> <br>
+      <a href="http://csteachingtips.org/about/#summer-research">Summer Researchers</a> <br>
+      <a href="http://csteachingtips.org/about/#advisory-board">Advisory Board & Expert Coordinators</a> <br>
     </div>
   </div>
 
