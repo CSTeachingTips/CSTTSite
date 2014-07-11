@@ -25,10 +25,10 @@
 <div>
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
-      <a href="http://csteachingtips.org/about/#project-summary">Project Summary</a> <br>
-      <a href="http://csteachingtips.org/about/#team">Team</a> <br>
-      <a href="http://csteachingtips.org/about/#summer-research">Summer Researchers</a> <br>
-      <a href="http://csteachingtips.org/about/#advisory-board">Advisory Board & Expert Coordinators</a> <br>
+      <a href="#project-summary">Project Summary</a> <br>
+      <a href="#team">Team</a> <br>
+      <a href="#summer-research">Summer Researchers</a> <br>
+      <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
     </div>
   </div>
 
@@ -44,11 +44,11 @@
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
   </div>
-  <p id="team"> </p>
+  <a id="team">
   <div class="col-xs-12 col-sm-9 tables" id="team">
 
     <h3>Team</h3>
-
+</a>
     <table class="team-table">
       <tr>
         <td><img class="alignnone size-full wp-image-209" alt="Colleen" src="http://blogs.hmc.edu/csteachingtips/wp-content/uploads/sites/6/2013/11/Colleen1.jpg" width="100" height="100" /></td>
