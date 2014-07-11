@@ -1,0 +1,3 @@
+name = Taxonomy Links
+description = Changes the default links for taxonomy to redirect to the browse-all view
+core = 7.x
