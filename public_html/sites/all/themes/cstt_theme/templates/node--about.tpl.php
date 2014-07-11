@@ -22,7 +22,7 @@
 
 <h1> <br>  </h1>
 
-<div>
+<div id = "colorblack">
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
       <a href="#project-summary">Project Summary</a> <br>
