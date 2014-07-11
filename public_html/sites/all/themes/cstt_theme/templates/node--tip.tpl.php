@@ -109,11 +109,15 @@
 
     <div class="col-xs-4 col-md-4">
       <p class="text-muted">
+        <?php print render($content['field_source_taxonomy']) ?>
+      </p>
+      <p class="text-muted">
         <?php print render($content['field_source']); ?>
       </p>
       <p class="text-muted" id="tag">
         <?php print render($content['field_tags']); ?>
       </p>  
+
     </div>
   </div>
 
