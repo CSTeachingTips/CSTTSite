@@ -83,7 +83,7 @@
 
 
   <!-- Whitespace -->
-  <p style="font-size:230px"> <br> </p>
+  <p style="font-size:150px"> <br> </p>
 
 
   <!-- Category Panels --> 
