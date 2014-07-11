@@ -46,7 +46,7 @@
 
 
 <!-- just the side panel -->
-<div class="col-md-3">
+<div class="col-sm-3">
 <div class="panel panel-default">
 
   <div class="panel-heading">
@@ -65,7 +65,7 @@
 </div>
 <!--- end sidebar -->
 
-<div class="col-md-9">
+<div class="col-sm-9">
 
 
 <?php print render($page['content']); ?>
