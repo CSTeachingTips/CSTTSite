@@ -192,7 +192,8 @@
 
         // Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
         $('a[href*=#]').each(function() {
-
+            //Prevent jump-down
+            event.preventDefault();
             // Ensure it's a same-page link
             var thisPath = filterPath(this.pathname) || locationPath;
             if (  locationPath == thisPath
@@ -208,7 +209,7 @@
                         $(this).click(function(event) {
 
                             // Prevent jump-down
-                            // event.preventDefault();
+                            event.preventDefault();
 
                             // Animate to target
                             $(scrollElem).animate({scrollTop: targetOffset}, 400, function(e) {

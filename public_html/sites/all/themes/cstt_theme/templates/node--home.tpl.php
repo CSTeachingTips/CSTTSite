@@ -172,7 +172,8 @@
             if (  locationPath == thisPath
                 && (location.hostname == this.hostname || !this.hostname)
                 && this.hash.replace(/#/,'') ) {
-
+                    //Prevent jump-down
+                    event.preventDefault();
                     // Ensure target exists
                     var $target = $(this.hash), target = this.hash;
                     if (target) {
