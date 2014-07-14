@@ -199,3 +199,15 @@ vertical-align: middle;
 	padding-top: 0px;
 }
 
+.views-exposed-form .views-exposed-widget {
+
+  padding: 0em 1em 0 0; /* LTR */
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0em;
+}
+
+.views-exposed-widgets {
+  margin-bottom: 0em;
+}
