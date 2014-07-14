@@ -201,7 +201,11 @@ vertical-align: middle;
 
 .views-exposed-form .views-exposed-widget {
 
-  padding: none; /* LTR */
+  padding-top: 0px ; 
+  padding-bottom: 0px;
+  padding-left: 2px;
+  padding-right: 0px;
+
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
