@@ -270,6 +270,13 @@ a:hover {
 	padding-left: 10%;
 }
 
+@media all and (max-width: 992px) {
+	.panel {
+	width: 95%;
+	position: relative;
+  }
+}
+
 @media all and (max-width: 720px) {
   #about-side {
   	position:relative;
