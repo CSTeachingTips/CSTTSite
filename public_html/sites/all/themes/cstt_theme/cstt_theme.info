@@ -52,7 +52,8 @@ stylesheets[all][] = css/fixingstyle.css
  scripts[] = 'bootstrap/js/scrollspy.js'
  scripts[] = 'bootstrap/js/tab.js'
  scripts[] = 'bootstrap/js/transition.js'
- scripts[] = 'jquery-1.11.1.min.js'
+
+
 
 
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
