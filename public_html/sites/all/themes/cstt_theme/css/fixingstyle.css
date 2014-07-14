@@ -213,3 +213,8 @@ vertical-align: middle;
 .views-exposed-widgets {
   margin-bottom: 0em;
 }
+
+.searchbutton {
+	margin-left: 0px;
+	padding-left: 0px;
+}
