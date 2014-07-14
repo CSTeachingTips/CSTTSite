@@ -22,6 +22,7 @@
 <h1> <br>  </h1>
 
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
+    <h3><br></h3>
     <div class="panel-body">
       <a href="#project-summary">Project Summary</a> <br>
       <a href="#team">Team</a> <br>
