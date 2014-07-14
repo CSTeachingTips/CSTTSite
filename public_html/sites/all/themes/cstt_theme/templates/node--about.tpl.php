@@ -22,6 +22,7 @@
 <h1> <br>  </h1>
 
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
+    <h3><br></h3>
     <div class="panel-body">
       <a href="#project-summary">Project Summary</a> <br>
       <a href="#team">Team</a> <br>
@@ -31,20 +32,20 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="project-summary">
-
+    
     <h3 style="position:relative;clear:both;">Project Summary</h3>
 
     <p style="position:relative;clear:both;">
       <strong>Problem:</strong> CS pedagogical content knowledge (CS PCK) – i.e., knowledge of how to teach computer science – is mostly undocumented.
       <br>
-      <strong>Project Goal:</strong> Develop a set of CS teaching tips to help novice teachers anticipate students’ difficulties and build upon students’ strengths.
+      <strong>Project Goal:</strong> Develop a set of CS teaching tips to help teachers anticipate students’ difficulties and build upon students’ strengths.
       <br>
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="team">
-
+    
     <h3>Team</h3>
     <table class="team-table">
       <tr>
@@ -66,11 +67,17 @@
         <h6></h6>
         <p>Tiffany Berry is a Research Associate Professor in the Division of Behavioral and Organizational Sciences. She is a Core Faculty member in Positive Developmental Psychology, regularly teaching and providing research supervision to masters and doctoral developmental students. In addition, she is an active educational program evaluator at the Claremont Evaluation Center (CEC) at CGU. Dr. Berry&#8217;s research focuses primarily on evaluating educational programs, including K-12 educational curricula, early childhood education programs, after school programs, and comprehensive school reform initiatives.</p></td>
       </tr>
+      <tr>
+        <td><img alt="ArielleSchlesinger" src="http://www.csteachingtips.org/images/arielleschlesinger.jpg" width="100" height="100" /></td>
+        <td><strong>Arielle Schlesinger (Research Project Manager) &#8211; Harvey Mudd College</strong>
+        <h6></h6>
+        <p>Arielle Schlesinger is the Research Project Manager for CSTeachingTips at Harvey Mudd College. Previously, she collaborated on the DOCC (Distributive Open Collaborative Course) with FemTechNet, a network of scholars whose focus is on feminism, science, media, and technology. Her other research includes feminist programming languages, CS education, and socially conscious science.</p></td>
+      </tr>
     </table>
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="summer-research">
-
+    
     <h3>Summer Researchers</h3>
     <center>
       <img src="http://www.csteachingtips.org/images/team-google.png" width="760" height="500" />
@@ -80,7 +87,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="advisory-board">
-
+    <h3><br></h3>
     <h3>Advisory Board and Expert Coordinators</h3>
     
     <table class="advisory-table">
