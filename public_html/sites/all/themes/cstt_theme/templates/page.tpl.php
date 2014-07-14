@@ -103,14 +103,14 @@
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
           </ul>
-              
-            <div class = "navbar-right">
+          <ul class = "nav navbar-nav navbar-right">    
+          
               <?php 
               $block = block_load('views','-exp-clone_of_browse_all-page');
               $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummyblock);
               ?>           
-           </div>
+          </ul>
              
           
       </div><!-- /.navbar-collapse -->
