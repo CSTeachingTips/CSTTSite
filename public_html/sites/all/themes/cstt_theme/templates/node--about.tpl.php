@@ -32,7 +32,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="project-summary">
-    <h3><br></h3>
+    
     <h3 style="position:relative;clear:both;">Project Summary</h3>
 
     <p style="position:relative;clear:both;">
@@ -45,7 +45,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="team">
-    <h3><br></h3>
+    
     <h3>Team</h3>
     <table class="team-table">
       <tr>
@@ -77,7 +77,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="summer-research">
-    <h3><br></h3>
+    
     <h3>Summer Researchers</h3>
     <center>
       <img src="http://www.csteachingtips.org/images/team-google.png" width="760" height="500" />
