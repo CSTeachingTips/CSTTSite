@@ -6,28 +6,13 @@
  ======================================================= 
 -->
 
-<head>
-        <title>
 
-        </title>
-        <meta name="description" content="CS Teaching Tips is an NSF funded project for providing tips to Computer Science teachers.">
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="m" />
-        <meta property="og:image" content="m" />
-        <meta property="og:title" content="!"/>
-        <meta property="og:site_name" content="CS Teaching Tips!" />
-        <meta property="og:description" content="hi!" />
-        <meta property="fb:app_id" content="560604524019670"/>
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta charset="utf-8">
-        
-</head>
   
 <body>
 
 
   <!-- Navbar -->
-  <!-- linnea and sammy made it show up on all pages -->
+ 
   <!-- End Navbar -->
 
 
@@ -143,12 +128,11 @@
 
 
   <!-- Footer -->
-  <!-- linnea and sammy made the footer show up on all pages -->
+
   <!-- End Footer -->
     
 
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
 
   <!-- !!!! We should put this in a separate file and link to it  like the others !!!! -->
   <script>
