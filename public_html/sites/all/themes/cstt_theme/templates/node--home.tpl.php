@@ -20,7 +20,6 @@
         <meta property="fb:app_id" content="560604524019670"/>
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
         
 </head>
   
@@ -173,7 +172,8 @@
             if (  locationPath == thisPath
                 && (location.hostname == this.hostname || !this.hostname)
                 && this.hash.replace(/#/,'') ) {
-
+                    //Prevent jump-down
+                    event.preventDefault();
                     // Ensure target exists
                     var $target = $(this.hash), target = this.hash;
                     if (target) {

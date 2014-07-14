@@ -13,7 +13,6 @@
     <meta property="fb:app_id" content="560604524019670"/>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
         
 </head>
 
@@ -31,7 +30,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="project-summary">
-
+    
     <h3 style="position:relative;clear:both;">Project Summary</h3>
 
     <p style="position:relative;clear:both;">
@@ -44,7 +43,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="team">
-
+    
     <h3>Team</h3>
     <table class="team-table">
       <tr>
@@ -68,7 +67,7 @@
       </tr>
       <tr>
         <td><img alt="ArielleSchlesinger" src="http://www.csteachingtips.org/images/arielleschlesinger.jpg" width="100" height="100" /></td>
-        <td><strong>Arielle Schlesinger (Research Project Manager) &#8211; Harvey Mudd College</strong>
+        <td><a href="http://arielleschlesinger.com"><strong>Arielle Schlesinger (Research Project Manager) &#8211; Harvey Mudd College</strong></a>
         <h6></h6>
         <p>Arielle Schlesinger is the Research Project Manager for CSTeachingTips at Harvey Mudd College. Previously, she collaborated on the DOCC (Distributive Open Collaborative Course) with FemTechNet, a network of scholars whose focus is on feminism, science, media, and technology. Her other research includes feminist programming languages, CS education, and socially conscious science.</p></td>
       </tr>
@@ -76,7 +75,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="summer-research">
-
+    
     <h3>Summer Researchers</h3>
     <center>
       <img src="http://www.csteachingtips.org/images/team-google.png" width="760" height="500" />
@@ -86,7 +85,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="advisory-board">
-
+    <h3><br></h3>
     <h3>Advisory Board and Expert Coordinators</h3>
     
     <table class="advisory-table">
@@ -193,7 +192,8 @@
 
         // Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
         $('a[href*=#]').each(function() {
-
+            //Prevent jump-down
+            event.preventDefault();
             // Ensure it's a same-page link
             var thisPath = filterPath(this.pathname) || locationPath;
             if (  locationPath == thisPath
@@ -209,7 +209,7 @@
                         $(this).click(function(event) {
 
                             // Prevent jump-down
-                            // event.preventDefault();
+                            event.preventDefault();
 
                             // Animate to target
                             $(scrollElem).animate({scrollTop: targetOffset}, 400, function(e) {
