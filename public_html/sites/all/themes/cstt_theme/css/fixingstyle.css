@@ -1,3 +1,6 @@
+
+
+
 /* Fixing the display of the exposed form on the browse-all page */
 
 
@@ -168,6 +171,9 @@ margin-top: 1.2em;
 vertical-align: middle;
 }
 
+
+
+
 @media all and (max-width: 992px) {
 	.buttonplacementfix {
 		float: left;
@@ -188,4 +194,8 @@ vertical-align: middle;
   }
 }
 
+.views-exposed-widget .views-submit-button {
+	margin-top: 0px;
+	padding-top: 0px;
+}
 
