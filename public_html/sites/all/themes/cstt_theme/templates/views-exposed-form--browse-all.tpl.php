@@ -73,8 +73,8 @@
       </div>
     <?php endif; ?>
     
-    <div class = "buttonplacementfix"
-    <div class="views-exposed-widget views-submit-button">
+    <div class = "buttonplacementfix">
+    <div class="views-exposed-widget views-submit-button" id = "buttonplacementfix">
       <?php print $button; ?>
     </div>
     </div>
