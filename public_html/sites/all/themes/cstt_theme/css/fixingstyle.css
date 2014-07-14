@@ -200,12 +200,8 @@ vertical-align: middle;
 }
 
 .views-exposed-form .views-exposed-widget {
-
-  padding-top: 0px ; 
-  padding-bottom: 0px;
-  padding-left: 2px;
-  padding-right: 0px;
-
+  padding: none;
+  margin-left: 4px;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
