@@ -194,6 +194,15 @@ vertical-align: middle;
   }
 }
 
+@media all and (max-width: 992px) {
+	.views-exposed-form .views-exposed-widget {
+		padding: none;
+		margin-left: 4px;
+		margin-right: 0px;
+		margin-bottom: 4px;
+	}
+}
+
 .views-exposed-widget .views-submit-button {
 	margin-top: 0px;
 	padding-top: 0px;
@@ -214,7 +223,7 @@ vertical-align: middle;
   margin-bottom: 0em;
 }
 
-.searchbutton {
+#searchbutton {
 	margin-left: 0px;
 	padding-left: 0px;
 }
