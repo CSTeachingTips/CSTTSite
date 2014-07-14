@@ -73,11 +73,11 @@
       </div>
     <?php endif; ?>
     
-    <div class = "buttonplacementfix">
-    <div class="views-exposed-widget views-submit-button" id = "buttonplacementfix">
+    
+    <div class="buttonplacementfix" id = "buttonplacementfix">
       <?php print $button; ?>
     </div>
-    </div>
+    
     <?php if (!empty($reset_button)): ?>
       <div class="views-exposed-widget views-reset-button">
         <?php print $reset_button; ?>
