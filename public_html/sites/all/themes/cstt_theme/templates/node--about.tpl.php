@@ -85,7 +85,7 @@
   </div>
 
   <div class="col-xs-12 col-sm-9 tables" id="advisory-board">
-    <h3><br></h3>
+    
     <h3>Advisory Board and Expert Coordinators</h3>
     
     <table class="advisory-table">
