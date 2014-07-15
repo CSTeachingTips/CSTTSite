@@ -25,7 +25,7 @@
     <p style="font-size:50px"> <br> </p>
 
     <h1> 
-      <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/p50x50/1900081_632479410157781_1725500249_n.png" id="cstt-icon"> 
+      <img alt="CS Teaching Tips icon" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/p50x50/1900081_632479410157781_1725500249_n.png" id="cstt-icon"> 
         CS Teaching Tips 
     </h1>
 
@@ -81,7 +81,7 @@
       <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">
+          <img alt="Organizing Curriculum image" src="http://csteachingtips.org/images/placeholder.png">
           <div class="caption">
             <h3>Organizing<br>Curriculum</h3>
           </div>
@@ -96,7 +96,7 @@
       <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">
+          <img alt="Delivering Content image" src="http://csteachingtips.org/images/placeholder.png">
             <div class="caption"> 
               <h3>Delivering<br>Content</h3> 
             </div>
@@ -110,7 +110,7 @@
       <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">  
+          <img alt="Managing & Assessing image" src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
               <h3> <span class="nobr">Managing &</span><br>Assessing</h3>
             </div>
