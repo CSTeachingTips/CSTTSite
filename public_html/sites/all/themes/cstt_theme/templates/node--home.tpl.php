@@ -71,7 +71,7 @@
 
 
   <!-- Category Panels --> 
-  <p id="category-panels"><br></p>
+  <p class="jump" id="category-panels"><br></p>
   <!-- id useful for bookmark & anchoring -->
   <div>
 
@@ -112,7 +112,7 @@
           <br>
           <img src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
-              <h3> <span class="nobr">Managing and</span><br>Assessing</h3>
+              <h3> <span class="nobr">Managing &</span><br>Assessing</h3>
             </div>
         </center> 
       </a>
