@@ -99,11 +99,11 @@
   </div>
 
   <div class="container">
-    <div class="col-xs-8 col-md-8">      
+    <div class="col-xs-8 col-md-8">
 
         <!-- Printing the body/additional info for the tip -->
         <?php print render($content['body']); ?>
-     
+   
     </div>
 
     <div class="col-xs-4 col-md-4">
@@ -124,12 +124,12 @@
   <div class="container">
     <div class="col-xs-12">
     <h4> Similar Tips </h4>
-
- <?php $block = block_load('views','similar_tips-block');
+    		<ul>
+ 			  <?php $block = block_load('views','similar_tips-block');
               $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummysearch); 
               ?>
-
+            </ul>
   </div>
   </div>
 
