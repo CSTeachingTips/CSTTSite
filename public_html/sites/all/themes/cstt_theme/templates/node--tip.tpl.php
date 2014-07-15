@@ -100,7 +100,7 @@
 
   <div class="container">
     <div class="col-xs-8 col-md-8">
-      <ul class="extra-info">
+      <ul class="extra-info" id="more-info">
 
         <!-- Printing the body/additional info for the tip -->
         <?php print render($content['body']); ?>
