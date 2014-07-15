@@ -310,4 +310,12 @@ a:hover {
 	margin-left: 5%;
 }
 
+/* For jumps so navbar not in the way */
+.jump:before {
+	display:block;
+	content:"";
+	height:75px;
+	margin-top:-75px;
+}
+
 

@@ -47,6 +47,20 @@ body {
 	margin: 0 auto;
 }
 
+.social2 {
+	max-width: 122px;
+	margin: 0 auto;
+	float:right;
+	padding-top:22px;
+	margin-right: 5%;
+}
+
+.sponsors2 {
+	float:left;
+	margin-left: 0%;
+	padding-top: 10px;
+}
+
 #navlist li {
 	list-style: none;
 	position: absolute;
@@ -300,6 +314,19 @@ a:hover {
   #summer-research img {
   	width:550;
   	height:362;
+  }
+  .social2 {
+  	float:none;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 0;
+  	padding-top: 10px;
+  }
+  .sponsors2 {
+  	float:none;
+  	text-align: center;
+  	margin-top:40px;
+  	position: relative;
   }
 }
 

@@ -29,9 +29,8 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="project-summary">
-    
-    <h3 style="position:relative;clear:both;">Project Summary</h3>
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="project-summary" style="position:relative;clear:both;">Project Summary</h3>
 
     <p style="position:relative;clear:both;">
       <strong>Problem:</strong> CS pedagogical content knowledge (CS PCK) – i.e., knowledge of how to teach computer science – is mostly undocumented.
@@ -42,9 +41,9 @@
     </p>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="team">
-    
-    <h3>Team</h3>
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="team">Team</h3>
+
     <table class="team-table">
       <tr>
         <td><img class="alignnone size-full wp-image-209" alt="Colleen" src="http://blogs.hmc.edu/csteachingtips/wp-content/uploads/sites/6/2013/11/Colleen1.jpg" width="100" height="100" /></td>
@@ -74,9 +73,9 @@
     </table>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="summer-research">
-    
-    <h3>Summer Researchers</h3>
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="summer-research">Summer Researchers</h3>
+
     <center>
       <img src="http://www.csteachingtips.org/images/team-google.png" width="760" height="500" />
       <p>From left-to right: Back: Dylan Baker, Marisol Beck, Linnea Nelson, Arielle Schlesinger, Neftali Dominguez, Justis Allen; Front: Vidushi Ojha, Colleen Lewis, Samantha Stilson, Nava Dallal.</p>
@@ -84,9 +83,8 @@
 
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="advisory-board">
-    
-    <h3>Advisory Board and Expert Coordinators</h3>
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="advisory-board">Advisory Board and Expert Coordinators</h3>
     
     <table class="advisory-table">
       <tr>
