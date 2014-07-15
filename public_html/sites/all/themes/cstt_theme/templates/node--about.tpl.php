@@ -86,8 +86,6 @@
   <div class="col-xs-12 col-sm-9 tables">
   <h3 class="jump" id="advisory-board">Advisory Board and Expert Coordinators</h3>
     
-    <h3>Advisory Board and Expert Coordinators</h3>
-    
     <table class="advisory-table">
       <tr>
         <td><img class="alignnone size-full wp-image-211" alt="LeciaBarker" src="http://blogs.hmc.edu/csteachingtips/wp-content/uploads/sites/6/2013/11/LeciaBarker1.jpg" width="100" height="100" /></td>
