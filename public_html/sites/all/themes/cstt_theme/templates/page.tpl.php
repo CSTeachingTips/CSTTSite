@@ -131,19 +131,28 @@
 <div id="footer">
     <div class="container">  
         
-        <div class="social" align="center">
-          <p class="text-muted">Connect:</p>
+        <div align ="left">
+        <div class="social">
+        	
             <ul id="navlist">
               <li id="facebook"><a href="https://www.facebook.com/csteachingtips"></a> </li>
               <li id="twitter"><a href="https://twitter.com/CSTeachingTips"></a> </li>
               <li id="google"><a href="https://plus.google.com/u/0/103378302928119467203/"></a> </li>
             </ul>
+            
         </div>
-        
-        <h3> <br> </h3>
-        
-        <div align="center">
-          <p class="text-muted">Powered by:</p>
+        </div>
+
+
+         <center>
+         <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>. 
+                                 Icons from <a href = "http://glyphicons.com/">Glyphicons</a>. 
+                                 Powered by <a href = "http://drupal.org/">Drupal</a>. 
+          </p>
+         </center>
+
+        <div align ="right">
+          
           <a href="http://www.nsf.gov/">
             <img src="http://www.csteachingtips.org/images/nsf_logo.png">
           </a>
@@ -153,13 +162,9 @@
           <a href="http://www.hmc.edu">
             <img src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
           </a>
-          <h6> <br> </h6>
-          <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>. 
-                                 Icons from <a href = "http://glyphicons.com/">Glyphicons</a>. 
-                                 Powered by <a href = "http://drupal.org/">Drupal</a>. 
-          </p>   
+            
 
         </div>
     </div>  
-      <h3> <br> </h3>
+   
 </div>
