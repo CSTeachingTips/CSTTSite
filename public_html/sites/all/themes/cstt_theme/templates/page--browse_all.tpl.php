@@ -1,5 +1,5 @@
 
- <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -28,14 +28,14 @@
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
           </ul>
-              
-            <div id = "fixingsearchform">
+          <ul class = "nav navbar-nav navbar-right">    
+          
               <?php 
-  $block = block_load('views','-exp-clone_of_browse_all-page');
-  $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
-  print drupal_render($dummyblock);
-  ?>           
-           </div>
+              $block = block_load('views','-exp-clone_of_browse_all-page');
+              $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
+              print drupal_render($dummyblock);
+              ?>           
+          </ul>
              
           
       </div><!-- /.navbar-collapse -->
@@ -53,7 +53,7 @@
     <h3 class="panel-title">Filters</h3>
   </div>
   <div class="panel-body">
-   
+  <label><h4>Click a tip for more information!</h4></label>
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
