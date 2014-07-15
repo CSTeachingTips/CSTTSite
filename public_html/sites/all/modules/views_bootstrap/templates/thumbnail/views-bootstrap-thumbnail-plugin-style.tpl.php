@@ -32,9 +32,12 @@
       <?php foreach ($items as $column): ?>
         <div class="col col-md-<?php print $column_type ?>">
           <?php foreach ($column['content'] as $row): ?>
-            <div class="thumbnail">
+       
+            <div class = "thumbnail">              
               <?php print $row['content'] ?>
             </div>
+           
+            
           <?php endforeach ?>
         </div>
       <?php endforeach ?>
