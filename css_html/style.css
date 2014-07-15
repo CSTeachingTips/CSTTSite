@@ -17,8 +17,7 @@ body {
 }
 
 #navbar {
-	height: 50px;
-	z-index: 4000;
+	min-height: 50px;
 }
 
 .navbar-brand {
@@ -283,6 +282,14 @@ a:hover {
 	padding-top: 10px;
 	padding-right: 10%;
 	padding-left: 10%;
+}
+
+/* For jumps so navbar not in the way */
+.jump:before {
+	display:block;
+	content:"";
+	height:75px;
+	margin-top:-75px;
 }
 
 @media all and (max-width: 992px) {

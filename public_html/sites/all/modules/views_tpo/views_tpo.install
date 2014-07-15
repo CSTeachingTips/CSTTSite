@@ -1,8 +1,0 @@
-<?php
-
-/**
- * Implementation of hook_uninstall().
- */
-function views_tpo_uninstall() {
-  variable_del('views_term_path_override');
-}

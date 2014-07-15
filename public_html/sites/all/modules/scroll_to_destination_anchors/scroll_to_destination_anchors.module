@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Enables scrolling to destination anchor links.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function scroll_to_destination_anchors_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#scroll_to_destination_anchors':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t("The Scroll to destination anchors module makes destination anchor links that start with a hashtag scroll users to the destination instead of the browser default jump behavior. For more information, see the project at <a href='@scroll_to_destination_anchors'>Scroll to destination anchors module</a>.", array('@scroll_to_destination_anchors' => 'https://drupal.org/sandbox/keeganhr/2022427')) . '</p>';
+      return $output;
+  }
+}

@@ -69,7 +69,7 @@
       </div>
     <?php endif; ?>
     
-    <div class="views-exposed-widget views-submit-button">
+    <div class="views-exposed-widget views-submit-button" id = "searchbutton">
       <?php print $button; ?>
     </div>
 

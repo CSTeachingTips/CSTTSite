@@ -53,6 +53,9 @@ stylesheets[all][] = css/fixingstyle.css
  scripts[] = 'bootstrap/js/tab.js'
  scripts[] = 'bootstrap/js/transition.js'
 
+
+
+
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
  settings[bootstrap_cdn] = ''
 

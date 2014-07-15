@@ -13,7 +13,6 @@
     <meta property="fb:app_id" content="560604524019670"/>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
         
 </head>
 
@@ -30,22 +29,21 @@
     </div>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="project-summary">
-
-    <h3 style="position:relative;clear:both;">Project Summary</h3>
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="project-summary" style="position:relative;clear:both;">Project Summary</h3>
 
     <p style="position:relative;clear:both;">
       <strong>Problem:</strong> CS pedagogical content knowledge (CS PCK) – i.e., knowledge of how to teach computer science – is mostly undocumented.
       <br>
-      <strong>Project Goal:</strong> Develop a set of CS teaching tips to help novice teachers anticipate students’ difficulties and build upon students’ strengths.
+      <strong>Project Goal:</strong> Develop a set of CS teaching tips to help teachers anticipate students’ difficulties and build upon students’ strengths.
       <br>
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="team">
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="team">Team</h3>
 
-    <h3>Team</h3>
     <table class="team-table">
       <tr>
         <td><img class="alignnone size-full wp-image-209" alt="Colleen" src="http://blogs.hmc.edu/csteachingtips/wp-content/uploads/sites/6/2013/11/Colleen1.jpg" width="100" height="100" /></td>
@@ -66,12 +64,18 @@
         <h6></h6>
         <p>Tiffany Berry is a Research Associate Professor in the Division of Behavioral and Organizational Sciences. She is a Core Faculty member in Positive Developmental Psychology, regularly teaching and providing research supervision to masters and doctoral developmental students. In addition, she is an active educational program evaluator at the Claremont Evaluation Center (CEC) at CGU. Dr. Berry&#8217;s research focuses primarily on evaluating educational programs, including K-12 educational curricula, early childhood education programs, after school programs, and comprehensive school reform initiatives.</p></td>
       </tr>
+      <tr>
+        <td><img alt="ArielleSchlesinger" src="http://www.csteachingtips.org/images/arielleschlesinger.jpg" width="100" height="100" /></td>
+        <td><a href="http://arielleschlesinger.com"><strong>Arielle Schlesinger (Research Project Manager) &#8211; Harvey Mudd College</strong></a>
+        <h6></h6>
+        <p>Arielle Schlesinger is the Research Project Manager for CSTeachingTips at Harvey Mudd College. Previously, she collaborated on the DOCC (Distributive Open Collaborative Course) with FemTechNet, a network of scholars whose focus is on feminism, science, media, and technology. Her other research includes feminist programming languages, CS education, and socially conscious science.</p></td>
+      </tr>
     </table>
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="summer-research">
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="summer-research">Summer Researchers</h3>
 
-    <h3>Summer Researchers</h3>
     <center>
       <img src="http://www.csteachingtips.org/images/team-google.png" width="760" height="500" />
       <p>From left-to right: Back: Dylan Baker, Marisol Beck, Linnea Nelson, Arielle Schlesinger, Neftali Dominguez, Justis Allen; Front: Vidushi Ojha, Colleen Lewis, Samantha Stilson, Nava Dallal.</p>
@@ -79,9 +83,8 @@
 
   </div>
 
-  <div class="col-xs-12 col-sm-9 tables" id="advisory-board">
-
-    <h3>Advisory Board and Expert Coordinators</h3>
+  <div class="col-xs-12 col-sm-9 tables">
+  <h3 class="jump" id="advisory-board">Advisory Board and Expert Coordinators</h3>
     
     <table class="advisory-table">
       <tr>
@@ -167,81 +170,6 @@
   </div>
 
 </div>
-
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- !!!! We should put this in a separate file and link to it  like the others !!!! -->
-  <script>
-    $(function() {
-
-        function filterPath(string) {
-            return string
-            .replace(/^\//,'')
-            .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-            .replace(/\/$/,'');
-        }
-
-        var locationPath = filterPath(location.pathname);
-        var scrollElem = scrollableElement('html', 'body');
-
-        // Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
-        $('a[href*=#]').each(function() {
-
-            // Ensure it's a same-page link
-            var thisPath = filterPath(this.pathname) || locationPath;
-            if (  locationPath == thisPath
-                && (location.hostname == this.hostname || !this.hostname)
-                && this.hash.replace(/#/,'') ) {
-
-                    // Ensure target exists
-                    var $target = $(this.hash), target = this.hash;
-                    if (target) {
-
-                        // Find location of target
-                        var targetOffset = $target.offset().top;
-                        $(this).click(function(event) {
-
-                            // Prevent jump-down
-                            // event.preventDefault();
-
-                            // Animate to target
-                            $(scrollElem).animate({scrollTop: targetOffset}, 400, function(e) {
-                                // Prevent jump-down
-                                e.preventDefault();
-
-                                // Set hash in URL after animation successful
-                                location.hash = target;
-
-
-                            });
-                        });
-                    }
-            }
-
-        });
-
-        // Use the first element that is "scrollable"  (cross-browser fix?)
-        function scrollableElement(els) {
-            for (var i = 0, argLength = arguments.length; i <argLength; i++) {
-                var el = arguments[i],
-                $scrollElement = $(el);
-                if ($scrollElement.scrollTop()> 0) {
-                    return el;
-                } else {
-                    $scrollElement.scrollTop(1);
-                    var isScrollable = $scrollElement.scrollTop()> 0;
-                    $scrollElement.scrollTop(0);
-                    if (isScrollable) {
-                        return el;
-                    }
-                }
-            }
-            return [];
-        }
-
-    });
-  </script>
 
 </body>
 </html>
