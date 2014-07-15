@@ -39,6 +39,7 @@
       <br>
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
     </p>
+    <p style="font-size:2px"> <br> </p>
   </div>
 
   <div class="col-xs-12 col-sm-9 tables">
