@@ -144,7 +144,7 @@ a.thumbnail:hover {
 #extra-tip {
 	min-height: 150px;
 	max-height: 200px;
-	margin: auto;
+	margin: none;
 	border-color: #fff;
 	background-color: #eee;
 }
@@ -154,7 +154,7 @@ a.thumbnail:hover {
 }
 
 .extra-tip {
-	padding: auto;
+	padding: none;
 }
 
 .panel {
