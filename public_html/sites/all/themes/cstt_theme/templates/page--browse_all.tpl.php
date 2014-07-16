@@ -53,7 +53,7 @@
     <h3 class="panel-title">Filters</h3>
   </div>
   <div class="panel-body">
-   
+  <label><h4>Click a tip for more information!</h4></label>
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
@@ -94,13 +94,13 @@
         <div align="center">
           <p class="text-muted">Powered by:</p>
           <a href="http://www.nsf.gov/">
-            <img src="http://www.csteachingtips.org/images/nsf_logo.png">
+            <img alt= "National Science Foundation" src="http://www.csteachingtips.org/images/nsf_logo.png">
           </a>
           <a href="http://www.sagefoxgroup.com/" style="margin-left:13px;">
-            <img src="http://www.csteachingtips.org/images/sagefoxlogo_75tall.png">
+            <img alt= "SageFox Consulting Group" src="http://www.csteachingtips.org/images/sagefoxlogo_75tall.png">
           </a>
           <a href="http://www.hmc.edu">
-            <img src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
+            <img alt= "Harvey Mudd College" src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
           </a>
 
         <h6> <br> </h6>

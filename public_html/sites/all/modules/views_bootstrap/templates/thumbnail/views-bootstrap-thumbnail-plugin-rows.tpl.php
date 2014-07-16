@@ -10,6 +10,7 @@
 <?php print $image ?>
 
 <?php if (!empty($title) || !empty($description)): ?>
+  
   <div class="caption">
     <?php if (!empty($title)): ?>
       <h3><?php print $title ?></h3>
@@ -21,4 +22,5 @@
       <?php endif ?>
     <?php endforeach ?>
   </div>
+  
 <?php endif ?>

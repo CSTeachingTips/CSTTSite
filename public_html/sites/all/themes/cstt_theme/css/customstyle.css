@@ -1,6 +1,5 @@
 body {
 	position: relative;
-	color: #495966;
 } 
 
 .jumbotron {
@@ -277,6 +276,48 @@ a:hover {
   }
 }
 
+@media all and (max-width: 768px) {
+
+  #project-summary:before {
+  	height:0px;
+  	margin-top:0px;
+  }
+
+  #hiddenlink {
+  	display: none;
+  }
+
+
+  #about-side {
+  	position:relative;
+  	margin-left: 4%;
+  	margin-bottom: -2%;
+  	width:100%;
+  }
+  .tables {
+	margin-left:5%;
+	margin-right: 10%;
+	clear:left;
+  }
+  #summer-research img {
+  	width:550;
+  	height:362;
+  }
+  .social2 {
+  	float:none;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 0;
+  	padding-top: 10px;
+  }
+  .sponsors2 {
+  	float:none;
+  	text-align: center;
+  	margin-top:40px;
+  	position: relative;
+  }
+}
+
 @media all and (max-width: 720px) {
   #about-side {
   	position:relative;
@@ -309,5 +350,14 @@ a:hover {
 .contribute {
 	margin-left: 5%;
 }
+
+/* For jumps so navbar not in the way */
+.jump:before {
+	display:block;
+	content:"";
+	height:75px;
+	margin-top:-75px;
+}
+
 
 
