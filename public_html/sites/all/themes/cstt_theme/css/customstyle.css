@@ -277,6 +277,37 @@ a:hover {
   }
 }
 
+@media all and (max-width: 768px) {
+  #about-side {
+  	position:relative;
+  	margin-left: 4%;
+  	margin-bottom: -2%;
+  	width:100%;
+  }
+  .tables {
+	margin-left:5%;
+	margin-right: 10%;
+	clear:left;
+  }
+  #summer-research img {
+  	width:550;
+  	height:362;
+  }
+  .social2 {
+  	float:none;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 0;
+  	padding-top: 10px;
+  }
+  .sponsors2 {
+  	float:none;
+  	text-align: center;
+  	margin-top:40px;
+  	position: relative;
+  }
+}
+
 @media all and (max-width: 720px) {
   #about-side {
   	position:relative;
