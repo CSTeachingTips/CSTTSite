@@ -277,6 +277,17 @@ a:hover {
 }
 
 @media all and (max-width: 768px) {
+
+  #project-summary:before {
+  	height:0px;
+  	margin-top:0px;
+  }
+
+  #hiddenlink {
+  	display: none;
+  }
+
+
   #about-side {
   	position:relative;
   	margin-left: 4%;
@@ -347,5 +358,6 @@ a:hover {
 	height:75px;
 	margin-top:-75px;
 }
+
 
 

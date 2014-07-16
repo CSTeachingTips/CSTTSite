@@ -22,7 +22,7 @@
 
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
-      <a href="#project-summary">Project Summary</a> <br>
+      <a href="#project-summary" id = "hiddenlink">Project Summary</a> <br>
       <a href="#team">Team</a> <br>
       <a href="#summer-research">Summer Researchers</a> <br>
       <a href="#advisory-board">Advisory Board & Expert Coordinators</a> <br>
