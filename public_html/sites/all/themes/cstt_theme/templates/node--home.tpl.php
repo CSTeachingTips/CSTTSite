@@ -7,6 +7,7 @@
 -->
 <head>
 <meta name="google-site-verification" content="Up3Fxtd5mCOt89lm6BsS70FTbHngSGkvkLSdsf6MQR8" />
+<meta name="msvalidate.01" content="C5625A16BBC7ED854F1458FD8775415B" />
 </head>
 
   
