@@ -347,5 +347,9 @@ a:hover {
 	margin-top:-75px;
 }
 
+.pagerfix {
+	position: fixed;
+}
+
 
 
