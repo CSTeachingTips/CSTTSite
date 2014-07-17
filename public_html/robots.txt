@@ -60,3 +60,5 @@ Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
 # Browse all search results pages
 Disallow: /browse-all/
+Disallow: /user/
+Disallow: /user
