@@ -72,7 +72,7 @@
  * @ingroup themeable
  */
 ?>
-
+<?php include_once("analyticstracking.php") ?>
 
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
