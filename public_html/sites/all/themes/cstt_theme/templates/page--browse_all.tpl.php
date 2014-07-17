@@ -53,7 +53,7 @@
     <h3 class="panel-title">Filters</h3>
   </div>
   <div class="panel-body">
-  <label><h4>Click a tip for more information!</h4></label>
+  <label><h3>Click a tip for more information!</h3></label>
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));

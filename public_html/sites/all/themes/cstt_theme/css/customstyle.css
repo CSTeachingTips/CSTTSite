@@ -164,7 +164,11 @@ a.thumbnail:hover {
 	position: fixed;
 }
 
-.panel-body label h4 {
+.panel-heading {
+	color: #000;
+}
+
+.panel-body label h3 {
 	padding-left:10px;
 }
 
