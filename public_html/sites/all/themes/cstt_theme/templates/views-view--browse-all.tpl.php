@@ -60,9 +60,9 @@
   <?php endif; ?>
 
   <?php if ($pager): ?>
-  	<div class = "pagerfix">
+  	
     <?php print $pager; ?>
-    </div>
+    
   <?php endif; ?>
 
   <?php if ($attachment_after): ?>
