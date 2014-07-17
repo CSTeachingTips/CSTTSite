@@ -72,6 +72,7 @@
  * @ingroup themeable
  */
 ?>
+<?php include 'analyticstracking.php'; ?>
 <?php include_once("analyticstracking.php") ?>
 
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
@@ -163,4 +164,3 @@
     </div>  
       <h3> <br> </h3>
 </div>
-t
