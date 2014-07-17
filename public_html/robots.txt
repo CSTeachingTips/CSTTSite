@@ -58,3 +58,6 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+# Browse all search results pages
+Disallow: /browse-all
+Disallow: /browse-all/
