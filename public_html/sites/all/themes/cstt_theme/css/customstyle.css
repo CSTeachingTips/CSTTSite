@@ -99,7 +99,10 @@ body {
 .thumbnail>img {
 	display:block;
 	max-width:100%;
-	height:auto
+}
+
+.thumbnail img {
+	padding-top: 8px;
 }
 
 .thumbnail {
@@ -110,6 +113,7 @@ body {
 	transition:all .2s ease-in-out;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	height: 250px;
 }
 
 a.thumbnail:hover {
