@@ -92,7 +92,8 @@
     <h6><br></h6>
     <p class="text-muted" id="category">
       
-       <!-- Printing the category attached to the tip -->      
+       <!-- Printing the category attached to the tip --> 
+       <?php print render($content['field_rating']); ?>     
        <?php print render($content['field_category']); ?>
 
     </p>
