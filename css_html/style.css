@@ -292,14 +292,14 @@ a:hover {
 	margin-top:-75px;
 }
 
-@media all and (max-width: 992px) {
+@media (max-width: 992px) {
 	.panel {
 	width: 95%;
 	position: relative;
   }
 }
 
-@media all and (max-width: 768px) {
+@media (max-width: 768px) {
   #about-side {
   	position:relative;
   	margin-left: 4%;
@@ -330,11 +330,28 @@ a:hover {
   }
 }
 
-@media all and (max-width: 900px) {
+@media (min-width: 768px) {
 	#summer-research img {
 		width:640;
 		height:421;
 	}
+}
+
+.managing {
+	background-color: #eac2ba;
+	background-size: auto 10px;
+	background-repeat: no-repeat;
+}
+
+.content {
+	background-color: #b8dbde;
+}
+
+.curriculum {
+	background-color: #e4c3d6;
+	background-size: auto 10px;
+	background-repeat: no-repeat;
+
 }
 
 
