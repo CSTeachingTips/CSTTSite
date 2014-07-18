@@ -23,3 +23,11 @@ function cstt_theme_theme() {
  );
 return $items;
 }
+
+//Encoding urls such that the taxonomy_links module works properly
+function cstt_theme_drupal_encode_path($path) {
+  return str_replace(array('%2F','%2C','%3D','%3F','%26'),array('/',',','=','?','&'), rawurlencode($path));
+}
+
+
+
