@@ -38,6 +38,8 @@
       <strong>Project Goal:</strong> Develop a set of CS teaching tips to help teachers anticipate students’ difficulties and build upon students’ strengths.
       <br>
       <strong>Status:</strong> Beginning the project in October of 2013, we are currently recruiting CS teachers who have insights into student learning.
+      <br>
+      <strong>Funding:</strong> This material is based upon work supported by the National Science Foundation under Grant No. 1339404. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
     </p>
     <p style="font-size:2px"> <br> </p>
   </div>
