@@ -113,7 +113,6 @@ body {
 	transition:all .2s ease-in-out;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	height: 250px;
 }
 
 a.thumbnail:hover {
@@ -142,6 +141,7 @@ a.thumbnail:hover {
 
 #category {
 	font-size: 100%;
+	height: 250px;
 }
 
 #extra-tip {
