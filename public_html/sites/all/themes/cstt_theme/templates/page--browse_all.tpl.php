@@ -104,7 +104,7 @@
           </a>
 
         <h6> <br> </h6>
-          <p class ="text-muted"> For more information or to report a bug, contact us at <a href = "mailto:csteachingtips.com@gmail.com"> csteachingtips.com@gmail.com</a> </p>
+          <p class ="text-muted"> For more information or to report a bug, contact us at <a href = "mailto:admin@csteachingtips.org">admin@csteachingtips.org</a> </p>
           <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>. 
                                  Icons from <a href = "http://glyphicons.com/">Glyphicons</a>. 
                                  Powered by <a href = "http://drupal.org/">Drupal</a>. 
