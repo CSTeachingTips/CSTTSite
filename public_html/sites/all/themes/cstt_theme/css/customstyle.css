@@ -141,6 +141,9 @@ a.thumbnail:hover {
 
 #category {
 	font-size: 100%;
+}
+
+.category {
 	height: 250px;
 }
 
