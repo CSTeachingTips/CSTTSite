@@ -54,11 +54,14 @@
   </div>
   <div class="panel-body">
   <label><h3>Click a tip for more information!</h3></label>
+  
+  <div tag = "exposedviews">
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
   print drupal_render($dummyblock);
   ?>
+  </div>
   
   </div>
 </div>
