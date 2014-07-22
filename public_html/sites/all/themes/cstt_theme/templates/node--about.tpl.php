@@ -62,7 +62,7 @@
         <p>Dr. McKlin has over a decade of experience conducting research and evaluation of federal programs for the National Science Foundation, National Institutes of Health, U.S. Department of Education, and the Department of Defense. Before launching is own research firm, Dr. McKlin formerly directed evaluation activity for Georgia Tech&#8217;s Center for Education Integrating Science, Mathematics, and Computing (CEISMC) and has served as guest lecturer at Georgia State University, University of Georgia, and Centers for Disease Control and Prevention.</p></td>
       </tr>
       <tr>
-        <td><img class="alignnone size-full wp-image-216" alt="Tiffany Berry" src="http://csteachingtips.org/tiffanyberry.JPG" width="100" height="100" /></td>
+        <td><img class="alignnone size-full wp-image-216" alt="Tiffany Berry" src="http://csteachingtips.org/images/tiffanyberry.JPG" width="100" height="100" /></td>
         <td><a href="http://www.cgu.edu/pages/976.asp"><strong>Tiffany Berry (Evaluator) &#8211; Claremont Graduate University</strong></a>
         <h6></h6>
         <p>Tiffany Berry is a Research Associate Professor in the Division of Behavioral and Organizational Sciences. She is a Core Faculty member in Positive Developmental Psychology, regularly teaching and providing research supervision to masters and doctoral developmental students. In addition, she is an active educational program evaluator at the Claremont Evaluation Center (CEC) at CGU. Dr. Berry&#8217;s research focuses primarily on evaluating educational programs, including K-12 educational curricula, early childhood education programs, after school programs, and comprehensive school reform initiatives.</p></td>
