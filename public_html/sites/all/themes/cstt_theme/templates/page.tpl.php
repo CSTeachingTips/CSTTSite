@@ -72,7 +72,8 @@
  * @ingroup themeable
  */
 ?>
-
+<?php include "analyticstracking.php"; ?>
+<?php include_once("analyticstracking.php") ?>
 
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
@@ -154,6 +155,7 @@
             <img alt= "Harvey Mudd College" src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">
           </a>
           <h6> <br> </h6>
+          <p class ="text-muted"> For more information or to report a bug, contact us at <a href = "mailto:admin@csteachingtips.org">admin@csteachingtips.org</a> </p>
           <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>. 
                                  Icons from <a href = "http://glyphicons.com/">Glyphicons</a>. 
                                  Powered by <a href = "http://drupal.org/">Drupal</a>. 
@@ -163,4 +165,3 @@
     </div>  
       <h3> <br> </h3>
 </div>
-t

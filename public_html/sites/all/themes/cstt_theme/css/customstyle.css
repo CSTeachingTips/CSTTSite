@@ -99,7 +99,10 @@ body {
 .thumbnail>img {
 	display:block;
 	max-width:100%;
-	height:auto
+}
+
+.thumbnail img {
+	padding-top: 8px;
 }
 
 .thumbnail {
@@ -140,6 +143,10 @@ a.thumbnail:hover {
 	font-size: 100%;
 }
 
+.category {
+	height: 375px;
+}
+
 #extra-tip {
 	min-height: 150px;
 	max-height: 200px;
@@ -162,6 +169,14 @@ a.thumbnail:hover {
 	margin-left: 10px;
 	width: 22%;
 	position: fixed;
+}
+
+.panel-heading {
+	color: #000;
+}
+
+.panel-body label h3 {
+	padding-left:10px;
 }
 
 .col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
@@ -346,6 +361,8 @@ a:hover {
 	height:75px;
 	margin-top:-75px;
 }
+
+
 
 
 

@@ -7,6 +7,7 @@
 -->
 <head>
 <meta name="google-site-verification" content="Up3Fxtd5mCOt89lm6BsS70FTbHngSGkvkLSdsf6MQR8" />
+<meta name="msvalidate.01" content="C5625A16BBC7ED854F1458FD8775415B" />
 </head>
 
   
@@ -80,12 +81,13 @@
     <!-- Organizing Curriculum--> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=" class="thumbnail category">
+      <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img alt="Organizing Curriculum image" src="http://csteachingtips.org/images/placeholder.png">
+          <img src="http://csteachingtips.org/images/placeholder.png">
           <div class="caption">
             <h3>Organizing<br>Curriculum</h3>
+            <p class="description">Tips to support you in lesson planning to improve the overall structure of your course and clarify desired student outcomes.</p>
           </div>
         </center> 
       </a>
@@ -95,12 +97,13 @@
     <!-- Delivering Content --> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=" class="thumbnail category">
+      <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img alt="Delivering Content image" src="http://csteachingtips.org/images/placeholder.png">
+          <img src="http://csteachingtips.org/images/placeholder.png">
             <div class="caption"> 
-              <h3>Delivering<br>Content</h3> 
+              <h3>Delivering<br>Content</h3>
+              <p class="description">Tips to help you engage your students on specific topics and discover where they might have misconceptions.</p>
             </div>
         </center> 
       </a> 
@@ -109,12 +112,13 @@
     <!-- Managing and Assessing--> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=" class="thumbnail category">
+      <a href="#" class="thumbnail category">
         <center>
           <br>
-          <img alt="Managing & Assessing image" src="http://csteachingtips.org/images/placeholder.png">  
+          <img src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
-              <h3> <span class="nobr">Managing &</span><br>Assessing</h3>
+              <h3><span class="nobr">Managing &</span><br>Assessing</h3>
+              <p class="description">Tips to establish your classroom as a safe, equitable space for students to grow and receive valuable, constructive feedback.</p>
             </div>
         </center> 
       </a>
