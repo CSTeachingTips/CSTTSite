@@ -84,7 +84,7 @@
       <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">
+          <img alt="Organizing Curriculum" src="http://csteachingtips.org/images/placeholder.png">
           <div class="caption">
             <h3>Organizing<br>Curriculum</h3>
             <p class="description">Tips to support you in lesson planning to improve the overall structure of your course and clarify desired student outcomes.</p>
@@ -100,7 +100,7 @@
       <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">
+          <img alt="Delivering Content" src="http://csteachingtips.org/images/placeholder.png">
             <div class="caption"> 
               <h3>Delivering<br>Content</h3>
               <p class="description">Tips to help you engage your students on specific topics and discover where they might have misconceptions.</p>
@@ -115,7 +115,7 @@
       <a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=" class="thumbnail category">
         <center>
           <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">  
+          <img alt="Managing & Assessing" src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
               <h3><span class="nobr">Managing &</span><br>Assessing</h3>
               <p class="description">Tips to establish your classroom as a safe, equitable space for students to grow and receive valuable, constructive feedback.</p>
