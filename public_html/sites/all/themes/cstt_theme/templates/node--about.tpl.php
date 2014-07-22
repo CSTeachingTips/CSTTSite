@@ -62,7 +62,7 @@
         <p>Dr. McKlin has over a decade of experience conducting research and evaluation of federal programs for the National Science Foundation, National Institutes of Health, U.S. Department of Education, and the Department of Defense. Before launching is own research firm, Dr. McKlin formerly directed evaluation activity for Georgia Tech&#8217;s Center for Education Integrating Science, Mathematics, and Computing (CEISMC) and has served as guest lecturer at Georgia State University, University of Georgia, and Centers for Disease Control and Prevention.</p></td>
       </tr>
       <tr>
-        <td><img class="alignnone size-full wp-image-216" alt="Tiffany Berry" src="http://csteachingtips.org/tiffanyberry.jpg" width="100" height="100" /></td>
+        <td><img class="alignnone size-full wp-image-216" alt="Tiffany Berry" src="http://csteachingtips.org/tiffanyberry.JPG" width="100" height="100" /></td>
         <td><a href="http://www.cgu.edu/pages/976.asp"><strong>Tiffany Berry (Evaluator) &#8211; Claremont Graduate University</strong></a>
         <h6></h6>
         <p>Tiffany Berry is a Research Associate Professor in the Division of Behavioral and Organizational Sciences. She is a Core Faculty member in Positive Developmental Psychology, regularly teaching and providing research supervision to masters and doctoral developmental students. In addition, she is an active educational program evaluator at the Claremont Evaluation Center (CEC) at CGU. Dr. Berry&#8217;s research focuses primarily on evaluating educational programs, including K-12 educational curricula, early childhood education programs, after school programs, and comprehensive school reform initiatives.</p></td>
@@ -146,13 +146,13 @@
         <p>Dan Garcia is a Senior Lecturer S.O.E. in the EECS Department at the University of California, Berkeley. He serves as the PI for “The Beauty and Joy of Computing” AP Principles course pilot, is an advisor to the College Board’s AP CS Principles project, an ACM distinguished educator, and is project personnel at the Ensemble Computing Portal, an NSF sponsored website for computing educators.</p></td>
       </tr>
       <tr>
-        <td><img class="alignnone size-full wp-image-205" alt="Mark Guzdial" src="http://csteachingtips.org/images/markguzdial.jpg" width="100" height="100" /></td>
+        <td><img class="alignnone size-full wp-image-205" alt="Mark Guzdial" src="http://csteachingtips.org/images/markguzdial.JPG" width="100" height="100" /></td>
         <td><strong><a href="http://www.cc.gatech.edu/~guzdial/">Mark Guzdial &#8211; Georgia Institute of Technology</a></strong>
         <h6></h6>
         <p>Mark Guzdial has a joint Ph.D. in computer science and education, is a Professor in the College of Computing at Georgia Institute of Technology, is the former director of Undergraduate Programs, and invented the Media Computation approach to teaching introductory computing.</p></td>
       </tr>
       <tr>
-        <td><img class="alignnone size-full wp-image-212" alt="Maria Klawe" src="http://csteachingtips.org/images/MariaKlawe.jpg" width="100" height="100" /></td>
+        <td><img class="alignnone size-full wp-image-212" alt="Maria Klawe" src="http://csteachingtips.org/images/MariaKlawe.jpeg" width="100" height="100" /></td>
         <td><strong><a href="http://www.hmc.edu/about1/administrativeoffices/officeofthepresident1/bio.html">Maria Klawe &#8211; Harvey Mudd College</a></strong>
         <h6></h6>
         <p>Maria Klawe is the President of Harvey Mudd College (HMC), former Dean of Engineering and Professor of Computer Science at Princeton University, and has led the work to increase the percentage of women in CS at HMC from 12% to 40%.</p></td>
