@@ -117,7 +117,7 @@
       </tr>
       <tr>
         <td><img class="alignnone size-full wp-image-206" alt="Allison Elliot Tew" src="http://csteachingtips.org/images/allisonelliotttew.jpg" width="100" height="100" /></td>
-        <td><strong>Allison Elliot Tew &#8211; University of Washington, Tacoma</strong>
+        <td><strong><a href="http://home.cc.gatech.edu/allison" target="_blank">Allison Elliot Tew &#8211; University of Washington, Tacoma</a></strong>
         <h6></h6>
         <p>Allison Elliot Tew is a Postdoctoral Scholar at the University of Washington, Tacoma. Her area of expertise is assessment within CS education. In her dissertation work at the Georgia Institute of Technology, she developed a language-agnostic, validated instrument for assessing students’ programming competence.</p></td>
       </tr>
