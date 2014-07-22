@@ -21,7 +21,7 @@ box-shadow: none !important;
 
 select.form-control + .chosen-container.chosen-container-single .chosen-single {
 display: block;
-width: 100%;
+width: 200px;
 height: 34px;
 padding: 6px 12px;
 font-size: 14px;
@@ -57,7 +57,7 @@ margin: 2px 0 0;
  
 select.form-control + .chosen-container .chosen-search input[type=text] {
 display: block;
-width: 100%;
+width: 200px;
 height: 34px;
 padding: 6px 12px;
 font-size: 14px;
@@ -106,7 +106,7 @@ background-image:none;
  
 select.form-control + .chosen-container-multi .chosen-choices {
 display: block;
-width: 100%;
+width: 200px;
 min-height: 34px;
 padding: 6px;
 font-size: 14px;
