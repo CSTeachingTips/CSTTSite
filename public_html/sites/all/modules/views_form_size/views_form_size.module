@@ -1,7 +1,7 @@
 <?php
 /** 
  * @file
- * Modifies where taxonomy links point to 
+ * Limits the length of tags and sources
  */
 
 /**

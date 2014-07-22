@@ -53,7 +53,7 @@
     <h3 class="panel-title">Filters</h3>
   </div>
   <div class="panel-body">
-  <label><h3>Click a tip for more information!</h3></label>
+  <label><h4>Click a tip for more information!</h4></label>
   
   <div tag = "exposedviews">
    <?php 
