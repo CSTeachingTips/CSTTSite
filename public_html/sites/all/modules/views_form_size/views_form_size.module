@@ -37,7 +37,7 @@ function views_form_size_help($path, $arg) {
       $form['field_source_taxonomy']['#maxlength'] = 10;
       $form['field_tags']['#maxlength'] = 10; 
     }
-
+}
 
 
 
