@@ -34,8 +34,8 @@ function views_form_size_help($path, $arg) {
     // Normally a switch is used because you may want to alter more than
     // one form and it is easy to add a new case for each form.
     if ($form_id == 'views-exposed-form-browse-all-page') {
-      $form['field_source_taxonomy']['#maxlength'] = 10;
-      $form['field_tags']['#maxlength'] = 10; 
+      $form['field_source_taxonomy']['#maxlength'] = 5;
+      $form['field_tags']['#maxlength'] = 5; 
     }
 }
 
