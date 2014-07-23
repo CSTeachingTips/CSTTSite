@@ -79,7 +79,7 @@
     </div>
     
     <?php if (!empty($reset_button)): ?>
-      <div class="views-exposed-widget views-reset-button">
+      <div class="buttonplacementfix" id = "buttonplacementfix">
         <?php print $reset_button; ?>
       </div>
     <?php endif; ?>
