@@ -58,9 +58,7 @@
       <div class="views-exposed-widget views-widget-sort-by">
         <?php print $sort_by; ?>
       </div>
-      <div class="views-exposed-widget views-widget-sort-order">
-        <?php print $sort_order; ?>
-      </div>
+
     <?php endif; ?>
     <?php if (!empty($items_per_page)): ?>
       <div class="views-exposed-widget views-widget-per-page">
