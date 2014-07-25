@@ -6,6 +6,10 @@
  ======================================================= 
 -->
 <head>
+    <title>
+    Computer Science Teaching Tips is an NSF funded project for providing tips to K-12 computer science teachers.
+    </title>
+    <meta name="description" content="Computer Science Teaching tips provides tips and resources for K-12 computer science teachers.">    
 <meta name="google-site-verification" content="Up3Fxtd5mCOt89lm6BsS70FTbHngSGkvkLSdsf6MQR8" />
 <meta name="msvalidate.01" content="C5625A16BBC7ED854F1458FD8775415B" />
 </head>

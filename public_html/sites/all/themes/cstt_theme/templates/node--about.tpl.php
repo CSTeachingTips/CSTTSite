@@ -1,18 +1,9 @@
 <html>
 <head>
     <title>
-
+    Computer Science Teaching Tips About page with profiles of team members.
     </title>
-    <meta name="description" content="CS Teaching Tips is an NSF funded project for providing tips to Computer Science teachers.">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="m" />
-    <meta property="og:image" content="m" />
-    <meta property="og:title" content="!"/>
-    <meta property="og:site_name" content="CS Teaching Tips!" />
-    <meta property="og:description" content="hi!" />
-    <meta property="fb:app_id" content="560604524019670"/>
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <meta charset="utf-8">
+    <meta name="description" content="Computer Science Teaching tips research team bios and profiles.">
         
 </head>
 
