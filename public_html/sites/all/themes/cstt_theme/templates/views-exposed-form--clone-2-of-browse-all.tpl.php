@@ -22,7 +22,6 @@
  * @ingroup views_templates
  */
 ?>
- HELLO
 
 <?php if (!empty($q)): ?>
   <?php
