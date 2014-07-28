@@ -22,6 +22,7 @@
  * @ingroup views_templates
  */
 ?>
+ HELLO
 
 <?php if (!empty($q)): ?>
   <?php
@@ -58,7 +59,9 @@
       <div class="views-exposed-widget views-widget-sort-by">
         <?php print $sort_by; ?>
       </div>
-
+      <div class="views-exposed-widget views-widget-sort-order">
+        <?php print $sort_order; ?>
+      </div>
     <?php endif; ?>
     <?php if (!empty($items_per_page)): ?>
       <div class="views-exposed-widget views-widget-per-page">
@@ -66,5 +69,13 @@
       </div>
     <?php endif; ?>
     
+    <div class="views-exposed-widget views-submit-button" id = "searchbutton">
+      <?php print $button; ?>
+    </div>
 
+    <?php if (!empty($reset_button)): ?>
+      <div class="views-exposed-widget views-reset-button">
+        <?php print $reset_button; ?>
+      </div>
+    <?php endif; ?>
   </div>
