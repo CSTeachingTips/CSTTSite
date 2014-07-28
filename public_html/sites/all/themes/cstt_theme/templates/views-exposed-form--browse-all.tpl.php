@@ -38,6 +38,7 @@
           <label for="<?php print $widget->id; ?>">
             <?php print $widget->label; ?>
           </label>
+
         <?php endif; ?>
         <?php if (!empty($widget->operator)): ?>
           <div class="views-operator">
@@ -55,7 +56,7 @@
       </div>
     <?php endforeach; ?>
     <?php if (!empty($sort_by)): ?>
-      <div class="views-exposed-widget views-widget-sort-by">
+      <div class="views-exposed-widget views-widget-sort-by" id ="viewswidgetpadding">
         <?php print $sort_by; ?>
       </div>
 
