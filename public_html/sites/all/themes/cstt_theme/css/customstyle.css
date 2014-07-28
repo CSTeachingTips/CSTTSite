@@ -165,10 +165,11 @@ a.thumbnail:hover {
 
 .panel {
 	margin-top: 15px;
-	margin-right: 15px;
-	margin-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
 	width: 250px;
-	position: fixed;
+	width: 95%;
+	position: relative;
 }
 
 .panel-heading {
@@ -180,8 +181,10 @@ a.thumbnail:hover {
 }
 
 .views-content {
-	float:right;
-	padding-right: 70px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left:auto;
+	width: 95%;
 }
 
 .col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
