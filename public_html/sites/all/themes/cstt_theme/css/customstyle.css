@@ -108,7 +108,7 @@ body {
 .thumbnail {
 	background-color: #eee;
 	border:1px solid #ffffff;
-	border-radius:3px;
+	border-radius:6px;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 	margin-top: 15px;
