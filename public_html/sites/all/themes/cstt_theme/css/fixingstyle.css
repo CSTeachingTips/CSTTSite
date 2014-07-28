@@ -106,7 +106,7 @@ background-image:none;
 select.form-control + .chosen-container-multi .chosen-choices {
 width: 100%;
 min-height: 34px;
-padding: 6px;
+padding: 0px 0px 0px 8px;
 font-size: 14px;
 line-height: 1.428571429;
 color: #555;
@@ -123,14 +123,14 @@ background-image:none;
  
 select.form-control + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
 height:auto;
-padding:5px 0;
+padding:8px 0;
 }
  
 select.form-control + .chosen-container-multi .chosen-choices li.search-choice {
  
 background-image: none;
 padding: 3px 24px 3px 5px;
-margin: 0 6px 0 0;
+margin: 2px 2px 2px 2px;
 font-size: 14px;
 font-weight: normal;
 line-height: 1.428571429;
@@ -164,30 +164,6 @@ color: #ccc;
 cursor: default;
 background-color: white;
 }
-
-
-/* Changing the way the drop-down menu for sort order looks */
-
-/* Shadow when cicked for drop-down for sort order */
-.edit-sort-by {
-display: block;
-width: 100%;
-height: 34px;
-padding: 6px 12px;
-font-size: 14px;
-line-height: 1.428571429;
-color: #555;
-vertical-align: middle;
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 4px;
--webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
--webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-background-image:none;
-}
-
 
 
 
