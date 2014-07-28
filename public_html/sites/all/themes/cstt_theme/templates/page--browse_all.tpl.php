@@ -45,7 +45,7 @@
     <h3> <br> </h3>
 
 
-<!-- just the side panel -->
+<!-- just the top panel -->
 
 <div class="panel panel-default">
 
@@ -66,9 +66,21 @@
   </div>
 </div>
 
-<!--- end sidebar -->
+<!--- end top panel -->
 
+<!-- Sort Order -->
+<div class = "pull-right" id = "sortorder">
 
+<?php 
+  $block = block_load('views','-exp-clone_2_of_browse_all-page');
+  $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
+  print drupal_render($dummyblock);
+  ?>
+
+ </div> 
+<!-- End Sort Order -->
+
+<h3> <br> </h3>
 <div class="views-content">
 
 <?php print render($page['content']); ?>
