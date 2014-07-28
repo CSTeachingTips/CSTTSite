@@ -26,7 +26,7 @@
                   </ul>
               </li>
               <li><a href="http://csteachingtips.org/about">About</a></li>
-              <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
+              <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
           
