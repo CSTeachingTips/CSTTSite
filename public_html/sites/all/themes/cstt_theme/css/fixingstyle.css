@@ -76,7 +76,7 @@ background-image:none;
 }
  
 select.form-control + .chosen-container .chosen-results {
-margin: 2px 0 0;
+margin: 1px 0 0;
 padding: 5px 0;
 font-size: 14px;
 list-style: none;
@@ -129,8 +129,8 @@ padding:8px 0;
 select.form-control + .chosen-container-multi .chosen-choices li.search-choice {
  
 background-image: none;
-padding: 3px 24px 3px 5px;
-margin: 2px 2px 2px 2px;
+padding: 3px 24px 5px 5px;
+margin: 1px 1px 1px 1px;
 font-size: 14px;
 font-weight: normal;
 line-height: 1.428571429;
