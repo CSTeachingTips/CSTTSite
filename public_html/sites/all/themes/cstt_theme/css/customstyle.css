@@ -203,39 +203,6 @@ a.thumbnail:hover {
 	white-space:nowrap;
 }
 
-/* CSS for checkboxes on browse all page */
-input[type=checkbox].css-checkbox {
-	position: absolute; 
-	overflow: hidden; 
-	clip: rect(0 0 0 0); 
-	height:1px; 
-	width:1px; 
-	margin:-1px; 
-	padding-top:0;
-	border:0;
-}
-
-input[type=checkbox].css-checkbox + label.css-label {
-	padding-left:20px;
-	height:15px; 
-	display:block;
-	line-height:15px;
-	background-repeat:no-repeat;
-	background-position: 0 0;
-	font-size:1em;
-	font-weight: normal;
-	vertical-align:middle;
-	cursor:pointer;
-}
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-	background-position: 0 -15px;
-}
-
-.css-label{
-	background-image:url(http://csscheckbox.com/checkboxes/lite-gray-check.png);
-
-}
 
 .categories, .tags {
 	padding-top: 10px;
@@ -366,8 +333,6 @@ a:hover {
 	height:75px;
 	margin-top:-75px;
 }
-
-
 
 
 
