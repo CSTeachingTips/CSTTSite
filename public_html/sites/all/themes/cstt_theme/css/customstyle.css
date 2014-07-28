@@ -337,5 +337,8 @@ a:hover {
 	margin-top:-75px;
 }
 
-
+/*Tags padding on browse all page */
+.tagspadding {
+	padding: 5px;
+}
 

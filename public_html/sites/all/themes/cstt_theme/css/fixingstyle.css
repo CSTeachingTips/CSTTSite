@@ -167,6 +167,8 @@ background-color: white;
 
 
 /* Changing the way the drop-down menu for sort order looks */
+
+/* Shadow when cicked for drop-down for sort order */
 .edit-sort-by {
 display: block;
 width: 100%;
@@ -185,6 +187,8 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 background-image:none;
 }
+
+
 
 
 /* Fixing the display of the search button */
