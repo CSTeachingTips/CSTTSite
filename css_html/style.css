@@ -31,7 +31,6 @@ body {
 
 #cstt-icon {
 	position: relative;
-	top: -6px;
 }
 
 #navlist {
@@ -123,12 +122,11 @@ body {
 .thumbnail {
 	background-color: #eee;
 	border:1px solid #ffffff;
-	border-radius:3px;
+	border-radius:6px;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	height: 250px;
 }
 
 a.thumbnail:hover {
