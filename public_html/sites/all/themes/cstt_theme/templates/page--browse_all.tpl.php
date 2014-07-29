@@ -42,6 +42,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+    <h3> <br> </h3>
+
 
 <!-- just the top panel -->
 
@@ -78,7 +80,7 @@
  </div> 
 <!-- End Sort Order -->
 
-<h3> <br> </h3>
+
 <div class="views-content">
 
 <?php print render($page['content']); ?>
