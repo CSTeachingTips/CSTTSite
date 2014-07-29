@@ -42,8 +42,6 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <h3> <br> </h3>
-
 
 <!-- just the top panel -->
 
