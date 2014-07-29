@@ -80,7 +80,7 @@
  </div> 
 <!-- End Sort Order -->
 
-<h3> <br> </h3>
+
 <div class="views-content">
 
 <?php print render($page['content']); ?>
@@ -107,7 +107,7 @@
         <h3> <br> </h3>
         
         <div align="center">
-          <p class="text-muted">Powered by:</p>
+          <p class="text-muted">Supported by:</p>
           <a href="http://www.nsf.gov/">
             <img alt= "National Science Foundation" src="http://www.csteachingtips.org/images/nsf_logo.png">
           </a>
