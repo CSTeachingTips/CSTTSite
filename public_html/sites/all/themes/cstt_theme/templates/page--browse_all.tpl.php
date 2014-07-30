@@ -47,13 +47,6 @@
 
 <!-- just the top panel -->
 
-<div class="panel panel-default">
-
-  <div class="panel-heading">
-    <h3 class="panel-title">Filters</h3>
-  </div>
-  <div class="panel-body">
-  <label><h4>Click a tip for more information!</h4></label>
   
   <div tag = "exposedviews">
    <?php 
@@ -63,22 +56,8 @@
   ?>
   </div>
   
-  </div>
-</div>
 
 <!--- end top panel -->
-
-<!-- Sort Order -->
-<div class = "pull-right" id = "sortorder">
-
-<?php 
-  $block = block_load('views','-exp-clone_2_of_browse_all-page');
-  $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
-  print drupal_render($dummyblock);
-  ?>
-
- </div> 
-<!-- End Sort Order -->
 
 
 <div class="views-content">
