@@ -15,16 +15,7 @@
       <!-- NAV BAR -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tips<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=">Organizing Curriculum</a></li>
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=">Delivering Content</a></li>
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=">Managing & Assessing</a></li>
-                      <li class="divider"></li>
-                      <li><a href="http://csteachingtips.org/browse-all">Browse All</a></li>
-                  </ul>
-              </li>
+              <li><a href="http://csteachingtips.org/browse-all">Browse All Tips</a></li> 
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
