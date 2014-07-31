@@ -30,4 +30,3 @@ function cstt_theme_drupal_encode_path($path) {
 }
 
 
-

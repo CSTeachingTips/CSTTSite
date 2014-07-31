@@ -18,6 +18,7 @@ box-shadow: none !important;
 -webkit-box-shadow: none !important;
 }
 
+/* Adding bootstrap like appearance to chosen */
 
 select.form-control + .chosen-container.chosen-container-single .chosen-single {
 display: block;
@@ -75,7 +76,7 @@ background-image:none;
 }
  
 select.form-control + .chosen-container .chosen-results {
-margin: 2px 0 0;
+margin: 1px 0 0;
 padding: 5px 0;
 font-size: 14px;
 list-style: none;
@@ -85,13 +86,11 @@ margin-bottom: 5px;
  
 select.form-control + .chosen-container .chosen-results li ,
 select.form-control + .chosen-container .chosen-results li.active-result {
-display: block;
 padding: 3px 20px;
 clear: both;
 font-weight: normal;
 line-height: 1.428571429;
 color: #333;
-white-space: nowrap;
 background-image:none;
 }
 select.form-control + .chosen-container .chosen-results li:hover,
@@ -105,10 +104,9 @@ background-image:none;
 }
  
 select.form-control + .chosen-container-multi .chosen-choices {
-display: block;
 width: 100%;
 min-height: 34px;
-padding: 6px;
+padding: 0px 0px 0px 8px;
 font-size: 14px;
 line-height: 1.428571429;
 color: #555;
@@ -125,19 +123,18 @@ background-image:none;
  
 select.form-control + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
 height:auto;
-padding:5px 0;
+padding:8px 0;
 }
  
 select.form-control + .chosen-container-multi .chosen-choices li.search-choice {
  
 background-image: none;
-padding: 3px 24px 3px 5px;
-margin: 0 6px 0 0;
+padding: 3px 24px 5px 5px;
+margin: 1px 1px 1px 1px;
 font-size: 14px;
 font-weight: normal;
 line-height: 1.428571429;
 text-align: center;
-white-space: nowrap;
 vertical-align: middle;
 cursor: pointer;
 border: 1px solid #ccc;
@@ -167,6 +164,8 @@ color: #ccc;
 cursor: default;
 background-color: white;
 }
+
+
 
 /* Fixing the display of the search button */
 .buttonplacementfix {
@@ -230,3 +229,6 @@ vertical-align: middle;
 	margin-left: 0px;
 	padding-left: 0px;
 }
+
+
+

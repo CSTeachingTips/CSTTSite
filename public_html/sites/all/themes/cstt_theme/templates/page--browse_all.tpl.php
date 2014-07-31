@@ -26,7 +26,7 @@
                   </ul>
               </li>
               <li><a href="http://csteachingtips.org/about">About</a></li>
-              <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
+              <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
           
@@ -45,34 +45,28 @@
     <h3> <br> </h3>
 
 
-<!-- just the side panel -->
-<div class="col-xs-12 col-md-3">
-<div class="panel panel-default">
+<!-- just the top panel -->
 
-  <div class="panel-heading">
-    <h3 class="panel-title">Filters</h3>
-  </div>
-  <div class="panel-body">
-  <label><h3>Click a tip for more information!</h3></label>
+  
+  <div tag = "exposedviews">
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
   print drupal_render($dummyblock);
   ?>
-  
   </div>
-</div>
-</div>
-<!--- end sidebar -->
+  
 
-<div class="col-xs-12 col-md-9">
+<!--- end top panel -->
 
+
+<div class="views-content">
 
 <?php print render($page['content']); ?>
 
 </div>
 
-<p style="font-size:200px"> <br> <br> </p>
+<p style="font-size:15px"> <br> <br> </p>
 
 
 <h3> <br> </h3>
@@ -92,7 +86,7 @@
         <h3> <br> </h3>
         
         <div align="center">
-          <p class="text-muted">Powered by:</p>
+          <p class="text-muted">Supported by:</p>
           <a href="http://www.nsf.gov/">
             <img alt= "National Science Foundation" src="http://www.csteachingtips.org/images/nsf_logo.png">
           </a>

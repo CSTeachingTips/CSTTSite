@@ -30,7 +30,7 @@ body {
 
 #cstt-icon {
 	position: relative;
-	top: -6px;
+	top: 25px;
 }
 
 #navlist {
@@ -107,8 +107,8 @@ body {
 
 .thumbnail {
 	background-color: #eee;
-	border:1px solid #ffffff;
-	border-radius:3px;
+	border:10px solid #ffffff;
+	border-radius:6px;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 	margin-top: 15px;
@@ -165,18 +165,26 @@ a.thumbnail:hover {
 
 .panel {
 	margin-top: 15px;
-	margin-right: 15px;
-	margin-left: 10px;
-	width: 22%;
-	position: fixed;
+	margin-right: auto;
+	margin-left: auto;
+	width: 250px;
+	width: 95%;
+	position: relative;
 }
 
 .panel-heading {
 	color: #000;
 }
 
-.panel-body label h3 {
-	padding-left:10px;
+.panel-body label h4 {
+	padding-left:9px;
+}
+
+.views-content {
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left:auto;
+	width: 95%;
 }
 
 .col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
@@ -198,39 +206,6 @@ a.thumbnail:hover {
 	white-space:nowrap;
 }
 
-/* CSS for checkboxes on browse all page */
-input[type=checkbox].css-checkbox {
-	position: absolute; 
-	overflow: hidden; 
-	clip: rect(0 0 0 0); 
-	height:1px; 
-	width:1px; 
-	margin:-1px; 
-	padding-top:0;
-	border:0;
-}
-
-input[type=checkbox].css-checkbox + label.css-label {
-	padding-left:20px;
-	height:15px; 
-	display:block;
-	line-height:15px;
-	background-repeat:no-repeat;
-	background-position: 0 0;
-	font-size:1em;
-	font-weight: normal;
-	vertical-align:middle;
-	cursor:pointer;
-}
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-	background-position: 0 -15px;
-}
-
-.css-label{
-	background-image:url(http://csscheckbox.com/checkboxes/lite-gray-check.png);
-
-}
 
 .categories, .tags {
 	padding-top: 10px;
@@ -362,7 +337,12 @@ a:hover {
 	margin-top:-75px;
 }
 
+/*Tags padding on browse all page */
+.tagspadding {
+	padding: 9px;
+}
 
-
-
+#sortorder {
+	padding-right: 20px;
+}
 

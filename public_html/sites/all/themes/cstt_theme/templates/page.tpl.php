@@ -102,7 +102,7 @@
                   </ul>
               </li>
               <li><a href="http://csteachingtips.org/about">About</a></li>
-              <li><a href="http://csteachingtips.org/contribute">Contribute</a></li>
+              <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
           
@@ -144,7 +144,7 @@
         <h3> <br> </h3>
         
         <div align="center">
-          <p class="text-muted">Powered by:</p>
+          <p class="text-muted">Supported by:</p>
           <a href="http://www.nsf.gov/">
             <img alt= "National Science Foundation" src="http://www.csteachingtips.org/images/nsf_logo.png">
           </a>

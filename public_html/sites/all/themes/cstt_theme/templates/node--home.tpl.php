@@ -1,140 +1,114 @@
 <html>
 
 
-<!-- ======================= VERSION 2 =================
- == This version has all of the content over 2 screens==
- ======================================================= 
+<!-- =============================== VERSION 3 ================================
+ == This version has all of the content over 1 screen with the updated design==
+ ============================================================================== 
 -->
-<head>
-<meta name="google-site-verification" content="Up3Fxtd5mCOt89lm6BsS70FTbHngSGkvkLSdsf6MQR8" />
-<meta name="msvalidate.01" content="C5625A16BBC7ED854F1458FD8775415B" />
-</head>
 
+<head>
+        <title>
+
+        </title>
+        <meta name="description" content="CS Teaching Tips is an NSF funded project for providing tips to Computer Science teachers.">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="m" />
+        <meta property="og:image" content="m" />
+        <meta property="og:title" content="!"/>
+        <meta property="og:site_name" content="CS Teaching Tips!" />
+        <meta property="og:description" content="hi!" />
+        <meta property="fb:app_id" content="560604524019670"/>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+</head>
   
 <body>
 
 
   <!-- Navbar -->
- 
+  <!-- linnea and sammy made it show up on all pages -->
   <!-- End Navbar -->
 
 
-  <!-- Center button and mission statement -->
+  <!-- Logo and mission statement -->
 
   <br>
-  <div class="jumbotron">
 
-    <!-- Whitespace -->
-    <p style="font-size:50px"> <br> </p>
+  <div>  
 
     <h1> 
-      <img alt="CS Teaching Tips icon" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/p50x50/1900081_632479410157781_1725500249_n.png" id="cstt-icon"> 
-        CS Teaching Tips 
+      <center> <img src="http://i60.tinypic.com/atxcgm.png" id="cstt-icon"> </center>
     </h1>
-
-    <p>
-      <em> From personal stories to published papers, we've done the reading for you. <br>
-      Connect and teach like never before. </em>
-    </p>
-
-    <!-- Whitespace -->
-    <p style="font-size:15px"> <br> </p>
-
-    <p>
-      <a href="http://www.csteachingtips.org/browse-all" class="btn btn-primary btn-lg" role="button">Start Browsing Tips <span class="glyphicon glyphicon-chevron-right"> </span>
-      </a>
-    </p>
-    
-    <!-- Whitespace -->
-    <p style="font-size:25px"> <br> </p>
 
   </div>
 
-  <!-- End center button and mission statement -->
+  <div class="col-xs-12 col-sm-5 col-sm-offset-1">
 
+    <p>
+      <h2 align="center"><br><br><br><br>CSTT Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius blandit venenatis. Draco dormiens nunquam titillandus. Aliquam id mauris diam. Donec luctus consectetur facilisis.</h2>
+    </p>
 
-  <!-- Whitespace
-  <p id="white" style="font-size:50px"> <br> </p> -->
+  </div>
 
-
-  <!-- Down Arrow (for jumping to category panels) -->
-
-  <center>
-    <a href="#category-panels">
-      <span class="glyphicon glyphicon-chevron-down text-muted" style="font-size: 2em">
-    </a>
-    </span>
-  </center>
-
-  <!-- End Down Arrow -->
-
-
-  <!-- Whitespace -->
-  <p style="font-size:150px"> <br> </p>
-
+  <!-- End mission statement -->
 
   <!-- Category Panels --> 
   <p class="jump" id="category-panels"><br></p>
   <!-- id useful for bookmark & anchoring -->
+    
   <div>
-
-    <!-- Organizing Curriculum--> 
-
-    <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
-        <center>
-          <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">
-          <div class="caption">
-            <h3>Organizing<br>Curriculum</h3>
-            <p class="description">Tips to support you in lesson planning to improve the overall structure of your course and clarify desired student outcomes.</p>
-          </div>
-        </center> 
-      </a>
-    </div>
 
 
     <!-- Delivering Content --> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+      <div class="thumbnail">
         <center>
-          <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">
             <div class="caption"> 
-              <h3>Delivering<br>Content</h3>
-              <p class="description">Tips to help you engage your students on specific topics and discover where they might have misconceptions.</p>
+              <h3><a href="#">Delivering Content<br>Tips</a></h3>
+              <p class="description">Tips to help you engage your students on specific topics and discover where they might have misconceptions.</p><br>
             </div>
         </center> 
-      </a> 
+      </div> 
     </div>
+
 
     <!-- Managing and Assessing--> 
 
     <div class="col-xs-12 col-sm-4">
-      <a href="#" class="thumbnail category">
+      <div class="thumbnail">
         <center>
-          <br>
-          <img src="http://csteachingtips.org/images/placeholder.png">  
             <div class="caption">
-              <h3><span class="nobr">Managing &</span><br>Assessing</h3>
-              <p class="description">Tips to establish your classroom as a safe, equitable space for students to grow and receive valuable, constructive feedback.</p>
+              <h3><a href="#">Managing & Assessing<br>Tips</a></h3>
+              <p class="description">Tips to establish your classroom as a safe, equitable space for students to grow and receive valuable, constructive feedback.</p><br>
             </div>
         </center> 
-      </a>
+      </div>
     </div>
+
+    <!-- Organizing Curriculum--> 
+
+    <div class="col-xs-12 col-sm-4">
+      <div class="thumbnail">
+        <center>
+          <div class="caption">
+            <h3><a href="#">Organizing Curriculum<br>Tips</a></h3>
+            <p class="description">Tips to support you in lesson planning to improve the overall structure of your course and clarify desired student outcomes.</p><br>
+          </div>
+        </center> 
+      </div>
+    </div>
+
 
   </div>
 
   <!-- End Category Panels -->
 
-
-  <!-- Whitespace -->
-  <p style="font-size:120px"> <br> <br> </p>
-
-
   <!-- Footer -->
-
+  <!-- linnea and sammy made the footer show up on all pages -->
   <!-- End Footer -->
 
 

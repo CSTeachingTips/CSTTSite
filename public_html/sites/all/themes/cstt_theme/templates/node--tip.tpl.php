@@ -80,7 +80,13 @@
  * @ingroup themeable
  */
 ?>
-
+<html>
+<head>
+    <title>
+    Computer Science Teaching Tips tip page.
+    </title>
+    <meta name="description" content="Computer Science Teaching tips tip page.">    
+</head>
 
 
 <h4> <br> </h4>
@@ -140,3 +146,5 @@
 <br>
 
 </body>
+
+</html>
