@@ -107,7 +107,7 @@ body {
 
 .thumbnail {
 	background-color: #eee;
-	border:1px solid #ffffff;
+	border:10px solid #ffffff;
 	border-radius:6px;
 	-webkit-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
@@ -337,26 +337,12 @@ a:hover {
 	margin-top:-75px;
 }
 
-/*Padding and text color on browse all page */
+/*Tags padding on browse all page */
 .tagspadding {
 	padding: 9px;
-	color: #58585B;
-}
-
-[typeof="skos:Concept"] {
-	color: #58585B;
 }
 
 #sortorder {
-	padding-right: 30px;
-	padding-bottom: 0px;
-}
-
-.views-content {
-	margin-top: 0px;
-}
-
-.moreinfo {
-	margin-left:20px;
+	padding-right: 20px;
 }
 

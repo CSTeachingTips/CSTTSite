@@ -20,7 +20,8 @@
         <meta property="fb:app_id" content="560604524019670"/>
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <meta charset="utf-8">
-
+        <link rel = "stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
         
 </head>
   
@@ -35,15 +36,19 @@
   <!-- Logo and mission statement -->
 
   <br>
-  <div class="col-xs-12 col-sm-6">
 
+  <div>  
 
     <h1> 
       <center> <img src="http://i60.tinypic.com/atxcgm.png" id="cstt-icon"> </center>
     </h1>
 
+  </div>
+
+  <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+
     <p>
-      <h2 align="center"><br>CSTT Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius blandit venenatis. Nullam varius, arcu a suscipit vulputate, sapien tortor lacinia est, at rutrum turpis libero vitae ipsum. </h2>
+      <h2 align="center"><br><br><br><br>CSTT Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius blandit venenatis. Draco dormiens nunquam titillandus. Aliquam id mauris diam. Donec luctus consectetur facilisis.</h2>
     </p>
 
   </div>
@@ -53,37 +58,6 @@
   <!-- Category Panels --> 
   <p class="jump" id="category-panels"><br></p>
   <!-- id useful for bookmark & anchoring -->
-
-<!-- Line breaks so that the category panels are centered in their half of the webapge-->
-
-  <div class="col-xs-12 col-sm-1">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>
     
   <div>
 
@@ -94,7 +68,7 @@
       <div class="thumbnail">
         <center>
             <div class="caption"> 
-              <h3><a href="#">Delivering<br>Content</a></h3>
+              <h3><a href="#">Delivering Content<br>Tips</a></h3>
               <p class="description">Tips to help you engage your students on specific topics and discover where they might have misconceptions.</p><br>
             </div>
         </center> 
@@ -108,7 +82,7 @@
       <div class="thumbnail">
         <center>
             <div class="caption">
-              <h3><a href="#">Managing &<br>Assessing</a></h3>
+              <h3><a href="#">Managing & Assessing<br>Tips</a></h3>
               <p class="description">Tips to establish your classroom as a safe, equitable space for students to grow and receive valuable, constructive feedback.</p><br>
             </div>
         </center> 
@@ -121,7 +95,7 @@
       <div class="thumbnail">
         <center>
           <div class="caption">
-            <h3><a href="#">Organizing<br>Curriculum</a></h3>
+            <h3><a href="#">Organizing Curriculum<br>Tips</a></h3>
             <p class="description">Tips to support you in lesson planning to improve the overall structure of your course and clarify desired student outcomes.</p><br>
           </div>
         </center> 
