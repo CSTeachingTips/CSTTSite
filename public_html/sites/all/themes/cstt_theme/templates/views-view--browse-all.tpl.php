@@ -1,3 +1,4 @@
+<!-- Formats the Browse All View -->
 <?php
 
 /**

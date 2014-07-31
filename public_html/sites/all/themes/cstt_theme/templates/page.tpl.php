@@ -1,3 +1,8 @@
+<!-- Responsible for printing the nav bar and footer on all pages except 
+the Browse All page. In a more typical Drupal site, this template would
+be used to print content on almost every page of the site. See 
+/modules/system/page.tpl.php for the default implementation of this file -->
+
 <?php
 
 /**
@@ -75,6 +80,7 @@
 <?php include "analyticstracking.php"; ?>
 <?php include_once("analyticstracking.php") ?>
 
+<!-- The nav bar -->
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -85,27 +91,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://csteachingtips.org"><img src="http://www.csteachingtips.org/images/csteachingtips.png" id="cstt-logo"/></a>
+          
+          <a class="navbar-brand" href="http://csteachingtips.org"><img src="http://i1194.photobucket.com/albums/aa379/Kahnyri/navbar.png" id="cstt-logo"/></a>
       </div>
 
       <!-- NAV BAR -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tips<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=">Organizing Curriculum</a></li>
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=">Delivering Content</a></li>
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=">Managing & Assessing</a></li>
-                      <li class="divider"></li>
-                      <li><a href="http://csteachingtips.org/browse-all">Browse All</a></li>
-                  </ul>
-              </li>
+              <li><a href="http://csteachingtips.org/browse-all">Browse All Tips</a></li>
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
-          
+              <!-- Printing the Views exposed form block for the View Clone of Browse All Page -->
               <?php 
               $block = block_load('views','-exp-clone_of_browse_all-page');
               $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
@@ -122,13 +120,14 @@
 
 <!-- CONTENT -->
 <div>
+ <!-- Printing the content of a Drupal page - Important -->
  <?php print render($page['content']); ?>
 </div>
-
 <!-- END CONTENT -->
     
 <h3> <br> </h3>
 
+<!-- The footer -->
 <div id="footer">
     <div class="container">  
         

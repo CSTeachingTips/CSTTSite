@@ -1,4 +1,6 @@
+<!-- The Browse All Page -->
 
+<!-- Nav bar for browse all page  -->
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,35 +11,25 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://csteachingtips.org"><img src="http://www.csteachingtips.org/images/csteachingtips.png" id="cstt-logo"/></a>
+          <a class="navbar-brand" href="http://csteachingtips.org"><img src="http://i1194.photobucket.com/albums/aa379/Kahnyri/navbar.png" id="cstt-logo"/></a>
       </div>
 
       <!-- NAV BAR -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tips<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=">Organizing Curriculum</a></li>
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=">Delivering Content</a></li>
-                      <li><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=">Managing & Assessing</a></li>
-                      <li class="divider"></li>
-                      <li><a href="http://csteachingtips.org/browse-all">Browse All</a></li>
-                  </ul>
-              </li>
+              <li><a href="http://csteachingtips.org/browse-all">Browse All Tips</a></li> 
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
-          
+              <!-- Printing the Views exposed form block that contains the search bar for View Clone of Browse All -->
               <?php 
               $block = block_load('views','-exp-clone_of_browse_all-page');
               $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummyblock);
               ?>           
           </ul>
-             
-          
+                   
       </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -45,10 +37,11 @@
     <h3> <br> </h3>
 
 
-<!-- just the top panel -->
+<!-- the top panel -->
 
   
   <div tag = "exposedviews">
+   <!-- Printing the exposed filters Views block for the browse all view -->
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
@@ -62,6 +55,7 @@
 
 <div class="views-content">
 
+<!-- Printing the content of the page, which in this case is the View Browse All -->
 <?php print render($page['content']); ?>
 
 </div>
@@ -71,6 +65,7 @@
 
 <h3> <br> </h3>
 
+<!-- The footer for the browse all page -->
 <div id="footer">
     <div class="container">  
         

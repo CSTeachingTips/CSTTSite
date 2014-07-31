@@ -1,3 +1,4 @@
+<!-- Formats the Views Exposed form for the View Clone of Browse All. -->
 <?php
 
 /**
@@ -68,7 +69,7 @@
         <?php print $items_per_page; ?>
       </div>
     <?php endif; ?>
-    
+    <!-- Here we add an id to the search button to allow for easier formatting -->
     <div class="views-exposed-widget views-submit-button" id = "searchbutton">
       <?php print $button; ?>
     </div>
