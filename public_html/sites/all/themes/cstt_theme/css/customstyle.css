@@ -2,10 +2,6 @@ body {
 	position: relative;
 } 
 
-.jumbotron {
-	background-color: #eee;
-}
-
 .main {
 	position: absolute;
 	left: 0;
