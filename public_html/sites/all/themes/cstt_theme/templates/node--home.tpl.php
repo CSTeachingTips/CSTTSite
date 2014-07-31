@@ -35,19 +35,19 @@
 
   <br>
 
-  <div>  
-
-    <h1> 
-      <center> <img src="http://i60.tinypic.com/atxcgm.png" id="cstt-icon"> </center>
-    </h1>
-
-  </div>
-
   <div class="col-xs-12 col-sm-5 col-sm-offset-1">
 
     <p>
       <h2 align="center"><br><br><br><br>CSTT Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius blandit venenatis. Draco dormiens nunquam titillandus. Aliquam id mauris diam. Donec luctus consectetur facilisis.</h2>
     </p>
+
+  </div>
+
+  <div>  
+
+    <h1> 
+      <center> <img src="http://i60.tinypic.com/atxcgm.png" id="cstt-icon"> </center>
+    </h1>
 
   </div>
 
