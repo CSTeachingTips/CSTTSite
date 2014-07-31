@@ -85,12 +85,14 @@
 
     <?php if (!empty($sort_by)): ?>
 
+      <!-- HTML for the line of text below the filters bar -->
       <div class = "moreinfo col-md-4">
       <label><h4>Click a tip for more information!</h4></label>
       </div>
 
       <div class = "pull-right" id = "sortorder">
       <div class="views-exposed-widget views-widget-sort-by">
+        <!-- Printing the Views exposed sort order -->
         <?php print $sort_by; ?>
       </div>
       </div>
