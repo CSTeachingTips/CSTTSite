@@ -105,15 +105,6 @@ body {
 	padding-top: 8px;
 }
 
-.thumbnail {
-	background-color: #eee;
-	border:10px solid #ffffff;
-	border-radius:6px;
-	-webkit-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
 
 a.thumbnail:hover {
 	border-color:#ddd;
@@ -239,14 +230,6 @@ a.thumbnail:hover {
 td {
 	padding:10px;
 	vertical-align: top;
-}
-
-a {
-	color:black;
-}
-
-a:hover {
-	color:black;
 }
 
 #summer-research img {
