@@ -30,35 +30,68 @@
     print $q;
   ?>
 <?php endif; ?>
-<div class="views-exposed-form">
-  <div class="views-exposed-widgets clearfix">
-    <?php foreach ($widgets as $id => $widget): ?>
-      <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
-        <?php if (!empty($widget->label)): ?>
-          <label for="<?php print $widget->id; ?>">
-            <?php print $widget->label; ?>
-          </label>
 
-        <?php endif; ?>
-        <?php if (!empty($widget->operator)): ?>
-          <div class="views-operator">
-            <?php print $widget->operator; ?>
+<div class="views-exposed-form">
+  <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="views-exposed-widgets clearfix">
+        
+         <?php foreach ($widgets as $id => $widget): ?>
+           <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
+           
+            <?php if (!empty($widget->label)): ?>
+              <label for="<?php print $widget->id; ?>">
+                <?php print $widget->label; ?>
+              </label>
+            <?php endif; ?>
+
+            <?php if (!empty($widget->operator)): ?>
+              <div class="views-operator">
+                <?php print $widget->operator; ?>
+              </div>
+            <?php endif; ?>
+       
+            <div class="views-widget">
+            <?php print $widget->widget; ?>
+            </div>
+        
+            <?php if (!empty($widget->description)): ?>
+              <div class="description">
+                <?php print $widget->description; ?>
+              </div>
+            <?php endif; ?>
+
           </div>
-        <?php endif; ?>
-        <div class="views-widget">
-          <?php print $widget->widget; ?>
+        <?php endforeach; ?>
+
+        <div class="buttonplacementfix" id = "buttonplacementfix">
+         <?php print $button; ?>
         </div>
-        <?php if (!empty($widget->description)): ?>
-          <div class="description">
-            <?php print $widget->description; ?>
+
+        <?php if (!empty($reset_button)): ?>
+          <div class="buttonplacementfix" id = "buttonplacementfix">
+           <?php print $reset_button; ?>
           </div>
         <?php endif; ?>
+
       </div>
-    <?php endforeach; ?>
+    </div>
+  </div>
+</div>
+
     <?php if (!empty($sort_by)): ?>
-      <div class="views-exposed-widget views-widget-sort-by" id ="viewswidgetpadding">
+
+      <div class = "moreinfo col-md-4">
+      <label><h4>Click a tip for more information!</h4></label>
+      </div>
+
+      <div class = "pull-right" id = "sortorder">
+      <div class="views-exposed-widget views-widget-sort-by">
         <?php print $sort_by; ?>
       </div>
+      </div>
+
+
 
     <?php endif; ?>
     <?php if (!empty($items_per_page)): ?>
@@ -71,16 +104,6 @@
         <?php print $offset; ?>
       </div>
     <?php endif; ?>
-    
-    
-    <div class="buttonplacementfix" id = "buttonplacementfix">
-      <?php print $button; ?>
-    </div>
-    
-    <?php if (!empty($reset_button)): ?>
-      <div class="buttonplacementfix" id = "buttonplacementfix">
-        <?php print $reset_button; ?>
-      </div>
-    <?php endif; ?>
+
   </div>
 </div>
