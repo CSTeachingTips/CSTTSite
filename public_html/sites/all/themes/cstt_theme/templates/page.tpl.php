@@ -1,3 +1,8 @@
+<!-- Responsible for printing the nav bar and footer on all pages except 
+the Browse All page. In a more typical Drupal site, this template would
+be used to print content on almost every page of the site. See 
+/modules/system/page.tpl.php for the default implementation of this file -->
+
 <?php
 
 /**
@@ -75,6 +80,7 @@
 <?php include "analyticstracking.php"; ?>
 <?php include_once("analyticstracking.php") ?>
 
+<!-- The nav bar -->
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -96,7 +102,7 @@
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
-          
+              <!-- Printing the Views exposed form block for the View Clone of Browse All Page -->
               <?php 
               $block = block_load('views','-exp-clone_of_browse_all-page');
               $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
@@ -113,13 +119,14 @@
 
 <!-- CONTENT -->
 <div>
+ <!-- Printing the content of a Drupal page - Important -->
  <?php print render($page['content']); ?>
 </div>
-
 <!-- END CONTENT -->
     
 <h3> <br> </h3>
 
+<!-- The footer -->
 <div id="footer">
     <div class="container">  
         

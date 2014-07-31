@@ -1,10 +1,5 @@
+<!-- The Home Page -->
 <html>
-
-
-<!-- =============================== VERSION 3 ================================
- == This version has all of the content over 1 screen with the updated design==
- ============================================================================== 
--->
 
 <head>
         <title>
@@ -24,11 +19,6 @@
 </head>
   
 <body>
-
-
-  <!-- Navbar -->
-  <!-- linnea and sammy made it show up on all pages -->
-  <!-- End Navbar -->
 
 
   <!-- Logo and mission statement -->
@@ -104,11 +94,6 @@
   </div>
 
   <!-- End Category Panels -->
-
-  <!-- Footer -->
-  <!-- linnea and sammy made the footer show up on all pages -->
-  <!-- End Footer -->
-
 
 </body>
 

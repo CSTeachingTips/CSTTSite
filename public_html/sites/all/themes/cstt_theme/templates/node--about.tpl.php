@@ -1,3 +1,4 @@
+<!-- The About Page -->
 <html>
 <head>
     <title>
@@ -9,8 +10,10 @@
 
 <body>
 
+<!-- Breaks so that the nav bar doesn't overlap anything it shouldn't -->
 <h1> <br>  </h1>
 
+<!-- Links to anchors -->
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
     <div class="panel-body">
       <a href="#project-summary" id = "hiddenlink">Project Summary</a> <br>
@@ -20,6 +23,7 @@
     </div>
   </div>
 
+<!-- Project Summary --> 
   <div class="col-xs-12 col-sm-9 tables">
   <h3 class="jump" id="project-summary" style="position:relative;clear:both;">Project Summary</h3>
 
@@ -35,6 +39,7 @@
     <p style="font-size:2px"> <br> </p>
   </div>
 
+<!-- Team -->
   <div class="col-xs-12 col-sm-9 tables">
   <h3 class="jump" id="team">Team</h3>
 
@@ -77,6 +82,8 @@
 
   </div>
 
+
+<!--Advisory Board -->
   <div class="col-xs-12 col-sm-9 tables">
   <h3 class="jump" id="advisory-board">Advisory Board and Expert Coordinators</h3>
     

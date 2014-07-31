@@ -1,4 +1,6 @@
+<!-- The Browse All Page -->
 
+<!-- Nav bar for browse all page  -->
  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id = "navbar">
       <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,15 +22,14 @@
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">    
-          
+              <!-- Printing the Views exposed form block that contains the search bar for View Clone of Browse All -->
               <?php 
               $block = block_load('views','-exp-clone_of_browse_all-page');
               $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummyblock);
               ?>           
           </ul>
-             
-          
+                   
       </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -36,10 +37,11 @@
     <h3> <br> </h3>
 
 
-<!-- just the top panel -->
+<!-- the top panel -->
 
   
   <div tag = "exposedviews">
+   <!-- Printing the exposed filters Views block for the browse all view -->
    <?php 
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
@@ -53,6 +55,7 @@
 
 <div class="views-content">
 
+<!-- Printing the content of the page, which in this case is the View Browse All -->
 <?php print render($page['content']); ?>
 
 </div>
@@ -62,6 +65,7 @@
 
 <h3> <br> </h3>
 
+<!-- The footer for the browse all page -->
 <div id="footer">
     <div class="container">  
         

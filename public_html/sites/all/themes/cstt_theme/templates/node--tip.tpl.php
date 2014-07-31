@@ -1,8 +1,10 @@
+<!-- The Tip Profile Page -->
+
 <?php
 
 /**
  * @file
- * Tip profile page default format.
+ * Tip profile page format.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -97,30 +99,32 @@
     <h2> <?php print $title; ?> </h2>
     <h6><br></h6>
     <p class="text-muted" id="category">
-      
-       <!-- Printing the category attached to the tip --> 
-       <?php print render($content['field_rating']); ?>     
+       <!-- printing the rating field for content type tip -->
+       <?php print render($content['field_rating']); ?> 
+       <!-- Printing the category field for content type tip -->     
        <?php print render($content['field_category']); ?>
-
     </p>
   </div>
 
   <div class="container">
     <div class="col-xs-8 col-md-8">
 
-        <!-- Printing the body/additional info for the tip -->
+        <!-- Printing the body/additional info field for content type tip -->
         <?php print render($content['body']); ?>
    
     </div>
 
     <div class="col-xs-4 col-md-4">
       <p class="text-muted">
+        <!-- Printing taxonomy terms from the vocabulary source field for content type tip -->
         <?php print render($content['field_source_taxonomy']) ?>
       </p>
       <p class="text-muted">
+        <!-- Printing the external source field for content type tip -->
         <?php print render($content['field_source']); ?>
       </p>
       <p class="text-muted" id="tag">
+        <!-- Printing taxonomy terms from tips vocabularly field for content type tip --> 
         <?php print render($content['field_tags']); ?>
       </p>  
 
@@ -132,11 +136,12 @@
     <div class="col-xs-12">
     <h4> Similar Tips </h4>
     		<ul>
+        <!-- Printing a Views block configured to show similar tips -->
  			  <?php $block = block_load('views','similar_tips-block');
-              $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
-              print drupal_render($dummysearch); 
-              ?>
-            </ul>
+         $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
+         print drupal_render($dummysearch); 
+        ?>
+        </ul>
   </div>
   </div>
 

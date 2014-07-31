@@ -1,3 +1,4 @@
+<!-- Formats the Views Exposed filters on the Browse All page -->
 <?php
 
 /**
@@ -31,14 +32,17 @@
   ?>
 <?php endif; ?>
 
+<!-- HTML to place exposed filters in a panel -->
 <div class="views-exposed-form">
   <div class="panel panel-default">
       <div class="panel-body">
         <div class="views-exposed-widgets clearfix">
         
+         <!-- Looping over the exposed filters that need to be printed -->
          <?php foreach ($widgets as $id => $widget): ?>
            <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
            
+            <!-- Prints the label of a Views exposed filter -->           
             <?php if (!empty($widget->label)): ?>
               <label for="<?php print $widget->id; ?>">
                 <?php print $widget->label; ?>
@@ -50,9 +54,9 @@
                 <?php print $widget->operator; ?>
               </div>
             <?php endif; ?>
-       
+            <!-- Prints the Views exposed filter -->       
             <div class="views-widget">
-            <?php print $widget->widget; ?>
+              <?php print $widget->widget; ?>
             </div>
         
             <?php if (!empty($widget->description)): ?>
@@ -63,11 +67,11 @@
 
           </div>
         <?php endforeach; ?>
-
+        <!-- Prints the submit button for the views exposed filters -->
         <div class="buttonplacementfix" id = "buttonplacementfix">
          <?php print $button; ?>
         </div>
-
+        <!-- Prints the reset button for the views exposed filters -->
         <?php if (!empty($reset_button)): ?>
           <div class="buttonplacementfix" id = "buttonplacementfix">
            <?php print $reset_button; ?>
