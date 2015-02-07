@@ -1,0 +1,567 @@
+body {
+	position: relative;
+} 
+
+.main {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#navbar {
+	min-height: 50px;
+}
+
+.navbar-brand {
+	margin-top: 1px;
+}
+
+#cstt-logo {
+	position: relative;
+	top: -3px;
+}
+
+#cstt-icon {
+	padding-top: 10px;
+	position: relative;
+	top: 25px;
+	right: 25px;
+
+}
+
+#cstt-description {
+	text-align: left;
+	position:relative;
+	left: -25px;
+}
+
+.descriptionalign {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 25px;
+	line-height: 1.3;
+	font-family: "Didot", "Sans-Sarif";
+}
+
+#navlist {
+	position: relative;
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+
+#navlist li {
+	list-style: none;
+	position: absolute;
+	top: 0;
+	zoom: 1;
+	transition: all 0.01s;
+	display: inline;
+}
+
+#navlist li, #navlist a {
+	height: 40px;
+	display: block;
+}
+
+/*Social media icons */
+#facebook {
+	left: 0px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/02_facebook.png') 0 0;
+}
+
+#twitter {
+	left: 43px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/01_twitter.png') -40px 0;
+}
+
+#google {
+	left: 86px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/14_google+.png') -160px 0;
+}
+
+#facebook:hover {
+	left: 0px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/02_facebook_dark.png') 0 0;
+}
+
+#twitter:hover {
+	left: 43px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/01_twitter_dark.png') -40px 0;
+}
+
+#google:hover {
+	left: 86px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/14_google+_dark.png') -160px 0;
+}
+
+/* End social media icons */
+
+#footerpadding {
+	padding-bottom: 20px;
+}
+
+
+.thumbnail {
+	min-height: 200px;
+}
+
+.thumbnail>img {
+	display:block;
+	max-width:100%;
+}
+
+.thumbnail img {
+	padding-top: 8px;
+}
+
+
+a.thumbnail:hover {
+	border-color:#ddd;
+	text-decoration: none;
+}
+
+.caption {
+	height:auto;
+    vertical-align:middle;
+    float:none;
+}
+
+.thumbnail .caption {
+	padding:9px;
+	color: #495966;
+}
+
+
+
+#tag {
+	font-size: 150%;
+}
+
+.panel {
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 250px;
+	width: 95%;
+	position: relative;
+}
+
+
+.views-content {
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left:auto;
+	width: 95%;
+}
+
+.col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
+	position:relative;
+	min-height:1px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.panel-title {
+	color: #495966;
+}
+
+/* Styling for the FAQ page */
+.faq {
+	padding-left:30px;
+}
+
+.nobr {
+	white-space:nowrap;
+}
+
+
+.categories, .tags {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#more_tags {
+	margin-left: -15px;
+}
+
+.category {
+	min-height: 200px;
+	min-width: 180px;
+}
+
+#about-side {
+	border:0px solid transparent;
+	box-shadow:none;
+	margin-top:5px;
+	position:fixed;
+	clear:right;
+	width:15%;
+}
+
+.tables {
+	margin-left:15%;
+	margin-right: 10%;
+	clear:left;
+}
+
+td {
+	padding:10px;
+	vertical-align: top;
+}
+
+#summer-research img {
+	padding:7px;
+}
+
+#summer-research p {
+	padding-top: 10px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.social {
+	left: -85px;
+}
+
+@media all and (max-width: 992px) {
+  .panel {
+	width: 95%;
+	position: relative;
+  }
+  #cstt-description {
+  	left: 0px;
+  }
+  .descriptionalign {
+  	text-align: center;
+  	padding-top: 50px;
+  	font-size: 30px;
+  	  }
+  #cstt-icon {
+  	left: 0px;
+  	max-width: 300px;
+  	max-height: 300px;
+  }
+  .social {
+ 	 left: 0px;
+  }
+  .support-logos {
+  	text-align:center;
+  }
+  .navbar-header {
+        float: none;
+  }
+  .navbar-toggle {
+        display: block;
+  }
+  .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+        display: none!important;
+  }
+  .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+        float: none;
+  }
+  .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in { 
+        display: block!important;
+  }
+  .collapsing {
+        overflow: hidden!important;
+  }
+  #cstt-description {
+    	text-align: center;
+  }
+  .socialmediabuttons {
+  	text-align: left;
+  	margin-left:15px;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+.descriptionalign {
+	font-size: 20px;
+}
+  #project-summary:before {
+  	height:0px;
+  	margin-top:0px;
+  }
+
+  #hiddenlink {
+  	display: none;
+  }
+
+  #cstt-icon {
+  	max-height: 150px;
+  	max-width: 150px;
+  }
+
+  #about-side {
+  	position:relative;
+  	margin-left: 4%;
+  	margin-bottom: -2%;
+  	width:100%;
+  }
+  .tables {
+	margin-left:5%;
+	margin-right: 10%;
+	clear:left;
+  }
+}
+
+@media all and (max-width: 720px) {
+  #about-side {
+  	position:relative;
+  	margin-left: 4%;
+  	margin-bottom: -2%;
+  	width:100%;
+  }
+  .tables {
+	margin-left:5%;
+	margin-right: 10%;
+	clear:left;
+  }
+  .panel {
+	width: 95%;
+	position: relative;
+  }
+
+}
+
+
+.contribute {
+	margin-left: 5%;
+}
+
+/* For jumps so navbar not in the way */
+.jump:before {
+	display:block;
+	content:"";
+	height:75px;
+	margin-top:-75px;
+}
+
+/*Padding and text color on browse all page */
+
+
+#sortorder {
+	padding-right: 30px;
+	padding-bottom: 0px;
+}
+
+.views-content {
+	margin-top: 0px;
+}
+
+.moreinfo {
+	margin-left:30px;
+}
+
+/* Making tips uniform size on the browse all page and the tip profile page */
+
+.browseallthumbnail {
+	min-height: 100px;
+}
+
+/* Style for the nav bar*/
+
+.navbar-default {
+	background-color: #e6f5eb;
+}
+
+/* Style for the background of the tip profile page #f3faf3 */
+.jumbotron {
+	background-color: #E6F5EB;
+	height:auto;
+}
+
+/* Style for the categories page */
+.view-content ul {
+	font-size: 20px;
+}
+
+.view-content ul ul {
+	font-size: 16px;
+}
+
+.view-content ul p {
+	font-size: 16px;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility: hidden;
+}	
+
+
+/* Theming the rate module on tip profile pages*/
+.rate-thumbs-up-btn-up {
+  display: inline-block;
+  background: url(http://csteachingtips.org/images/star-1.png) no-repeat 0 0;
+  font-size: 18px;
+  text-indent: -9999px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.rate-thumbs-up-btn-up:hover {
+	display: inline-block;
+	background: url(http://csteachingtips.org/images/starhover-1.png) no-repeat 0 0;
+	font-size: 18px;
+	text-indent: -9999px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition:.5s;
+}
+
+.tipside .ratestar {
+	font-size: 18px;
+	font-weight: bold;
+	font-color: #419763;
+	width: 1px;
+}
+
+.hidezero {
+	display: none;
+	float: right;
+	margin-left: 30px;
+}
+
+.tipside .rate-info {
+	padding-left: 7px;
+}
+
+/* Theming the rate module on the browse all page */
+
+.browseallthumbnail {
+	overflow: hidden;
+}
+
+.browseallrate .ratestar {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  width: auto;
+  float: right;
+  padding-bottom: 10px;
+}
+
+.browseallrate .ratestar .rate-info {
+ margin-left:8px;
+}
+
+.browseallrate .ratestar .rate-description {
+  display: none;
+}
+
+.categoriespadding {
+  padding: 8px;
+  color: #58585B;
+  float: left;
+}
+
+.tiptitle {
+  float: left;
+}
+.tagspadding {
+  padding: 8px;
+  padding-bottom: 0px;
+  color: #58585B;
+  float: left;
+}
+
+.tagspadding .a {
+	color: #58585b;
+}
+
+/* Hover for social media sharing buttons */
+
+.twittershare:hover {
+	opacity: 0.8;
+}
+
+.facebookshare:hover{
+	opacity: 0.8;
+}
+
+.googleplusshare:hover{
+	opacity: 0.8;
+}
+
+/*Styling for /random-tip-short */
+
+.randomtip {
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+
+/* Tip profile page */		
+
+.socialmediabuttons {
+	padding-bottom:0px;
+	padding-top: 10px;
+}
+
+.colorstripe {
+	background-color: #E6F5EB;
+	height: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#tip {
+	margin-top:60px;
+}
+.tipspace {
+	padding-bottom: 4px;
+}
+.categoriesspacing {
+	padding-bottom: 5px;
+}
+
+/*Font size on the tip profile page */
+
+.field-item ul li {
+	font-size: 18px;
+}
+
+.sources .field-label {
+	font-size: 17px;
+}
+.sources .field-items {
+	font-size: 17px;
+}
+
+.tagslabel {
+	font-weight: bold;
+}

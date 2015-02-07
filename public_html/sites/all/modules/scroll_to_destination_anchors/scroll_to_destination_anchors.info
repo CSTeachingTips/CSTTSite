@@ -1,0 +1,13 @@
+name = Scroll to destination anchors
+description = Makes destination anchor links that start with a hashtag scroll users to the destination instead of the browser default jump behavior.
+package = User interface
+core = 7.x
+ 
+scripts[] = scroll_to_destination_anchors.js
+
+; Information added by drupal.org packaging script on 2013-09-19
+version = "7.x-1.2"
+core = "7.x"
+project = "scroll_to_destination_anchors"
+datestamp = "1379592197"
+
