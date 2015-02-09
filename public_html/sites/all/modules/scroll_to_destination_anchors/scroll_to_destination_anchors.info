@@ -5,9 +5,9 @@ core = 7.x
  
 scripts[] = scroll_to_destination_anchors.js
 
-; Information added by drupal.org packaging script on 2013-09-19
-version = "7.x-1.2"
+; Information added by Drupal.org packaging script on 2014-10-10
+version = "7.x-1.3"
 core = "7.x"
 project = "scroll_to_destination_anchors"
-datestamp = "1379592197"
+datestamp = "1412962730"
 

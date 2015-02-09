@@ -13,7 +13,7 @@ Drupal.behaviors.scrolltoanchors = {
         }
         $('html,body').animate({ scrollTop: destination }, 800, 'swing');
       }
-      $('a[href^="#"]').click(function(event) {
+      $('a[href^="#"]', context).click(function(event) {
         event.preventDefault();
         var hrefValue = $(this).attr('href');
         var strippedHref = hrefValue.replace('#','');

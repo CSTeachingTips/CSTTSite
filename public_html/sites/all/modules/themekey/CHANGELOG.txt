@@ -1,3 +1,11 @@
+ThemeKey 7.x-3.3, 2015-02-03
+----------------------------
+[#2277243] mkalkbrenner: fixed Call to undefined function themekey_invoke_modules() in themekey_ui.module on line 304
+[#2224913] mkalkbrenner: removed single quotes from module descriptions in info files which seemed to cause issues in some environments.
+[#2380909] mkalkbrenner: Redirect for is_front_page does not work for root URL
+[#2373821] paulbeaney, mkalkbrenner: differentiate between scalar and complex get and cookie values
+
+
 ThemeKey 7.x-3.2, 2014-05-13
 ----------------------------
 [#2265813] mkalkbrenner: fatal error when submitting a contextual filter for a view via ajax
