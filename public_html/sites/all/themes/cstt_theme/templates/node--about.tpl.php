@@ -41,10 +41,10 @@
 
         <div class= "support-logos" align = "center" id = "footerpadding">
           <a href="http://www.nsf.gov/">
-            <img alt= "National Science Foundation" src="http://testing.csteachingtips.org/public_html/images/nsflogo.png">
+            <img alt= "National Science Foundation" src="http://www.csteachingtips.org/images/nsflogo.png">
           </a>
           <a href="http://www.sagefoxgroup.com/" style="margin-left:13px;">
-            <img alt= "SageFox Consulting Group" src="http://testing.csteachingtips.org/public_html/images/sagefoxlogo.png">
+            <img alt= "SageFox Consulting Group" src="http://www.csteachingtips.org/images/sagefoxlogo.png">
           </a>
           <a href="http://www.hmc.edu">
             <img alt= "Harvey Mudd College" src="http://www.csteachingtips.org/images/HMClogo_75sq.png" style="margin-left:13px;">

@@ -421,7 +421,7 @@ td {
 /* Theming the rate module on tip profile pages*/
 .rate-thumbs-up-btn-up {
   display: inline-block;
-  background: url(http://csteachingtips.org/images/star-1.png) no-repeat 0 0;
+  background: url(http://www.csteachingtips.org/images/star-1.png) no-repeat 0 0;
   font-size: 18px;
   text-indent: -9999px;
   -o-transition:.5s;
@@ -433,7 +433,7 @@ td {
 
 .rate-thumbs-up-btn-up:hover {
 	display: inline-block;
-	background: url(http://csteachingtips.org/images/starhover-1.png) no-repeat 0 0;
+	background: url(http://www.csteachingtips.org/images/starhover-1.png) no-repeat 0 0;
 	font-size: 18px;
 	text-indent: -9999px;
 	-o-transition:.5s;
