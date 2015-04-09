@@ -1,0 +1,31 @@
+--- 
+customlog: 
+  - 
+    format: combined
+    target: /usr/local/apache/domlogs/csteachingtips.org
+  - 
+    format: "\"%{%s}t %I .\\n%{%s}t %O .\""
+    target: /usr/local/apache/domlogs/csteachingtips.org-bytes_log
+documentroot: /home/csteach1/public_html
+group: csteach1
+hascgi: 1
+homedir: /home/csteach1
+ifmodulemodsuphpc: 
+  group: csteach1
+ip: 198.1.109.130
+owner: root
+phpopenbasedirprotect: 1
+port: 80
+scriptalias: 
+  - 
+    path: /home/csteach1/public_html/cgi-bin
+    url: /cgi-bin/
+  - 
+    path: /home/csteach1/public_html/cgi-bin/
+    url: /cgi-bin/
+serveradmin: webmaster@csteachingtips.org
+serveralias: www.csteachingtips.org
+servername: csteachingtips.org
+usecanonicalname: 'Off'
+user: csteach1
+userdirprotect: ''

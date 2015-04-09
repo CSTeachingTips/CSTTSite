@@ -1,0 +1,5 @@
+cstt:$1$DCOQFS8y$k2PZjMc8FvQPmVwPWdV.V1:500:501:csteach1:/home/csteach1/public_html:/bin/ftpsh
+csteach:$1$uSawLzA9$uKAjg512f6Lf7BTq1qe040:500:501:csteach1:/home/csteach1/public_html:/bin/ftpsh
+csteach1:$1$j.Mvv1FC$lYqYNCM4kdBwsgtV24KZR0:500:501::/home/csteach1:/bin/bash
+ftp::14:50::/home/csteach1/public_ftp:/bin/ftpsh
+csteach1_logs:$1$j.Mvv1FC$lYqYNCM4kdBwsgtV24KZR0:500:501:csteach1:/usr/local/apache/domlogs/csteach1:/bin/ftpsh

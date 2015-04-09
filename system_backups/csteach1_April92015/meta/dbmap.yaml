@@ -1,0 +1,23 @@
+--- 
+MYSQL: 
+  dbs: 
+    csteach1_mysql: 198.1.109.130
+    csteach1_test: 198.1.109.130
+    csteach1_testing: 198.1.109.130
+    csteach1_wordpress: 198.1.109.130
+  dbusers: 
+    csteach1_admin: 
+      dbs: 
+        csteach1_mysql: 198.1.109.130
+      server: 198.1.109.130
+    csteach1_cstt: 
+      dbs: 
+        csteach1_mysql: 198.1.109.130
+        csteach1_test: 198.1.109.130
+        csteach1_testing: 198.1.109.130
+        csteach1_wordpress: 198.1.109.130
+      server: 198.1.109.130
+  noprefix: {}
+
+  owner: csteach1
+  server: 198.1.109.130

@@ -1,0 +1,9 @@
+--- 
+addon_domains: {}
+
+main_domain: csteachingtips.org
+parked_domains: []
+
+sub_domains: 
+  - blog.csteachingtips.org
+  - test.csteachingtips.org
