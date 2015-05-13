@@ -99,7 +99,7 @@ be used to print content on almost every page of the site. See
               <span class="icon-bar"></span>
           </button>
           
-          <a class="navbar-brand" href="http://csteachingtips.org/browse-all"><img alt="CS Teaching Tips Logo" src="http://csteachingtips.org/images/navbar.png" id="cstt-logo"/></a>
+          <a class="navbar-brand" href="http://csteachingtips.org/"><img alt="CS Teaching Tips Logo" src="http://csteachingtips.org/images/navbar.png" id="cstt-logo"/></a>
       </div>
 
       <!-- NAV BAR -->
