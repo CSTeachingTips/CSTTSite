@@ -2,7 +2,7 @@
 .DS_Store
 
 #ignore the testing subdomain folder
-public_html/testing
+public_html/test
 
 # Ignore configuration files that may contain sensitive information.
 public_html/sites/*/settings*.php
