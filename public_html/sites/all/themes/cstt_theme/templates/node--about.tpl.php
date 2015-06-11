@@ -69,7 +69,7 @@
       </tr>
       <tr>
         <td><img alt="Tom McKlin" src="http://csteachingtips.org/images/tommcklin.jpg" width="100" height="100" /></td>
-        <td><a href="http://www.thefindingsgroup.com/The_Findings_Group,_LLC/Tom.html" target="_blank"><strong>Tom McKlin (Co-PI) &#8211; SageFox Consulting Group</strong></a>
+        <td><a href="http://sagefoxgroup.com/staff-members/tom-mcklin/" target="_blank"><strong>Tom McKlin (Co-PI) &#8211; SageFox Consulting Group</strong></a>
         <h6></h6>
         <p>Dr. McKlin has over a decade of experience conducting research and evaluation of federal programs for the National Science Foundation, National Institutes of Health, U.S. Department of Education, and the Department of Defense. Before launching is own research firm, Dr. McKlin formerly directed evaluation activity for Georgia Tech&#8217;s Center for Education Integrating Science, Mathematics, and Computing (CEISMC) and has served as guest lecturer at Georgia State University, University of Georgia, and Centers for Disease Control and Prevention.</p></td>
       </tr>
@@ -167,7 +167,7 @@
       </tr>
       <tr>
         <td><img class="alignnone size-full wp-image-212" alt="Maria Klawe" src="http://csteachingtips.org/images/MariaKlawe.jpeg" width="100" height="100" /></td>
-        <td><strong><a href="http://www.hmc.edu/about1/administrativeoffices/officeofthepresident1/bio.html" target="_blank">Maria Klawe &#8211; Harvey Mudd College</a></strong>
+        <td><strong><a href="https://www.hmc.edu/about-hmc/president-klawe/" target="_blank">Maria Klawe &#8211; Harvey Mudd College</a></strong>
         <h6></h6>
         <p>Maria Klawe is the President of Harvey Mudd College (HMC), former Dean of Engineering and Professor of Computer Science at Princeton University, and has led the work to increase the percentage of women in CS at HMC from 12% to 40%.</p></td>
       </tr>
