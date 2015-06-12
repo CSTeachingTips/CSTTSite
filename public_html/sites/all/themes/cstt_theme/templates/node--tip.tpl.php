@@ -132,9 +132,6 @@
 
   <ul>
     <div class = "col-xs-6 col-md-4 tipside"> 
-     <!-- printing the rating field for content type tip -->
-     <?php print rate_embed($node, 'star', $mode = RATE_FULL); ?> 
-
       <!-- Printing the category field for content type tip -->     
       <?php print render($content['field_category']);?>
 
