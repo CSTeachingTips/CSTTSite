@@ -43,7 +43,7 @@
       <div class="thumbnail">
         <center>
             <div class="caption"> 
-              <h3><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=3&keys=">Teaching Content</a></h3>
+              <h3><a href="http://csteachingtips.org/browse-all?field_category_%5B%5D=3&search_api_views_fulltext=&sort_by=created">Teaching Content</a></h3>
               <p class="description">Tips to help you engage your students on specific topics and discover where they might have misconceptions.</p><br>
             </div>
         </center> 
@@ -57,7 +57,7 @@
       <div class="thumbnail">
         <center>
             <div class="caption">
-              <h3><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=4&keys=">Managing & Assessing</a></h3>
+              <h3><a href="http://csteachingtips.org/browse-all?field_category%5B%5D=4&search_api_views_fulltext=&sort_by=created">Managing & Assessing</a></h3>
               <p class="description">Tips to establish your classroom as a safe, equitable space for students to grow and receive valuable, constructive feedback.</p><br>
             </div>
         </center> 
@@ -70,7 +70,7 @@
       <div class="thumbnail">
         <center>
           <div class="caption">
-            <h3><a href="http://csteachingtips.org/browse-all?field_category_tid%5B%5D=2&keys=">Organizing Curriculum</a></h3>
+            <h3><a href="http://csteachingtips.org/browse-all?field_category%5B%5D=2&search_api_views_fulltext=&sort_by=created">Organizing Curriculum</a></h3>
             <p class="description">Tips to support you in lesson planning to improve the overall structure of your course and clarify desired student outcomes.</p><br>
           </div>
         </center> 
