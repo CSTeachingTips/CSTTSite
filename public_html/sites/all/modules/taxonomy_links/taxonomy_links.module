@@ -31,7 +31,7 @@ function taxonomy_links_entity_info_alter(&$entity_info) {
 
 
 function taxonomy_links_taxonomy_term_uri($term) {
- return array('path' => 'browse-all?field_'. $term->vocabulary_machine_name . '_tid[]=' . $term->tid . '&keys=');
+ return array('path' => 'browse-all?field_'. $term->vocabulary_machine_name . '[]=' . $term->tid . '&search_api_views_fulltext=&sort_by=created');
 }
 
 
