@@ -1,8 +1,9 @@
 <!-- Formats the Search API Search Sorts Field on the Browse All page -->
 
 
-<div class="pull-right"  id = "sortorder">
-<?php print "Sort By" ?>
+<div id = "sortorder">
+<strong> <?php print "Sort By" ?> </strong>
 <?php print $content ?>
-
 </div>
+
+<div style="clear:both;"></div> 
