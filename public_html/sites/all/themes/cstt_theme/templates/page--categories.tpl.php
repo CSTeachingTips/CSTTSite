@@ -10,7 +10,7 @@
               <span class="icon-bar"></span>
           </button>
           
-          <a class="navbar-brand" href="http://csteachingtips.org/browse-all"><img src="http://csteachingtips.org/images/navbar.png" id="cstt-logo"/></a>
+          <a class="navbar-brand" href="http://csteachingtips.org"><img src="http://csteachingtips.org/images/navbar.png" id="cstt-logo"/></a>
       </div>
 
       <!-- NAV BAR -->
