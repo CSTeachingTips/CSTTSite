@@ -18,7 +18,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
               <li><a href="http://csteachingtips.org/browse-all">Browse All Tips</a></li> 
-              <li><a href="http://csteachingtips.org/categories">Categories</a>
+              <li><a href="http://csteachingtips.org/tags">Tags</a>
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>

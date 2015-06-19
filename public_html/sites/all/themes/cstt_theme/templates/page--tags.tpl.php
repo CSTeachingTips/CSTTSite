@@ -17,7 +17,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
               <li><a href="http://csteachingtips.org/browse-all">Browse All Tips</a></li>
-              <li><a href="http://csteachingtips.org/categories">Categories</a></li>
+              <li><a href="http://csteachingtips.org/tags">Tags</a></li>
               <li><a href="http://csteachingtips.org/about">About</a></li>
               <li><a href="http://csteachingtips.org/contribute">Contribute Tips</a></li>
           </ul>
@@ -35,18 +35,10 @@
       </div><!-- /.container-fluid -->
     </nav>
 
- <h1> <br> </h1>
-
- <div class="panel panel-default col-md-3" id = "about-side">
-    <div class="panel-body">
-      <a href="#anchor4">Managing & Assessing</a> <br>
-      <a href="#anchor2">Organizing Curriculum</a> <br>
-      <a href="#anchor3">Teaching Content</a> <br>
-    </div>
-  </div>
+ <h1> <br> </h>
 
 <div class = "col-md-9 tables">
-<h3> Categories </h3>
+<h3> Tags </h3>
  <!-- Printing the content of a Drupal page - Important -->
  <?php print render($page['content']); ?>
 </div>

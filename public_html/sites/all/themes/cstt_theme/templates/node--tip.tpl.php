@@ -132,9 +132,6 @@
 
   <ul>
     <div class = "col-xs-6 col-md-4 tipside"> 
-      <!-- Printing the category field for content type tip -->     
-      <?php print render($content['field_category']);?>
-
       <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
       <?php if (isset($content['field_tags'])) {
         print render($content['field_tags']);
