@@ -29,6 +29,8 @@
               $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
               print drupal_render($dummyblock);
               ?>           
+
+
           </ul>
                    
       </div><!-- /.navbar-collapse -->
@@ -48,6 +50,11 @@
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
   print drupal_render($dummyblock);
   ?>
+  <?php 
+    $block = block_load('search_api_sorts','search-sorts');
+    $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
+    print drupal_render($dummyblock);
+    ?>           
   </div>
   
 

@@ -367,6 +367,8 @@ td {
 
 
 #sortorder {
+	display:inline;
+	float:right;
 	padding-right: 30px;
 	padding-bottom: 0px;
 }
@@ -565,3 +567,4 @@ td {
 .tagslabel {
 	font-weight: bold;
 }
+
