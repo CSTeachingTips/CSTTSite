@@ -39,9 +39,9 @@
 
  <div class="panel panel-default col-md-3" id = "about-side">
     <div class="panel-body">
+      <a href="#anchor3">Teaching Content</a> <br>
       <a href="#anchor4">Managing & Assessing</a> <br>
       <a href="#anchor2">Organizing Curriculum</a> <br>
-      <a href="#anchor3">Teaching Content</a> <br>
     </div>
   </div>
 
