@@ -19,7 +19,7 @@
 
     <center>
     <p>
-      <h2 class = "descriptionalign">Even the best curriculum is better when you can tailor your teaching to meet your students' needs with our expertly gathered teaching tips!</h2>
+      <h2 class = "descriptionalign"><br>Tailor your teaching with our <br> Computer Science Teaching Tips!</h2>
     </p>
     <p><a class="btn btn-primary btn-lg" role="button" href = "http://csteachingtips.org/browse-all">Find Tips Now</a></p>
     </center>
