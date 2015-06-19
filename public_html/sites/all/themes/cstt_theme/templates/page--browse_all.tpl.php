@@ -49,12 +49,15 @@
   $block = block_load('views','-exp-browse_all-page');
   $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
   print drupal_render($dummyblock);
-  ?>
+  ?> 
+  </div>
+
+  <div tag = "exposed sort">
   <?php 
     $block = block_load('search_api_sorts','search-sorts');
     $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
     print drupal_render($dummyblock);
-    ?>           
+    ?>          
   </div>
   
 
