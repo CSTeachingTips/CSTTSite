@@ -89,12 +89,13 @@ function search_api_sorts_widget_form($form, &$form_state, $items, $options) {
 
     $settings = search_api_sorts_widget_load_sort_settings($sort);
 
-    if (in_array($settings['orders'], array('both', 'asc'))) {
-      $new_items[$name . '|asc'] = $settings['label_asc'];
-    }
     if (in_array($settings['orders'], array('both', 'desc'))) {
       $new_items[$name . '|desc'] = $settings['label_desc'];
     }
+    if (in_array($settings['orders'], array('both', 'asc'))) {
+      $new_items[$name . '|asc'] = $settings['label_asc'];
+    }
+   
 
     if ($item['#active']) {
       // The 'order' property contains the value that will be changed to, so we
@@ -215,8 +216,8 @@ function search_api_sorts_widget_default_index_settings() {
 function search_api_sorts_widget_default_sort_settings(SearchApiSort $sort) {
   return array(
     'label_asc' => $sort->name . ' (Asc)',
-    'label_desc' => $sort->name . ' (Desc)',
-    'orders' => 'both',
+    'label_desc' => $sort->name,
+    'orders' => 'desc',
   );
 }
 
