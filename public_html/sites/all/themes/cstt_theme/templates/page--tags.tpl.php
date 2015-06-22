@@ -44,7 +44,7 @@
 <div class = "col-md-8">
  <p>To learn more about some of these tags, check out Engage-CSEdu.org's <a href = "https://www.engage-csedu.org/engagement">Engagement Practices</a>
  <br>
- Note: T&LS Stands for Teaching and Learning Strategy
+ Note: [T&LS] Stands for Teaching and Learning Strategy
  </p>
 </div>
 </div>
