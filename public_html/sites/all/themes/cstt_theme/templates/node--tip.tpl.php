@@ -148,6 +148,12 @@
 <h4><br></h4>
 
 <div class = "container">
+ <?php print render($content['disqus']); ?>
+</div>
+
+<h4><br></h4>
+
+<div class = "container">
   <ul class = "sources">
     <div class="col-xs-6 col-md-4">
       <!-- Printing the external source field for content type tip -->
