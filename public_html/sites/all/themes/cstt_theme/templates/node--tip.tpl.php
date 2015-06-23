@@ -144,13 +144,6 @@
     </div>
   </ul>
 </div>
-
-<h4><br></h4>
-
-<div class = "container">
- <?php print render($content['disqus']); ?>
-</div>
-
 <h4><br></h4>
 
 <div class = "container">
@@ -165,6 +158,13 @@
       <?php print render($content['field_source_taxonomy']) ?>
     </div>    
   </ul>
+</div>
+
+
+<h4><br></h4>
+
+<div class = "container">
+ <?php print render($content['disqus']); ?>
 </div>
 
 <div class ="container">
