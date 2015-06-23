@@ -1,0 +1,17 @@
+<?php
+
+// $Id$
+/**
+ * @file
+ *
+ */
+
+/**
+ * Implements hook_views_api()
+ */
+function search_api_string_filter_views_api() {
+  return array(
+    'api' => '3',
+  );
+}
+

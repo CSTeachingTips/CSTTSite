@@ -1,0 +1,16 @@
+name = Search API String Filter
+description = Adds a string filter for search api views
+package = Other
+core = 7.x
+
+
+dependencies[] = search_api_views
+
+;Views
+files[] = includes/handler_filter_string.inc
+; Information added by drupal.org packaging script on 2012-08-01
+version = "7.x-1.0"
+core = "7.x"
+project = "search_api_string_filter"
+datestamp = "1343832752"
+
