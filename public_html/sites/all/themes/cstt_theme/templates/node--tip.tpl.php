@@ -115,6 +115,13 @@
          <!-- Printing the Google+ button -->
          <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
          <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/google+share.png" alt="Share on Google+" /></a>  
+      
+         <!-- Printing the Copy URL button-->
+
+         <button onclick= "window.prompt('Copy to clipboard: Ctrl+C, Enter', window.location.href)" >Copy URL </button>
+         <div> Here is the url! </div>
+
+
       </div>
     </div>
   </div>
