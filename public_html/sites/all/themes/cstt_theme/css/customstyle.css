@@ -568,3 +568,22 @@ td {
 	font-weight: bold;
 }
 
+/*Copy URL Box formatting */
+
+
+
+#urlBox {
+	background-color:white;
+	z-index: 50;
+	border: 1px;
+	border-color: #58585B;
+	border-style: solid;
+	box-shadow:3px 3px 3px #888888;
+	opacity:1;
+}
+
+
+#close {
+	float:right;
+	margin-bottom: 2px;
+}

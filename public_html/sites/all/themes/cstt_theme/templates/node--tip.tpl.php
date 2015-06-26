@@ -93,7 +93,7 @@
 
 <h4> <br> </h4>
 
-<body>
+<body style="position:relative">
   
   <div id="tip">
     <div class="container">
@@ -101,9 +101,9 @@
       <h2 class ="tipspace"> 
       <?php print $title; ?> </h2>
       </ul>
-      <div class = "col-md-8">
+      <div class = "col-md-7">
       </div>
-      <div class="socialmediabuttons col-md-4">
+      <div class="socialmediabuttons col-md-5">
         <!-- Printing the Twitter button -->
         <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
          <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/twittershare.png" alt="Post to Twitter"/></a>
@@ -116,15 +116,50 @@
          <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
          <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/google+share.png" alt="Share on Google+" /></a>  
       
-         <!-- Printing the Copy URL button-->
+         <!-- Printing the Copy URL button -->
+         <script>
+          function showDiv() {
+            document.getElementById('urlDiv').style.display = "block";
+          }
 
-         <button onclick= "window.prompt('Copy to clipboard: Ctrl+C, Enter', window.location.href)" >Copy URL </button>
-         <div> Here is the url! </div>
+          function hideDiv() {
+            document.getElementById('urlDiv').style.display = "none";
+          }
+
+         </script>
+      
+         <input type="button" value="Copy URL" onclick="showDiv()" />
+
+         
+         </div>
+      </div> 
+
+          
+       
 
 
-      </div>
+      
     </div>
+    
+  
   </div>
+
+  <div class="col-xs-12" id="urlDiv" style="display:none; position:absolute; padding:1px;">
+    <div class="col-md-8 "></div>
+    <div class="col-md-3 col-xs-12" id="urlBox" > 
+          Press CTRL-C to copy the link to this tip. 
+          <br> <br>
+          <input type="text" value=<?php echo "http://csteachingtips.org".$node_url; ?> readonly autofocus onFocus="this.select()">
+          <br>
+          <br>
+          <input type = "button" value="Close" id="close" onclick="hideDiv()">
+          <br>
+    </div>
+
+    <div class="col-md-1"></div>
+  </div>
+ 
+ 
 
 <div class = "colorstripe">
 </div>
