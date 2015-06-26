@@ -103,8 +103,9 @@
       </ul>
       <div class = "col-md-7">
       </div>
-      <div class="socialmediabuttons col-md-5">
+      <div class="socialmediabuttons col-md-5" style="position:relative;">
         <!-- Printing the Twitter button -->
+        <div style = "float:right;">
         <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
          <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/twittershare.png" alt="Post to Twitter"/></a>
       
@@ -115,11 +116,15 @@
          <!-- Printing the Google+ button -->
          <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
          <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/google+share.png" alt="Share on Google+" /></a>  
-      
-         <!-- Printing the Copy URL button -->
+         
+        <!-- Printing the Copy URL button -->
+         <input type="image" src="/../public_html/images/copyURL.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
+
          <script>
           function showDiv() {
             document.getElementById('urlDiv').style.display = "block";
+            document.getElementById('url').focus();
+            document.getElementById('url').select();
           }
 
           function hideDiv() {
@@ -128,8 +133,25 @@
 
          </script>
       
-         <input type="button" value="Copy URL" onclick="showDiv()" />
 
+          
+
+           
+          </div>  
+          <div id="urlDiv" class="col-xs-12" style="display:none; position:absolute; margin-top:42px; padding-right:0.7em;">
+            <div  id="urlBox" style="padding:2px;"> 
+                  <p style = "text-align:center;">Press CTRL-C to copy the link to this tip. <p>
+                  <div style="text-align:center;">
+                  <input id="url" style="width:90%;" type="text" value=<?php echo "http://csteachingtips.org".$node_url; ?> readonly autofocus onFocus="this.select()">
+                  </div>
+                  <br>
+                  <input type = "button" value="Close" id="close" onclick="hideDiv()">
+                  <br>
+          </div>
+        </div>
+         
+         
+         
          
          </div>
       </div> 
@@ -144,20 +166,7 @@
   
   </div>
 
-  <div class="col-xs-12" id="urlDiv" style="display:none; position:absolute; padding:1px;">
-    <div class="col-md-8 "></div>
-    <div class="col-md-3 col-xs-12" id="urlBox" > 
-          Press CTRL-C to copy the link to this tip. 
-          <br> <br>
-          <input type="text" value=<?php echo "http://csteachingtips.org".$node_url; ?> readonly autofocus onFocus="this.select()">
-          <br>
-          <br>
-          <input type = "button" value="Close" id="close" onclick="hideDiv()">
-          <br>
-    </div>
-
-    <div class="col-md-1"></div>
-  </div>
+  
  
  
 

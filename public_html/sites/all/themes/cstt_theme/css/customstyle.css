@@ -574,16 +574,18 @@ td {
 
 #urlBox {
 	background-color:white;
-	z-index: 50;
+	z-index: 200;
 	border: 1px;
 	border-color: #58585B;
 	border-style: solid;
 	box-shadow:3px 3px 3px #888888;
-	opacity:1;
+	position:relative;
+	border-radius:6px;
 }
 
 
 #close {
-	float:right;
-	margin-bottom: 2px;
+	position:absolute;
+	right:2px;
+	bottom:2px;
 }
