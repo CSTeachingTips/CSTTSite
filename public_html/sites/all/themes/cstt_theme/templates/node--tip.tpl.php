@@ -103,8 +103,8 @@
       </ul>
       <div class = "col-md-7">
       </div>
-      <div class="socialmediabuttons col-md-5">
-        <div style = "float:right;">
+      <div class="socialmediabuttons col-md-5 col-xs-12">
+        <div style = "float:right;min-width:340px;">
 
           <!-- Printing the Twitter button -->         
           <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
@@ -143,7 +143,7 @@
           <div  id="urlBox" style = "text-align:center;"> 
 
             <p >Press CTRL-C to copy the link to this tip. </p>
-            <input id="url" type="text" value=<?php echo "http://csteachingtips.org".$node_url; ?> readonly >
+            <input id="url" type="text" value=<?php echo "http://csteachingtips.org".$node_url; ?> readonly>
             <br><br>
             <input type = "button" value="Close" id="close" onclick="hideDiv()">
             <br>
