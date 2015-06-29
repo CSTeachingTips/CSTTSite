@@ -107,18 +107,18 @@
         <!-- Printing the Twitter button -->
         <div style = "float:right;">
         <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
-         <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="/../public_html/images/twittershare.png" alt="Post to Twitter"/></a>
+         <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/tshare.png" alt="Post to Twitter"/></a>
       
          <!-- Printing the Facebook button -->
          <?php $urlFacebook = "http://www.facebook.com/sharer.php?u=>Facebook" . $node_url; ?>
-         <a href="<?php echo $urlFacebook; ?>" target="_blank"><img class = "facebookshare" src="/../public_html/images/facebookshare.png" alt="Share on Facebook"/></a>
+         <a href="<?php echo $urlFacebook; ?>" target="_blank"><img class = "facebookshare" src="http://csteachingtips.org/images/fshare.png" alt="Share on Facebook"/></a>
 
          <!-- Printing the Google+ button -->
          <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
-         <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="/../public_html/images/googleplusshare.png" alt="Share on Google+" /></a>  
+         <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/gshare.png" alt="Share on Google+" /></a>  
          
         <!-- Printing the Copy URL button -->
-         <input type="image" class = "copyURL" src="/../public_html/images/linkshare.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
+         <input type="image" class = "copyURL" src="http://csteachingtips.org/images/linkshare.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
 
          <script>
           function showDiv() {
@@ -138,6 +138,7 @@
 
            
           </div>  
+          <!-- Printing the Copy URL popup box -->
           <div id="urlDiv" class="col-xs-12" style="display:none; position:absolute; margin-top:42px; padding-right:0.7em;">
             <div  id="urlBox" style="padding:2px;"> 
                   <p style = "text-align:center;">Press CTRL-C to copy the link to this tip. <p>
