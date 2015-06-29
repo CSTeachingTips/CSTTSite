@@ -136,7 +136,18 @@ be used to print content on almost every page of the site. See
 <h3> <br> </h3>
 
 <!-- The footer -->
-<div id="footer">
+
+
+<!-- Checking if page is front page, and making the footer green if so -->
+<?php 
+  $footercolor = "#ffffff";
+  if ($is_front) {
+    $footercolor = "#E6F5EB";
+  }
+  ?>
+
+<div id="footer" style=<?php echo "background-color:".$footercolor.";"; ?>>
+
     <div class="container">  
         
         <div class="social col-xs-12 col-md-3" align="center">
