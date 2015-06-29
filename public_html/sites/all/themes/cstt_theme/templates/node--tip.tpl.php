@@ -104,7 +104,7 @@
       <div class = "col-md-7">
       </div>
       <div class="socialmediabuttons col-md-5 col-xs-12">
-        <div style = "float:right;min-width:340px;">
+        <div style = "float:right;">
 
           <!-- Printing the Twitter button -->         
           <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>

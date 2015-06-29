@@ -578,7 +578,14 @@ td {
 	display: none;
 	position:absolute;
 	margin-top:42px;
-	padding-right:1.25em;
+	padding-right:0.7em;
+}
+
+@media screen and (max-width:392px) {
+	#urlDiv {
+		margin-top:84px;
+		float:left;
+	}
 }
 
 #urlBox {
@@ -592,6 +599,7 @@ td {
 	border-radius:6px;
 	padding:2px;
 }
+
 
 #url {
 	width:90%;
