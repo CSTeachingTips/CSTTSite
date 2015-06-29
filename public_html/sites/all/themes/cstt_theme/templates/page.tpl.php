@@ -148,7 +148,6 @@ be used to print content on almost every page of the site. See
         </div>
       
         <div class = "col-xs-12 col-md-6" align = "center" id = "footerpadding">
-        
           <p class ="text-muted"> For more information or to report a bug, contact us at <a href = "mailto:admin@csteachingtips.org">admin@csteachingtips.org</a> </p>
           <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>.
           						 Icons from <a href = "http://drbl.in/iOiy">http://drbl.in/iOiy</a>.  
