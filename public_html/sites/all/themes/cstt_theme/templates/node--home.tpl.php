@@ -12,7 +12,13 @@
 <body style="background-color:#E6F5EB;">
   <br>
 
-  <div style="margin-bottom:10%;">
+  <div id="cstt-description">
+    <center>
+      <h2 class = "descriptionalign">Tailor your teaching with our Computer Science Teaching Tips! </h2>
+    </center>
+  </div>
+
+  <div id = "frontpagetree">
     <center> <img alt="CS Teaching Tips Logo" src="http://csteachingtips.org/images/tree.png" id="cstt-icon"> </center>
   </div>
   
