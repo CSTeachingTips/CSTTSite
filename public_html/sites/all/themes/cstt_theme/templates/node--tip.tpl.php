@@ -118,7 +118,7 @@
          <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="/../public_html/images/gshare.png" alt="Share on Google+" /></a>  
          
         <!-- Printing the Copy URL button -->
-         <input type="image" src="/../public_html/images/copylink.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
+         <input type="image" class = "copyURL" src="/../public_html/images/linkicon4.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
 
          <script>
           function showDiv() {
