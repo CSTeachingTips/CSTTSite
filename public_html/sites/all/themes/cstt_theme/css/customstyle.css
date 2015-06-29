@@ -532,6 +532,7 @@ td {
 .socialmediabuttons {
 	padding-bottom:0px;
 	padding-top: 10px;
+	position: relative;
 }
 
 .colorstripe {
@@ -568,11 +569,17 @@ td {
 	font-weight: bold;
 }
 
-/*Copy URL Box formatting */
+/*Copy URL button and box formatting */
 .copyURL:hover{
 	opacity:0.8;
 }
 
+#urlDiv {
+	display: none;
+	position:absolute;
+	margin-top:42px;
+	padding-right:0.7em;
+}
 
 #urlBox {
 	background-color:white;
@@ -583,11 +590,16 @@ td {
 	box-shadow:3px 3px 3px #888888;
 	position:relative;
 	border-radius:6px;
+	padding:2px;
 }
 
+#url {
+	width:90%;
+}
 
 #close {
-	position:absolute;
-	right:2px;
-	bottom:2px;
+	position:relative;
+	float:right;
+	bottom:6px;
 }
+
