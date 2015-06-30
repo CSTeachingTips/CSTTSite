@@ -295,7 +295,7 @@ td {
   }
   .socialmediabuttons {
   	text-align: left;
-  	margin-left:15px;
+  	
   }
 }
 
@@ -550,6 +550,7 @@ td {
 .socialmediabuttons {
 	padding-bottom:0px;
 	padding-top: 10px;
+	position: relative;
 }
 
 .colorstripe {
@@ -584,5 +585,77 @@ td {
 
 .tagslabel {
 	font-weight: bold;
+}
+
+#socialtop {
+	display:inline;
+}
+
+#socialbottom {
+	display:inline;
+}
+
+#socialdiv {
+	float:right;
+}
+
+/*Copy URL button and box formatting */
+.copyURL:hover{
+	opacity:0.8;
+}
+
+#urlDiv {
+	display: none;
+	position:absolute;
+	margin-top:42px;
+	padding-right:0.7em;
+}
+
+
+
+@media screen and (max-width:392px) {
+	#urlDiv {
+		margin-top:84px;
+		text-align: center;
+	}
+	#urlBox {
+		left:0;
+		right:1%;
+	}
+
+	#socialtop {
+		display:block;
+		padding-bottom:2px;
+	}
+	#socialbottom {
+		display:block;
+	}
+	#socialdiv {
+		float:left;
+		padding-left:50px;
+	}
+}
+
+#urlBox {
+	background-color:white;
+	z-index: 200;
+	border: 1px;
+	border-color: #58585B;
+	border-style: solid;
+	box-shadow:3px 3px 3px #888888;
+	position:relative;
+	border-radius:6px;
+	padding:2px;
+}
+
+
+#url {
+	width:90%;
+}
+
+#close {
+	position:relative;
+	float:right;
+	bottom:6px;
 }
 
