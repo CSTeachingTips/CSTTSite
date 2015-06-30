@@ -569,6 +569,18 @@ td {
 	font-weight: bold;
 }
 
+#socialtop {
+	display:inline;
+}
+
+#socialbottom {
+	display:inline;
+}
+
+#socialdiv {
+	float:right;
+}
+
 /*Copy URL button and box formatting */
 .copyURL:hover{
 	opacity:0.8;
@@ -581,9 +593,21 @@ td {
 	padding-right:0.7em;
 }
 
+
+
 @media screen and (max-width:392px) {
 	#urlDiv {
-		margin-top:84px;
+		margin-top:0px;
+	}
+	#socialtop {
+		display:block;
+	}
+	#socialbottom {
+		display:block;
+	}
+	#socialdiv {
+		text-align:center;
+		float:none;
 	}
 }
 

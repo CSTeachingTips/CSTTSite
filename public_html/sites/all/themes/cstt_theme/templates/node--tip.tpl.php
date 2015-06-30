@@ -104,8 +104,10 @@
       <div class = "col-md-7">
       </div>
       <div class="socialmediabuttons col-md-5 col-xs-12">
-        <div style = "float:right;">
+        <div id = "socialdiv" >
 
+
+          <div id = "socialtop" >  
           <!-- Printing the Twitter button -->         
           <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
           <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/tshare.png" alt="Post to Twitter"/></a>
@@ -114,13 +116,15 @@
           <?php $urlFacebook = "http://www.facebook.com/sharer.php?u=>Facebook" . $node_url; ?>
           <a href="<?php echo $urlFacebook; ?>" target="_blank"><img class = "facebookshare" src="http://csteachingtips.org/images/fshare.png" alt="Share on Facebook"/></a>
 
+          </div>
+          <div id = "socialbottom" >
           <!-- Printing the Google+ button -->
           <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
           <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/gshare.png" alt="Share on Google+" /></a>  
          
           <!-- Printing the Copy URL button -->
           <input type="image" class = "copyURL" src="http://csteachingtips.org/images/linkshare.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
-
+          </div>
           <!-- Script for making Copy URL box display -->
           <script>
             function showDiv() {
