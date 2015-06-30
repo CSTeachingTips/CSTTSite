@@ -160,16 +160,6 @@
 
                 
   </div>
-    
-  
-  
-
-  
- 
- 
-
-<div class = "colorstripe">
-</div>
 
     <div class = "colorstripe">
     </div>
