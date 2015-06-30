@@ -295,7 +295,7 @@ td {
   }
   .socialmediabuttons {
   	text-align: left;
-  	margin-left:15px;
+  	
   }
 }
 
@@ -597,18 +597,24 @@ td {
 
 @media screen and (max-width:392px) {
 	#urlDiv {
-		margin-top:0px;
+		margin-top:84px;
+		text-align: center;
 	}
-	
+	#urlBox {
+		left:0;
+		right:1%;
+	}
+
 	#socialtop {
 		display:block;
+		padding-bottom:2px;
 	}
 	#socialbottom {
 		display:block;
 	}
 	#socialdiv {
-		text-align:center;
-		float:none;
+		float:left;
+		padding-left:50px;
 	}
 }
 
