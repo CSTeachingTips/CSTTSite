@@ -222,8 +222,4 @@ vertical-align: middle;
 }
 
 
-@media screen and (max-width:391px) {
-	#urlDiv {
-		margin-top:84px;
-	}
-}
+
