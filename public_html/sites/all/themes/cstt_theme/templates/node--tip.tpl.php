@@ -83,92 +83,104 @@
 ?>
 <html>
 <head>
-    <title>
+  <title>
     Computer Science Teaching Tips tip page.
-    </title>
-    <meta name="description" content="Computer Science Teaching tips tip page."> 
-    <meta property="og:image" content="http://csteachingtips.org/images/tree.png">   
+  </title>
+  <meta name="description" content="Computer Science Teaching tips tip page."> 
+  <meta property="og:image" content="http://csteachingtips.org/images/tree.png">   
 </head>
 
 
 <h4> <br> </h4>
 
 <body>
-  
+
   <div id="tip">
     <div class="container">
-    <ul>
-      <h2 class ="tipspace"> 
-      <?php print $title; ?> </h2>
+      <ul>
+        <h2 class ="tipspace"> 
+          <?php print $title; ?> </h2>
+        </ul>
+        <div class = "col-md-8">
+        </div>
+        <div class="socialmediabuttons col-md-4">
+          <!-- Printing the Twitter button -->
+          <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
+          <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/twittershare.png" alt="Post to Twitter"/></a>
+
+          <!-- Printing the Facebook button -->
+          <?php $urlFacebook = "http://www.facebook.com/sharer.php?u=>Facebook" . $node_url; ?>
+          <a href="<?php echo $urlFacebook; ?>" target="_blank"><img class = "facebookshare" src="http://csteachingtips.org/images/facebookshare.png" alt="Share on Facebook"/></a>
+
+          <!-- Printing the Google+ button -->
+          <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
+          <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/google+share.png" alt="Share on Google+" /></a>  
+        </div>
+      </div>
+    </div>
+
+    <div class = "colorstripe">
+    </div>
+
+    <div class = "container">
+
+      <div class="col-xs-12 col-md-8">
+        <!-- Printing the body/additional info field for content type tip -->
+        <?php print render($content['body']); ?>
+      </div>
+
+
+      <ul>
+        <div class = "col-xs-6 col-md-4 tipside"> 
+          <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
+          <?php if (isset($content['field_tags'])) {
+            print render($content['field_tags']);
+          }
+          else {
+            print '<div class = "tagslabel"> Tags: </div>';
+          }
+          ?>
+
+          <div class="fivestar">
+	    <!-- Print fivestar and vote count (vote count doesn't automatically update)-->
+	    <?php print render($content['field_five_star']); 
+	    $fivestar = field_view_field('node', $node, 'field_five_star');
+	    $count = round(($fivestar['#items'][0]['average']/100), 1);
+	  
+  	    if ($count == 1) {
+	      print '<p>'. $count . ' person found this helpful.</p>';
+	    } else {
+              print '<p>'. $count . ' people found this helpful.</p>';
+	    }
+	    ?>
+	  </div>
+
+        </div>
       </ul>
-      <div class = "col-md-8">
-      </div>
-      <div class="socialmediabuttons col-md-4">
-        <!-- Printing the Twitter button -->
-        <?php $urlTwitter = "https://twitter.com/share?url=" . $node_url . "&text=" . $title . " http://csteachingtips.org" . $node_url; ?>
-         <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/twittershare.png" alt="Post to Twitter"/></a>
-      
-         <!-- Printing the Facebook button -->
-         <?php $urlFacebook = "http://www.facebook.com/sharer.php?u=>Facebook" . $node_url; ?>
-         <a href="<?php echo $urlFacebook; ?>" target="_blank"><img class = "facebookshare" src="http://csteachingtips.org/images/facebookshare.png" alt="Share on Facebook"/></a>
-
-         <!-- Printing the Google+ button -->
-         <?php $urlGoogle = "https://plus.google.com/share?url=" . "http://csteachingtips.org" . $node_url; ?>
-         <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/google+share.png" alt="Share on Google+" /></a>  
-      </div>
     </div>
-  </div>
+    <h4><br></h4>
 
-<div class = "colorstripe">
-</div>
+    <div class = "container">
+      <ul class = "sources">
+        <div class="col-xs-6 col-md-4">
+          <!-- Printing the external source field for content type tip -->
+          <?php print render($content['field_source']); ?>
+        </div>
 
-<div class = "container">
-
-  <div class="col-xs-12 col-md-8">
-    <!-- Printing the body/additional info field for content type tip -->
-    <?php print render($content['body']); ?>
- </div>
-
-
-  <ul>
-    <div class = "col-xs-6 col-md-4 tipside"> 
-      <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
-      <?php if (isset($content['field_tags'])) {
-        print render($content['field_tags']);
-      }
-      else {
-        print '<div class = "tagslabel"> Tags: </div>';
-      }
-      ?>
-
+        <div class="col-xs-6 col-md-4">
+          <!-- Printing taxonomy terms from the vocabulary source field for content type tip -->
+          <?php print render($content['field_source_taxonomy']) ?>
+        </div>    
+      </ul>
     </div>
-  </ul>
-</div>
-<h4><br></h4>
-
-<div class = "container">
-  <ul class = "sources">
-    <div class="col-xs-6 col-md-4">
-      <!-- Printing the external source field for content type tip -->
-      <?php print render($content['field_source']); ?>
-    </div>
-
-    <div class="col-xs-6 col-md-4">
-      <!-- Printing taxonomy terms from the vocabulary source field for content type tip -->
-      <?php print render($content['field_source_taxonomy']) ?>
-    </div>    
-  </ul>
-</div>
-
 
 <h4><br></h4>
-
-<div class = "container">
- <?php print render($content['disqus']); ?>
+<div class="container">
+  <?php print render($content['disqus']); ?>
 </div>
 
 <div class ="container">
-<h1><br></h1>
+  <h1><br></h1>
 </div>
 
 
