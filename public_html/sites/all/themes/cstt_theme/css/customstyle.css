@@ -295,7 +295,7 @@ td {
   }
   .socialmediabuttons {
   	text-align: left;
-  	margin-left:15px;
+  	
   }
 }
 
@@ -569,6 +569,18 @@ td {
 	font-weight: bold;
 }
 
+#socialtop {
+	display:inline;
+}
+
+#socialbottom {
+	display:inline;
+}
+
+#socialdiv {
+	float:right;
+}
+
 /*Copy URL button and box formatting */
 .copyURL:hover{
 	opacity:0.8;
@@ -581,9 +593,28 @@ td {
 	padding-right:0.7em;
 }
 
+
+
 @media screen and (max-width:392px) {
 	#urlDiv {
 		margin-top:84px;
+		text-align: center;
+	}
+	#urlBox {
+		left:0;
+		right:1%;
+	}
+
+	#socialtop {
+		display:block;
+		padding-bottom:2px;
+	}
+	#socialbottom {
+		display:block;
+	}
+	#socialdiv {
+		float:left;
+		padding-left:50px;
 	}
 }
 
