@@ -32,11 +32,12 @@ body {
 }
 
 #cstt-description {
+	font-size: 30px
 }
 
 .descriptionalign {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 13px;
 	padding-bottom: 25px;
 	line-height: 1.3;
 	font-family: "Didot", "Sans-Sarif";
@@ -241,7 +242,7 @@ td {
   }
   .descriptionalign {
   	text-align: center;
-  	padding-top: 50px;
+  	padding-top: 13px;
   	font-size: 30px;
   	  }
   #cstt-icon {
@@ -307,11 +308,6 @@ td {
 
   #hiddenlink {
   	display: none;
-  }
-
-  #cstt-icon {
-  	max-height: 150px;
-  	max-width: 150px;
   }
 
   #about-side {
@@ -647,10 +643,40 @@ td {
 #centralsearch #edit-search-api-views-fulltext-wrapper {
 	margin:0px;
 	padding:0px;
-	width:500px;
-	border:none;
+	width:560px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	margin-top: 180px;
+	z-index:1;
 }
 
-#centralsearch #form-item-search-api-views-fulltext {
-	border:none;
+#centralsearch #edit-search-api-views-fulltext {
+	border: 0px;
+	border-radius:0px;
+	height:43px;
+}
+
+
+@media all and (max-height:930px) {
+	#cstt-icon {
+		max-width:500px;
+		max-height:521px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:160px;
+		width:535px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:40px;
+	}
+
+}
+
+@media all and (max-height:671px) {
+	#cstt-icon {
+		max-width:450px;
+		max-height:469px;
+	}
 }
