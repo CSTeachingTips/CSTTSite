@@ -19,7 +19,7 @@
   </div>
 
   <div style="text-align:center;margin-bottom:3%;position:relative;">
-    <div id = "centralsearch" style="position:absolute;max-width:266px;left:0;right:0;margin: 0 auto;">
+    <div id = "centralsearch" style="position:absolute;max-width:266px;left:0;right:0;margin: 0 auto;margin-top:80px;z-index:2;">
 
       <?php 
         $block = block_load('views','-exp-centralsearch-page');

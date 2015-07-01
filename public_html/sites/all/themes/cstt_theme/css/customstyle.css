@@ -28,14 +28,10 @@ body {
 	padding-top: 10px;
 	position: relative;
 	top: 25px;
-	right: 25px;
 
 }
 
 #cstt-description {
-	text-align: left;
-	position:relative;
-	left: -25px;
 }
 
 .descriptionalign {
