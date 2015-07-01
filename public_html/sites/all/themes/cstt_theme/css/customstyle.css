@@ -641,3 +641,13 @@ td {
 	bottom:6px;
 }
 
+/*Formats central search bar on front page*/
+#views-exposed-form-centralsearch-page {
+	margin:0px;
+	padding:0px;
+}
+
+#edit-search-api-views-fulltext-wrapper {
+	margin:0px;
+	padding:0px;
+}
