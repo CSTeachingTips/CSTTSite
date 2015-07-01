@@ -641,9 +641,16 @@ td {
 #views-exposed-form-centralsearch-page {
 	margin:0px;
 	padding:0px;
+
 }
 
-#edit-search-api-views-fulltext-wrapper {
+#centralsearch #edit-search-api-views-fulltext-wrapper {
 	margin:0px;
 	padding:0px;
+	width:500px;
+	border:none;
+}
+
+#centralsearch #form-item-search-api-views-fulltext {
+	border:none;
 }
