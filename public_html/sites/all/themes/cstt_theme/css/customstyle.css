@@ -28,6 +28,7 @@ body {
 	padding-top: 5px;
 	position: relative;
 	top: 20px;
+	margin-top:0px;
 
 }
 
@@ -38,8 +39,9 @@ body {
 .descriptionalign {
 	text-align: center;
 	padding-top: 13px;
-	padding-bottom: 15px;
-	line-height: 1.3;
+	padding-bottom: 0px;
+	margin-bottom: -10px;
+	line-height: 1.4;
 	font-family: "Didot", "Sans-Sarif";
 }
 
@@ -568,6 +570,8 @@ td {
 	font-weight: bold;
 }
 
+
+/*Share Buttons Formatting */
 #socialtop {
 	display:inline;
 }
@@ -593,7 +597,7 @@ td {
 }
 
 
-
+/*Share Button formatting for mobile */
 @media screen and (max-width:392px) {
 	#urlDiv {
 		margin-top:84px;
@@ -666,6 +670,7 @@ td {
 }
 
 
+/*Scales tree and search bar for different screen sizes*/
 @media all and (max-height:930px) {
 	#cstt-icon {
 		max-width:500px;
@@ -781,3 +786,9 @@ td {
 	}	
 }
 
+/* Front Page Formatting */
+
+#treesearch {
+	text-align:center;
+	position:relative;
+}
