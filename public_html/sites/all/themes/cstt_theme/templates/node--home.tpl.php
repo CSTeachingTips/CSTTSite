@@ -27,7 +27,7 @@
         ?>     
       </div>
      
-      <img alt="CS Teaching Tips Logo" src="/../public_html/images/tree2.png" id="cstt-icon"> 
+      <img alt="CS Teaching Tips Logo" src="http://www.csteachingtips.org/images/tree2.png" id="cstt-icon"> 
      
     </div>
 
