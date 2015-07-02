@@ -25,9 +25,9 @@ body {
 }
 
 #cstt-icon {
-	padding-top: 10px;
+	padding-top: 5px;
 	position: relative;
-	top: 25px;
+	top: 20px;
 
 }
 
@@ -38,7 +38,7 @@ body {
 .descriptionalign {
 	text-align: center;
 	padding-top: 13px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 	line-height: 1.3;
 	font-family: "Didot", "Sans-Sarif";
 }
@@ -243,13 +243,9 @@ td {
   .descriptionalign {
   	text-align: center;
   	padding-top: 13px;
+  	padding-bottom:0px;
   	font-size: 30px;
   	  }
-  #cstt-icon {
-  	left: 0px;
-  	max-width: 350px;
-  	max-height: 350px;
-  }
   .social {
  	 left: 0px;
   }
@@ -324,21 +320,32 @@ td {
 }
 
 @media all and (max-width: 720px) {
-  #about-side {
-  	position:relative;
-  	margin-left: 4%;
-  	margin-bottom: -2%;
-  	width:100%;
-  }
-  .tables {
-	margin-left:5%;
-	margin-right: 10%;
-	clear:left;
-  }
-  .panel {
-	width: 95%;
-	position: relative;
-  }
+	#about-side {
+		position:relative;
+		margin-left: 4%;
+		margin-bottom: -2%;
+		width:100%;
+	}
+	.tables {
+		margin-left:5%;
+		margin-right: 10%;
+		clear:left;
+	}
+	.panel {
+		width: 95%;
+		position: relative;
+	}
+	#cstt-icon {
+		max-width:422px;
+		max-height:440px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:140px;
+		width:451px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:37px;
+	}
 
 }
 
@@ -674,9 +681,104 @@ td {
 
 }
 
-@media all and (max-height:671px) {
+@media all and (max-height:700px) {
 	#cstt-icon {
-		max-width:450px;
-		max-height:469px;
+		max-width:414px;
+		max-height:432px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:140px;
+		width:445px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:35px;
 	}
 }
+
+@media all and (max-height:598px) {
+	#cstt-icon {
+		max-width:370px;
+		max-height:386px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:120px;
+		width:397px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:35px;
+	}
+
+}
+
+@media all and (max-height:440px) {
+	#cstt-icon {
+		max-width:261px;
+		max-height:272px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:90px;
+		width:280px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:25px;
+	}	
+}
+
+
+@media all and (max-width:560px) {
+	#cstt-icon {
+		max-width:500px;
+		max-height:521px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:160px;
+		width:535px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:40px;
+	}	
+}
+
+@media all and (max-width:520px) {
+	#cstt-icon {
+		max-width:422px;
+		max-height:440px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:140px;
+		width:451px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:37px;
+	}	
+}
+
+@media all and (max-width:440px) {
+	#cstt-icon {
+		max-width:365px;
+		max-height:381px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:120px;
+		width:352px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:35px;
+		padding:0px;
+	}
+}
+
+@media all and (max-width:374px) {
+	#cstt-icon {
+		max-width:261px;
+		max-height:272px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:90px;
+		width:280px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:25px;
+	}	
+}
+
