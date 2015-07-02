@@ -10,6 +10,10 @@
 
 
 <body style="background-color:#E6F5EB;">
+  
+
+
+
   <br>
 
   <div class = "container-fluid">
@@ -22,6 +26,7 @@
   <div style="text-align:center;position:relative">
 
     <div id = "centralsearch" >
+    
 
       <?php 
         $block = block_load('views','-exp-centralsearch-page');
@@ -35,6 +40,16 @@
     </div>
   </div>
   </div>
+
+  <!-- Selects Search Bar when page loads, and places placeholder text in it -->
+  <script>
+    var att = document.createAttribute("placeholder");
+    att.value = "Search Tips";
+    document.querySelector("#centralsearch #edit-search-api-views-fulltext").setAttributeNode(att);
+
+    document.querySelector("#centralsearch #edit-search-api-views-fulltext").focus();
+    document.querySelector("#centralsearch #edit-search-api-views-fulltext").select();
+  </script>
 
 </body>
 
