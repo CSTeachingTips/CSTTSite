@@ -21,7 +21,6 @@
  * - browscap:platform
  * - browscap:platform_version
  * - browscap:ismobiledevice
- * - browscap:istablet
  * - browscap:issyndicationreader
  * - browscap:crawler
  * - browscap:cssversion
@@ -65,11 +64,6 @@ function themekey_browscap_themekey_properties() {
   );
   $attributes['browscap:ismobiledevice'] = array(
     'description' => t("Browscap: Is mobile device"),
-    'validator' => 'themekey_validator_string_boolean',
-    'page cache' => THEMEKEY_PAGECACHE_UNSUPPORTED,
-  );
-  $attributes['browscap:istablet'] = array(
-    'description' => t("Browscap: Is tablet"),
     'validator' => 'themekey_validator_string_boolean',
     'page cache' => THEMEKEY_PAGECACHE_UNSUPPORTED,
   );
@@ -120,22 +114,24 @@ function themekey_browscap_themekey_global() {
   $parameters['browscap:platform'] = array_key_exists('platform', $browser) ? $browser['platform'] : NULL;
   $parameters['browscap:platform_version'] = array_key_exists('platform_version', $browser) ? $browser['platform_version'] : NULL;
   $parameters['browscap:ismobiledevice'] = array_key_exists('ismobiledevice', $browser) ? $browser['ismobiledevice'] : NULL;
-  $parameters['browscap:istablet'] = array_key_exists('istablet', $browser) ? $browser['istablet'] : NULL;
+  if (is_numeric($parameters['browscap:ismobiledevice'])) {
+    // In some setups browsecap returns integers instead of strings. We have
+    // to convert them back to strings to keep rules exportable.
+    // See https://drupal.org/node/2118987
+    $parameters['browscap:ismobiledevice'] = ($parameters['browscap:ismobiledevice'] ? 'true' : 'false');
+  }
   $parameters['browscap:issyndicationreader'] = array_key_exists('issyndicationreader', $browser) ? $browser['issyndicationreader'] : NULL;
+  if (is_numeric($parameters['browscap:issyndicationreader'])) {
+    // In some setups browsecap returns integers instead of strings. We have
+    // to convert them back to strings to keep rules exportable.
+    // See https://drupal.org/node/2118987
+    $parameters['browscap:issyndicationreader'] = ($parameters['browscap:issyndicationreader'] ? 'true' : 'false');
+  }
   $parameters['browscap:crawler'] = array_key_exists('crawler', $browser) ? $browser['crawler'] : NULL;
   $parameters['browscap:cssversion'] = array_key_exists('cssversion', $browser) ? $browser['cssversion'] : NULL;
   $parameters['browscap:parent'] = array_key_exists('parent', $browser) ? $browser['parent'] : NULL;
   $parameters['browscap:useragent'] = array_key_exists('useragent', $browser) ? $browser['useragent'] : NULL;
   $parameters['browscap:browser_name_pattern'] = array_key_exists('browser_name_pattern', $browser) ? $browser['browser_name_pattern'] : NULL;
-
-  foreach ($parameters as $key => $value) {
-    if (strpos($key, 'browscap:is') === 0 && is_numeric($value)) {
-      // In some setups browsecap returns integers instead of strings. We have
-      // to convert them back to strings to keep rules exportable.
-      // See https://drupal.org/node/2118987
-      $parameters[$key] = $value ? 'true' : 'false';
-    }
-  }
 
   return $parameters;
 }
