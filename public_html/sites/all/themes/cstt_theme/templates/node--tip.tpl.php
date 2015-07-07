@@ -113,7 +113,7 @@
           <a href="<?php echo $urlTwitter; ?>" target="_blank"><img class = "twittershare" src="http://csteachingtips.org/images/tshare.png" alt="Post to Twitter"/></a>
       
           <!-- Printing the Facebook button -->
-          <?php $urlFacebook = "http://www.facebook.com/sharer.php?u=>Facebook" . $node_url; ?>
+          <?php $urlFacebook = "https://www.facebook.com/sharer/sharer.php?u=www.csteachingtips.org" . $node_url; ?>
           <a href="<?php echo $urlFacebook; ?>" target="_blank"><img class = "facebookshare" src="http://csteachingtips.org/images/fshare.png" alt="Share on Facebook"/></a>
 
           </div>

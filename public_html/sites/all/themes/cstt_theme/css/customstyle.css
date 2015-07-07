@@ -33,12 +33,13 @@ body {
 }
 
 #cstt-description {
-	font-size: 30px
+	font-size: 30px;
+	margin-top:45px;
 }
 
 .descriptionalign {
 	text-align: center;
-	padding-top: 13px;
+	padding-top: 0px;
 	padding-bottom: 0px;
 	margin-bottom: -10px;
 	line-height: 1.4;
@@ -244,7 +245,7 @@ td {
   }
   .descriptionalign {
   	text-align: center;
-  	padding-top: 13px;
+  	padding-top: 0px;
   	padding-bottom:0px;
   	font-size: 30px;
   	  }
