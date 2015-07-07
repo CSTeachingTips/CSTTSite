@@ -1,0 +1,150 @@
+<?php
+/**
+ * @file
+ * Index fivestar rating correctly
+ * and provides new fields to index.
+ */
+
+/**
+ * Implements hook_entity_property_info_alter().
+ */
+function search_api_fivestar_entity_property_info_alter(&$info) {
+  $info['node']['properties']['user_rating'] = array(
+    'type' => 'text',
+    'label' => t('Fivestar - Current user rating'),
+    'sanitized' => TRUE,
+    'getter callback' => 'search_api_fivestar_current_user_rating_getter_callback',
+  );
+
+  $info['node']['properties']['average_rating'] = array(
+    'type' => 'text',
+    'label' => t('Fivestar - Average rating'),
+    'sanitized' => TRUE,
+    'getter callback' => 'search_api_fivestar_average_user_rating_getter_callback',
+  );
+
+  $info['node']['properties']['count_rating'] = array(
+    'type' => 'text',
+    'label' => t('Fivestar - Rating count'),
+    'sanitized' => TRUE,
+    'getter callback' => 'search_api_fivestar_count_rating_getter_callback',
+  );
+}
+
+/**
+ * Getter callback for current user rating.
+ */
+function search_api_fivestar_current_user_rating_getter_callback($node, $entity) {
+  $divisor = (100 / variable_get('search_api_fivestar_rating_stars'));
+  $node_rating = fivestar_get_votes('node', $node->nid);
+  $actual = "0";
+  if(isset($node_rating['user']['value']) && $node_rating['user']['value'] > 0) {
+    $user = $node_rating['user']['value'];
+    $actual = $user / $divisor;
+  }
+
+  return $actual;
+}
+
+/**
+ * Getter callback for average rating.
+ */
+function search_api_fivestar_average_user_rating_getter_callback($node) {
+  $divisor = (100 / variable_get('search_api_fivestar_rating_stars'));
+  $actual = 0;
+  $node_rating = fivestar_get_votes('node', $node->nid);
+  if(!empty($node_rating['average']['value']) && isset($node_rating['average']['value'])) {
+    $average = $node_rating['average']['value'];
+    $actual = $average / $divisor;
+  }
+
+  return $actual;
+}
+
+/**
+ * Getter callback for average rating.
+ */
+function search_api_fivestar_count_rating_getter_callback($node) {
+  $node_rating = fivestar_get_votes('node', $node->nid);
+  $actual = 0;
+  if(!empty($node_rating['count']['value']) && isset($node_rating['count']['value'])) {
+    $actual = $node_rating['count']['value'];
+  }
+
+  return $actual;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function search_api_fivestar_menu() {
+  $items = array();
+  // Management page.
+  $items['admin/config/search/search_api_fivestar'] = array(
+    'title'             => 'Search API Fivestar',
+    'description'       => 'Configuration for the Search API Fivestar module',
+    'page callback'     => 'drupal_get_form',
+    'page arguments'    => array('search_api_fivestar_admin_form'),
+    'access arguments'  => array('administer modules'),
+    'type'              => MENU_NORMAL_ITEM,
+  );
+  
+  return $items;
+}
+
+/**
+ * Custom administration form.
+ */
+function search_api_fivestar_admin_form($form, &$form_state) {
+  $indexes['indexes'] = search_api_index_options_list();
+
+  // Index select.
+  $form['search_api_fivestar_rating_index'] = array(
+    '#type'             => 'radios',
+    '#default_value'    => variable_get('search_api_fivestar_rating_index', ''),
+    '#title'            => t('Rating index'),
+    '#description'      => t('Select the index that contains ratings. If you use ratings on multiple indexes leave as - All -. Selected indexes index votes immediately.'),
+    '#options'          => $indexes['indexes'],
+    '#required'         => TRUE,
+  );
+
+  $form['search_api_fivestar_rating_stars'] = array(
+    '#type'             => 'radios',
+    '#default_value'    => variable_get('search_api_fivestar_rating_stars', 5),
+    '#title'            => t('Stars'),
+    '#description'      => t('Select the amount of rating stars (This is used for division calculation to get correct values to index).'),
+    '#options'          => array(
+      1 => 1,
+      2 => 2,
+      3 => 3,
+      4 => 4,
+      5 => 5,
+      6 => 6,
+      7 => 7,
+      8 => 8,
+      9 => 9,
+      10 => 10,
+    ),
+    '#required'         => TRUE,
+  );
+
+  // Submit button.
+  $form['submit']   = array(
+    '#type'         => 'submit',
+    '#value'        => t('Save settings'),
+  );
+
+  return $form;
+}
+
+/**
+ * Save configuration settings for Search API Fivestar module.
+ */
+function search_api_fivestar_admin_form_submit($form, &$form_state) {
+  // Save vars.
+  variable_set('search_api_fivestar_rating_index', $form_state['values']['search_api_fivestar_rating_index']);
+  variable_set('search_api_fivestar_rating_stars', $form_state['values']['search_api_fivestar_rating_stars']);
+  drupal_flush_all_caches();
+  // Inform save was succesful.
+  drupal_set_message(t('The settings have been saved'));
+}

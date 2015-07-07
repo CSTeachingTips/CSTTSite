@@ -137,7 +137,7 @@ function fivestar_theme() {
 }
 
 function _fivestar_variables() {
-  return array('fivestar', 'fivestar_unvote', 'fivestar_style', 'fivestar_stars', 'fivestar_comment', 'fivestar_position', 'fivestar_position_teaser', 'fivestar_labels_enable', 'fivestar_labels', 'fivestar_text', 'fivestar_title', 'fivestar_feedback');
+  return array('fivestar', 'fivestar_unvote', 'fivestar_style', 'fivestar_stars', 'fivestar_comment', 'fivestar_position', 'fivestar_position_teaser', 'fivestar_labels_disable', 'fivestar_labels', 'fivestar_text', 'fivestar_title', 'fivestar_feedback');
 }
 
 /**
@@ -565,7 +565,8 @@ function fivestar_expand($element) {
   $options = array('-' => t('Select rating'));
   for ($i = 1; $i <= $element['#stars']; $i++) {
     $this_value = ceil($i * 100/$element['#stars']);
-    $options[$this_value] = t('Give it @star/@count', array('@star' => $i, '@count' => $element['#stars']));
+    //$options[$this_value] = t('Give it @star/@count', array('@star' => $i, '@count' => $element['#stars']));
+    $options[$this_value] = t('Mark this tip as helpful.');
   }
   // Display clear button only if enabled.
   if ($element['#allow_clear'] == TRUE) {
