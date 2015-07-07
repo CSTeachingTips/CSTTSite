@@ -662,3 +662,34 @@ function _votingapi_cron_delete_orphaned() {
     $queue->deleteItem($item);
   }
 }
+
+function search_api_voting_get_property_key($tag = 'vote', $value_type = 'points', $function = 'average') {
+   return 'search_api_voting_' . $tag . '_' . $value_type . '_' . $function;
+ }
+
+/**
+* Helper function to get parameters from search api voting keys.
+*
+* @param $field_key
+*   The machine name of search api property.
+* @param string $param_name
+*   The name of the parameter (tag, value_type, function).
+*
+* @return mixed
+*   The appropriate parameter or FALSE.
+*/
+function search_api_voting_get_param($field_key, $param_name = 'tag') {
+ if (strpos($field_key, 'search_api_voting_') === 0) {
+   // Get tag, value type and function from the key.
+   $params = explode('_', $field_key);
+   switch ($param_name) {
+     case 'tag':
+       return $params[3];
+     case 'value_type':
+       return $params[4];
+     case 'function':
+       return $params[5];
+   }
+ }
+ return FALSE;
+ }
