@@ -37,7 +37,7 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <h3> <br> </h3>
+<h3 style="margin-bottom:15px;"> <br> </h3>
 
 
 <!-- the top panel -->
@@ -62,8 +62,6 @@
   
 
 <!--- end top panel -->
-
-
 <div class="views-content">
 
 <!-- Printing the content of the page, which in this case is the View Browse All -->
