@@ -37,7 +37,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-<h3 style="margin-bottom:15px;"> <br> </h3>
+<!-- Line break to even spacing from nav bar -->
+<h1 style="margin-bottom:20px;"> <br> </h1>
 
 
 <!-- the top panel -->

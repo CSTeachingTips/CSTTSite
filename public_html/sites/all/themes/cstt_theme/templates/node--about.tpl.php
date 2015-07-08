@@ -11,7 +11,7 @@
 <body>
 
 <!-- Breaks so that the nav bar doesn't overlap anything it shouldn't -->
-<h3 style="margin-bottom:6px;"> <br> </h3>
+<h1> <br> </h1>
 
 <!-- Links to anchors -->
   <div class="panel panel-default col-xs-12 col-sm-3" id="about-side">
