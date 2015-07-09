@@ -37,7 +37,8 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <h3> <br> </h3>
+<!-- Line break to even spacing from nav bar -->
+<h1 style="margin-bottom:20px;"> <br> </h1>
 
 
 <!-- the top panel -->
@@ -59,8 +60,6 @@
   </div>
 
 <!--- end top panel -->
-
-
 <div class="views-content">
 
 <!-- Printing the content of the page, which in this case is the View Browse All -->

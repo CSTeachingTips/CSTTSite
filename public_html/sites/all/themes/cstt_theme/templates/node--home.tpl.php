@@ -10,7 +10,10 @@
 
 
 <body style="background-color:#E6F5EB;">
-  <br>
+
+  <!-- Line break to move past navbar -->
+  <h5 style="margin-bottom:11px;"> <br> </h5>
+
   <div class = "container-fluid">
     <!-- Mission Statement -->
     <div id="cstt-description"> 
