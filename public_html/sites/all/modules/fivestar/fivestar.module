@@ -183,6 +183,8 @@ function _fivestar_cast_vote($entity_type, $id, $value, $tag = NULL, $uid = NULL
 
     // Moving the calculationg after saving/deleting the vote but before getting the votes.
     votingapi_recalculate_results($entity_type, $id);
+    
+
     return fivestar_get_votes($entity_type, $id, $tag, $uid);
   }
 }

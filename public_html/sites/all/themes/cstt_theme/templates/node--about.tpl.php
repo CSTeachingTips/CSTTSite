@@ -92,6 +92,11 @@
   <h3 class="jump" id="summer-research">Summer Researchers</h3>
 
     <center>
+      <img alt="Summer Research Team 2015" class="img-responsive" src="http://csteachingtips.org/images/research_2015.png" />
+      <p>Back: Arielle Schlesinger, Kim Tran, Rilke Griffin, Christine Goins, Colleen Lewis;<br>Front: Sangeetha Naidu, Mackenzie Leake, Marina Knittel.</p>
+    </center>
+
+
       <img alt="Summer Research Team" class="img-responsive" src="http://csteachingtips.org/images/team-google.png" width="760" height="500" />
       <p>Back: Dylan Baker, Marisol Beck, Linnea Nelson, Arielle Schlesinger, Neftali Dominguez, Justis Allen;<br>Front: Vidushi Ojha, Colleen Lewis, Samantha Stilson, Nava Dallal.</p>
     </center>

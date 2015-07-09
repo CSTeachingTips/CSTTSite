@@ -174,7 +174,9 @@
 
       <ul>
         <div class = "col-xs-6 col-md-4 tipside"> 
-          <div class="fivestar">
+          <?php node_save($node); ?>
+	  
+	  <div class="fivestar">
 	    <!-- Print fivestar and vote count (vote count doesn't automatically update)-->
 	    <?php print render($content['field_five_star']); 
 	      $fivestar = field_view_field('node', $node, 'field_five_star');
