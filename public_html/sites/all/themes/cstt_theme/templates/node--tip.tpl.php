@@ -123,10 +123,20 @@
           <a href="<?php echo $urlGoogle; ?>" target="_blank"><img class = "googleplusshare" src="http://csteachingtips.org/images/gshare.png" alt="Share on Google+" /></a>  
          
           <!-- Printing the Copy URL button -->
-          <input type="image" class = "copyURL" src="http://csteachingtips.org/images/linkshare.png" value="Copy URL" onclick="showDiv()" style="vertical-align:middle;"/>
+          <input type="image" class = "copyURL" src="http://csteachingtips.org/images/linkshare.png" value="Copy URL" onclick="linkButton();" style="vertical-align:middle;"/>
           </div>
           <!-- Script for making Copy URL box display -->
           <script>
+
+            function linkButton() {
+              if (document.getElementById('urlDiv').style.display == "block") {
+                hideDiv();
+              }
+              else {
+                showDiv();
+              }
+            }
+
             function showDiv() {
               document.getElementById('urlDiv').style.display = "block";
               document.getElementById('url').focus();
