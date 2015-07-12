@@ -420,16 +420,12 @@ td {
 	visibility: hidden;
 }	
 
-/* Theming for all of fivestar on browse all page */
-.five-star-browse-all {
-  padding-bottom: 8px;
-  padding-top: 8px;
-  padding-right: 8px;
-}
-
 /* Theming for fivestar green star on browse all page */
 .green-star-browse-all {
   float: right;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  padding-right: 8px;
 }
 
 .star-img {
@@ -439,6 +435,8 @@ td {
 /* Theming for fivestar description on browse all page */
 .fivestar-count-browse-all {
   float: right;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
 
 .fivestar-count-items font {

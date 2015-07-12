@@ -41,7 +41,7 @@
  * @ingroup themeable
  */
 ?>
-<div class="<?php print $classes; ?> fivestar-count-browse-all col-lg-1"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> fivestar-count-browse-all"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
     <div class="fivestar-count-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>

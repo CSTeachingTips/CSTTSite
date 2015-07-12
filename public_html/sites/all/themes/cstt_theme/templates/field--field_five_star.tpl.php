@@ -41,7 +41,7 @@
  * @ingroup themeable
  */
 ?>
-<div class="green-star-browse-all col-lg-1">
+<div class="green-star-browse-all">
 <center>
 <div class="<?php print $classes; ?> star-img"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
