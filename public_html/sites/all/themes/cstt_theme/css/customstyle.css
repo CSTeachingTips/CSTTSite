@@ -420,11 +420,16 @@ td {
 	visibility: hidden;
 }	
 
-/* Theming for fivestar green star on browse all page */
+/* Theming for all of fivestar on browse all page */
 .five-star-browse-all {
-  float: right;
+  padding-bottom: 8px;
   padding-top: 8px;
   padding-right: 8px;
+}
+
+/* Theming for fivestar green star on browse all page */
+.green-star-browse-all {
+  float: right;
 }
 
 .star-img {
@@ -434,8 +439,11 @@ td {
 /* Theming for fivestar description on browse all page */
 .fivestar-count-browse-all {
   float: right;
-  padding-right: 8px;
-  padding-bottom: 8px;
+}
+
+.fivestar-count-items font {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* Theming the rate module on tip profile pages*/

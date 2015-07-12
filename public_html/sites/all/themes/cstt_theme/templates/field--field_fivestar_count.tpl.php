@@ -50,9 +50,9 @@
       <?php foreach ($items as $delta => $item): ?>
       <?php $count = render($item);
       if($count == 1) {
-        print '<p>' . $count . ' person found this tip helpful.</p>';
+        print '<p><font>' . $count . '</font> person found this tip helpful.</p>';
       } else if($item > 0){
-        print '<p>' . $count . ' people found this tip helpful.</p>';
+        print '<p><font>' . $count . '</font> people found this tip helpful.</p>';
       }
       ?>
       <?php endforeach; ?>

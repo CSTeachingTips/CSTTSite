@@ -41,13 +41,13 @@
  * @ingroup themeable
  */
 ?>
-<div class="five-star-browse-all col-lg-1">
+<div class="green-star-browse-all col-lg-1">
 <center>
 <div class="<?php print $classes; ?> star-img"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-    <div class="five-star-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
+    <div class="green-star-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>
-  <div class="five-star-items"<?php print $content_attributes; ?>>
+  <div class="green-star-items"<?php print $content_attributes; ?>>
       <?php foreach ($items as $delta => $item): ?>
         <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
       <?php endforeach; ?>
