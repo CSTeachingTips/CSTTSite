@@ -96,7 +96,7 @@ if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),'opera mini') > 0) {
       <?php $count = render($item);
       if($count == 1) {
         print '<p><font>' . $count . '</font> person found this tip helpful.</p>';
-      } else if($item > 0){
+      } else if($count > 0){
         print '<p><font>' . $count . '</font> people found this tip helpful.</p>';
       }
       ?>
