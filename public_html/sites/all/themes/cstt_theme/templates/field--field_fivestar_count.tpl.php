@@ -85,7 +85,7 @@ if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),'opera mini') > 0) {
  $mobile = $tablet_browser > 0 || $mobile_browser > 0;
 ?>
 
-<div class="<?php print $classes; ?> fivestar-count-browse-all"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> fivestar-count"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
     <div class="fivestar-count-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>
@@ -109,7 +109,7 @@ if (strpos(strtolower($_SERVER['HTTP_USER_AGENT']),'opera mini') > 0) {
       <?php $count = render($item);
       if($count == 1) {
         print '<p><font>' . $count . '</font></p>';
-      } else if($item > 0){
+      } else if($count > 0){
         print '<p><font>' . $count . '</font></p>';
       }
       ?>

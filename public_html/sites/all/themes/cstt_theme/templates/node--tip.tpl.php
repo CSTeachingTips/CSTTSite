@@ -188,29 +188,25 @@
 	  
 	  <div class="fivestar-tip">
 	    <!-- Print fivestar and vote count (vote count doesn't automatically update)-->
-	    <?php print render($content['field_five_star']); 
-	      $fivestar = field_view_field('node', $node, 'field_five_star');
+	    <div class="green-star-tip">
+	      <?php print render($content['field_five_star']);?>
+	    </div>
+
+            <div class="fivestar-count">
+	    <?php $fivestar = field_view_field('node', $node, 'field_five_star');
 	      $count = $fivestar['#items'][0]['count'];
 	  
-              print gettype($count);
-
   	      if ($count == 1) {
-	        print '<p>'. $count . ' person found this helpful.</p>';
-	      } else {
-                print '<p>'. $count . ' people found this helpful.</p>';
+	        print '<p><font>'. $count . '</font> person found this helpful.</p><br>';
+	      } else if ($count > 1){
+                print '<p><font>'. $count . '</font> people found this helpful.</p><br>';
 	      }
 	    ?>
+	    </div>
 	  </div>
-
-          <!-- Printing vote count-->
-	  <?php if (isset($content['field_fivestar_count'])) {
-	    print render($content['field_fivestar_count']);
-	  } else {
-	    print "<p>Null fivestar count<p>";
-	  }
-	  ?>
-
-          <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
+	  <br><br>
+          
+	  <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
           <?php if (isset($content['field_tags'])) {
             print render($content['field_tags']);
           }

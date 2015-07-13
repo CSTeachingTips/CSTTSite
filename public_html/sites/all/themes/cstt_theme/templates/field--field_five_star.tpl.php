@@ -41,11 +41,9 @@
  * @ingroup themeable
  */
 ?>
-<div class="green-star-browse-all">
 <center>
 <div class="<?php print $classes; ?> star-img"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-    <div class="green-star-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>
   <div class="green-star-items"<?php print $content_attributes; ?>>
       <?php foreach ($items as $delta => $item): ?>
@@ -54,4 +52,3 @@
   </div>
 </div>
 </center>
-</div>

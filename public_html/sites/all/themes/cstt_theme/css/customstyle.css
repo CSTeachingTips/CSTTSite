@@ -420,26 +420,38 @@ td {
 	visibility: hidden;
 }	
 
-/* Theming for fivestar green star on browse all page */
+/* Theming for all of fivestar on browse all page */
+.fivestar-browse-all {
+  padding-bottom: 8px;
+}
+
+/* Theming for fivestar green star on browse all page and tip pages */
 .green-star-browse-all {
   float: left;
   padding-left: 12px;
-  padding-bottom: 8px;
-  padding-right: 8px;
 }
 
 .star-img {
   width: 25px;
 }
 
-/* Theming for fivestar description on browse all page */
-.fivestar-count-browse-all {
+.green-star-tip {
   float: left;
-  padding-top: 4px;
-  padding-bottom: 8px;
 }
 
-.fivestar-count-items font {
+/* Theming for fivestar description on browse all page and tip pages */
+.fivestar-count {
+  float: left;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+.fivestar-tip .fivestar-count {
+  height: 25px;
+}
+
+.fivestar-count-items font,
+.fivestar-tip font {
   font-size: 16px;
   font-weight: bold;
 }
