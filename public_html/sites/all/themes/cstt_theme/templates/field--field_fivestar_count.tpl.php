@@ -46,13 +46,24 @@
     <div class="fivestar-count-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>
   <center>
-  <div class="fivestar-count-items"<?php print $content_attributes; ?>>
+  <div class="fivestar-count-items hidden-sm hidden-xs"<?php print $content_attributes; ?>>
       <?php foreach ($items as $delta => $item): ?>
       <?php $count = render($item);
       if($count == 1) {
         print '<p><font>' . $count . '</font> person found this tip helpful.</p>';
       } else if($item > 0){
         print '<p><font>' . $count . '</font> people found this tip helpful.</p>';
+      }
+      ?>
+      <?php endforeach; ?>
+  </div>
+  <div class="fivestar-count-items hidden-md hidden-lg"<?php print $content_attributes; ?>>
+      <?php foreach ($items as $delta => $item): ?>
+      <?php $count = render($item);
+      if($count == 1) {
+        print '<p><font>' . $count . '</font></p>';
+      } else if($item > 0){
+        print '<p><font>' . $count . '</font></p>';
       }
       ?>
       <?php endforeach; ?>
