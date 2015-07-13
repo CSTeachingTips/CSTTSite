@@ -422,7 +422,7 @@ td {
 
 /* Theming for fivestar green star on browse all page */
 .green-star-browse-all {
-  float: right;
+  float: left;
   padding-left: 12px;
   padding-bottom: 8px;
   padding-right: 8px;
@@ -434,7 +434,7 @@ td {
 
 /* Theming for fivestar description on browse all page */
 .fivestar-count-browse-all {
-  float: right;
+  float: left;
   padding-top: 4px;
   padding-bottom: 8px;
 }
