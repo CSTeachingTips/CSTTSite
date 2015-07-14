@@ -204,7 +204,7 @@
 	    ?>
 	    </div>
 	  </div>
-	  <br><br>
+	  <!--<br><br>-->
           
 	  <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
           <?php if (isset($content['field_tags'])) {
