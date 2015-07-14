@@ -185,9 +185,9 @@ function _fivestar_cast_vote($entity_type, $id, $value, $tag = NULL, $uid = NULL
     votingapi_recalculate_results($entity_type, $id);
   
     // Reloads node, allows updating of comptued field for Fivestar vote count
-    $entity = entity_load_single($entity_type, $id);
-    $wrapper = entity_metadata_wrapper('node', $entity);
-    $wrapper->save();
+    //$entity = entity_load_single($entity_type, $id);
+    //$wrapper = entity_metadata_wrapper('node', $entity);
+    //$wrapper->save();
 
     return fivestar_get_votes($entity_type, $id, $tag, $uid);
   }

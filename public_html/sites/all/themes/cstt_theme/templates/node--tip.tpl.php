@@ -184,7 +184,7 @@
 
       <ul>
         <div class = "col-xs-6 col-md-4 tipside"> 
-          <?php node_save($node); ?>
+          <!--<?php node_save($node); ?>-->
 	  
 	  <div class="fivestar-tip">
 	    <!-- Print fivestar and vote count (vote count doesn't automatically update)-->
