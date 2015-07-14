@@ -423,6 +423,7 @@ td {
 /* Theming for all of fivestar on browse all page */
 .fivestar-browse-all {
   padding-bottom: 8px;
+  display: none;
 }
 
 /* Theming for fivestar green star on browse all page and tip pages */
@@ -437,6 +438,7 @@ td {
 
 .green-star-tip {
   float: left;
+  display: none;
 }
 
 /* Theming for fivestar description on browse all page and tip pages */
