@@ -184,7 +184,7 @@
 
       <ul>
         <div class = "col-xs-6 col-md-4 tipside"> 
-          <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
+	  <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
           <?php if (isset($content['field_tags'])) {
             print render($content['field_tags']);
           }
@@ -192,21 +192,6 @@
             print '<div class = "tagslabel"> Tags: </div>';
           }
           ?>
-
-          <div class="fivestar">
-	    <!-- Print fivestar and vote count (vote count doesn't automatically update)-->
-	    <?php print render($content['field_five_star']); 
-	    $fivestar = field_view_field('node', $node, 'field_five_star');
-	    $count = round(($fivestar['#items'][0]['average']/100), 1);
-	  
-  	    if ($count == 1) {
-	      print '<p>'. $count . ' person found this helpful.</p>';
-	    } else {
-              print '<p>'. $count . ' people found this helpful.</p>';
-	    }
-	    ?>
-	  </div>
-
         </div>
       </ul>
     </div>
@@ -221,7 +206,7 @@
 
         <div class="col-xs-6 col-md-4">
           <!-- Printing taxonomy terms from the vocabulary source field for content type tip -->
-          <?php print render($content['field_source_taxonomy']) ?>
+          <?php print render($content['field_source_taxonomy']); ?>
         </div>    
       </ul>
     </div>

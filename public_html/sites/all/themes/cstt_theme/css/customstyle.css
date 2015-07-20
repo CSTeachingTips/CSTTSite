@@ -33,13 +33,12 @@ body {
 }
 
 #cstt-description {
-	font-size: 30px;
-	margin-top:45px;
+	font-size: 30px
 }
 
 .descriptionalign {
 	text-align: center;
-	padding-top: 0px;
+	padding-top: 13px;
 	padding-bottom: 0px;
 	margin-bottom: -10px;
 	line-height: 1.4;
@@ -245,7 +244,7 @@ td {
   }
   .descriptionalign {
   	text-align: center;
-  	padding-top: 0px;
+  	padding-top: 13px;
   	padding-bottom:0px;
   	font-size: 30px;
   	  }
@@ -420,24 +419,6 @@ td {
 	top: -50px;
 	visibility: hidden;
 }	
-
-/* Theming for fivestar */
-.fivestar {
-  display: none;
-}
-
-/* Theming for the modal */
-#form {
-	width: 100%;
-}
-
-/* Vertical alignment resource: http://stackoverflow.com/questions/18053408/vertically-centering-bootstrap-modal-window */
-.modal-open .modal {
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-	overflow-y: scroll;
-}
-
 
 /* Theming the rate module on tip profile pages*/
 .rate-thumbs-up-btn-up {

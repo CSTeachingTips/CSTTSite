@@ -42,8 +42,6 @@
 
 
 <!-- the top panel -->
-
-  
   <div tag = "exposedviews">
    <!-- Printing the exposed filters Views block for the browse all view -->
    <?php 
@@ -54,13 +52,12 @@
   </div>
 
   <div tag = "exposed sort">
-  <?php 
-    $block = block_load('search_api_sorts','search-sorts');
+  <?php
+    $block = block_load('search_api_sorts', 'search-sorts');
     $dummyblock = _block_get_renderable_array(_block_render_blocks(array($block)));
     print drupal_render($dummyblock);
-    ?>          
+  ?>
   </div>
-  
 
 <!--- end top panel -->
 <div class="views-content">
