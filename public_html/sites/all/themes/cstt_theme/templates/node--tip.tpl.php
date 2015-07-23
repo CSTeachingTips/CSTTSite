@@ -192,6 +192,12 @@
             print '<div class = "tagslabel"> Tags: </div>';
           }
           ?>
+          <h4> Similar Tips </h4>      
+            <!-- Printing a Views block configured to show similar tips -->
+            <?php $block = block_load('views','similar_tips-block');
+            $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
+            print drupal_render($dummysearch);
+            ?>       
         </div>
       </ul>
     </div>
@@ -216,22 +222,11 @@
   <?php print render($content['disqus']); ?>
 </div>
 
-<div class ="container">
-  <h1><br></h1>
-</div>
-
-
-
 <div class = "container">
   <div class = "col-md-1">
   </div>
   <div  class = "col-md-10">
-    <h4> Similar Tips </h4>      
-    <!-- Printing a Views block configured to show similar tips -->
-    <?php $block = block_load('views','similar_tips-block');
-    $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
-    print drupal_render($dummysearch);
-    ?>       
+    
   </div>
   <div class = "col-md-1">
   </div>
