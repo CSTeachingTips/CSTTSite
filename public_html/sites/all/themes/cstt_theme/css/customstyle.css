@@ -112,10 +112,6 @@ body {
 }
 
 
-.thumbnail {
-	min-height: 200px;
-}
-
 .thumbnail>img {
 	display:block;
 	max-width:100%;
