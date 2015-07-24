@@ -183,7 +183,7 @@
 
 
       <ul>
-        <div class = "col-xs-6 col-md-4 tipside"> 
+        <div class = "col-xs-12 col-md-4 tipside"> 
 	  <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
           <?php if (isset($content['field_tags'])) {
             print render($content['field_tags']);
@@ -192,7 +192,8 @@
             print '<div class = "tagslabel"> Tags: </div>';
           }
           ?>
-          <h4> Similar Tips </h4>      
+          <br>
+          <div class = "tagslabel"> Similar Tips: </div>     
             <!-- Printing a Views block configured to show similar tips -->
             <?php $block = block_load('views','similar_tips-block');
             $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
