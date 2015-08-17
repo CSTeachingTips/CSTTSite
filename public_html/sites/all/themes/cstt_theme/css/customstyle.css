@@ -388,6 +388,10 @@ td {
 	min-height: 100px;
 }
 
+.browseallthumbnail, .panel-default:not(#about-side) {
+	background-color: #e6f5eb;
+}
+
 /* Style for the nav bar*/
 
 .navbar-default {
