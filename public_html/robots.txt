@@ -13,6 +13,7 @@
 # For more information about the robots.txt standard, see:
 # http://www.robotstxt.org/robotstxt.html
 
+
 User-agent: *
 Crawl-delay: 10
 # Web Static Assets, eg CSS, Javascript files and Images.
