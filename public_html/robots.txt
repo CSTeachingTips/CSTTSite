@@ -15,6 +15,14 @@
 
 User-agent: *
 Crawl-delay: 10
+# Web Static Assets, eg CSS, Javascript files and Images.
+Allow: /misc/*.css
+Allow: /misc/*.js
+Allow: /misc/*.gif
+Allow: /misc/*.jpg
+Allow: /misc/*.jpeg
+Allow: /misc/*.png
+Allow: /misc/*.svg
 # Directories
 Disallow: /includes/
 Disallow: /misc/
