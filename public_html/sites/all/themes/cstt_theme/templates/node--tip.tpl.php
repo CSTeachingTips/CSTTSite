@@ -181,7 +181,7 @@
         <?php print render($content['body']); ?>
       </div>
 
-
+      <div>
       <ul>
         <div class = "col-xs-12 col-md-4 tipside"> 
 	  <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
@@ -201,10 +201,10 @@
             ?>       
         </div>
       </ul>
-    </div>
+    <!-- </div> -->
     <h4><br></h4>
 
-    <div class = "container">
+    <!-- <div class = "container"> -->  
       <ul class = "sources">
         <div class="col-xs-6 col-md-4">
           <!-- Printing the external source field for content type tip -->
@@ -216,6 +216,7 @@
           <?php print render($content['field_source_taxonomy']); ?>
         </div>    
       </ul>
+    </div>
     </div>
 
 <h4><br></h4>

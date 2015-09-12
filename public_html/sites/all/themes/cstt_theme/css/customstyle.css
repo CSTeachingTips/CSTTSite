@@ -826,6 +826,7 @@ td {
 	position:relative;
 }
 
+<<<<<<< HEAD
 /* Navbar highlight */
 
 .navbar-nav>li:hover {
@@ -836,3 +837,16 @@ td {
 .navbar-nav>li:hover>a {
 	color: #000000 !important;
 }
+=======
+/*Formatting the Similar Tips label */
+#similartips {
+	font-weight:bold;
+	padding-bottom:7px;
+}
+
+@media all and (max-width:999px) {
+	#tipside {
+		position:absolute;
+	}
+}
+>>>>>>> Moving Similar Tips around.
