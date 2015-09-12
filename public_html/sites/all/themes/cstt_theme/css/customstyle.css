@@ -388,6 +388,10 @@ td {
 	min-height: 100px;
 }
 
+.browseallthumbnail, .panel-default:not(#about-side) {
+	background-color: #e6f5eb;
+}
+
 /* Style for the nav bar*/
 
 .navbar-default {
@@ -419,6 +423,40 @@ td {
 	top: -50px;
 	visibility: hidden;
 }	
+
+/* Theming for fivestar green star on browse all page and tip pages */
+.green-star-browse-all {
+  float: left;
+  padding-left: 12px;
+  padding-bottom: 8px;
+}
+
+.star-img {
+  width: 25px;
+}
+
+.green-star-tip {
+  float: left;
+  display: none;
+}
+
+/* Theming for fivestar description on browse all page and tip pages */
+.fivestar-count {
+  float: left;
+  display: none;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+.fivestar-tip .fivestar-count {
+  height: 25px;
+}
+
+.fivestar-count-items font,
+.fivestar-tip font {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 /* Theming the rate module on tip profile pages*/
 .rate-thumbs-up-btn-up {
@@ -790,4 +828,15 @@ td {
 #treesearch {
 	text-align:center;
 	position:relative;
+}
+
+/* Navbar highlight */
+
+.navbar-nav>li:hover {
+	height: 51px;
+	background-color: #9bd9b1 !important;
+}
+
+.navbar-nav>li:hover>a {
+	color: #000000 !important;
 }
