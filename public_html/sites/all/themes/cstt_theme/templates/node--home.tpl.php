@@ -34,12 +34,14 @@
     </div>
 
 
-    <!-- Selects Search Bar when page loads, and places placeholder text in it -->
+    
     <script>
+      /*Places placeholder text in central search bar*/
       var att = document.createAttribute("placeholder");
       att.value = "Search Tips";
       document.querySelector("#centralsearch #edit-search-api-views-fulltext").setAttributeNode(att);
 
+      /*Selects central search bar when page loads*/
       document.querySelector("#centralsearch #edit-search-api-views-fulltext").focus();
       document.querySelector("#centralsearch #edit-search-api-views-fulltext").select();
     </script>
