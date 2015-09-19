@@ -1,20 +1,22 @@
 (function($) {
 Drupal.behaviors.scrolltoanchors = {
   attach: function(context, settings) {
-    $(document).ready(function(){
+    $(window).load(function(){
       function validateSelector(a) {
-        return /^#[a-z]{1}[a-z0-9_-]*$/i.test(a);
+        return a.indexOf('#') === 0;
       }
-      function scrollToDestination(a,b) {
+      function scrollToDestination(a, b) {
         if (a > b) {
           destination = b;
         } else {
           destination = a;
         }
-        $('html,body').animate({ scrollTop: destination }, 800, 'swing');
+        var movement = 'scroll mousedown DOMMouseScroll mousewheel keyup';
+        $('html, body').animate({scrollTop: destination}, 500, 'swing').bind(movement, function(){
+          $('html, body').stop();
+        });
       }
       $('a[href^="#"]', context).click(function(event) {
-        event.preventDefault();
         var hrefValue = $(this).attr('href');
         var strippedHref = hrefValue.replace('#','');
         var heightDifference = $(document).height() - $(window).height();
@@ -27,8 +29,10 @@ Drupal.behaviors.scrolltoanchors = {
             var linkOffset = $('a[name=' + strippedHref + ']').offset().top;
             scrollToDestination(linkOffset, heightDifference);
           }
+          document.location.hash = strippedHref;
         }
       });
+      event.preventDefault();
     });
   }
 };
