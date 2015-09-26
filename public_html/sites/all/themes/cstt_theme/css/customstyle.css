@@ -849,9 +849,8 @@ td {
 }
 
 @media all and (max-width:999px) {
-	#tipside {
-		position:absolute;
-	}
+	
 }
 
 
+/*Reversing order of tipside and sources divs when in mobile */
