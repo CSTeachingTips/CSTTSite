@@ -826,10 +826,10 @@ td {
 	position:relative;
 }
 
-<<<<<<< HEAD
 /* Navbar highlight */
 
-.navbar-nav>li:hover {
+.navbar-nav>li:hover,
+.navbar-brand:hover {
 	height: 51px;
 	background-color: #9bd9b1 !important;
 }
@@ -837,7 +837,11 @@ td {
 .navbar-nav>li:hover>a {
 	color: #000000 !important;
 }
-=======
+
+.navbar-brand {
+	margin-top: -1px;
+}
+
 /*Formatting the Similar Tips label */
 #similartips {
 	font-weight:bold;
@@ -849,4 +853,5 @@ td {
 		position:absolute;
 	}
 }
->>>>>>> Moving Similar Tips around.
+
+
