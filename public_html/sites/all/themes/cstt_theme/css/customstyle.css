@@ -848,9 +848,20 @@ td {
 	padding-bottom:7px;
 }
 
-@media all and (max-width:999px) {
-	
+/*Reversing order of tipside and sources divs when in mobile */
+
+@media all and (min-width:1000px) {
+	.tipsideMobile {
+		display:none;
+	}
 }
 
+@media all and (max-width:999px) {
+	.tipsideDesktop {
+		display:none;
+	}
+	.tipsideMobile {
+		display:block;
+	}
+}
 
-/*Reversing order of tipside and sources divs when in mobile */
