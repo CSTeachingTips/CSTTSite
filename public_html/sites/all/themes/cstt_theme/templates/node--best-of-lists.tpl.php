@@ -6,12 +6,12 @@
 
 <h1><br><br><br><br><br></h1>
 
-<center>
+
 <div class="tipspace">
         <!-- Printing the body/additional info field for content type tip -->
         <?php print render($content['body']); ?>
       </div>
-</center>
+
 
 </body>
 </html>
