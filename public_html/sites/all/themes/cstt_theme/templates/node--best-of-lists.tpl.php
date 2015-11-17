@@ -4,14 +4,14 @@
 
 <body>
 
-<h1><br><br><br><br><br></h1>
+<h1><br><br></h1>
 
-
-<div class="tipspace">
+<center>
+<div class="col-xs-12 col-sm-9 tables">
         <!-- Printing the body/additional info field for content type tip -->
         <?php print render($content['body']); ?>
       </div>
-
+</center>
 
 </body>
 </html>
