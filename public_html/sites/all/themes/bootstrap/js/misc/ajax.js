@@ -33,13 +33,11 @@ Drupal.ajax.prototype.beforeSend = function (xmlhttprequest, options) {
     }
   }
 
-  var $element = $(this.element);
-
   // Disable the element that received the change to prevent user interface
   // interaction while the Ajax request is in progress. ajax.ajaxing prevents
   // the element from triggering a new request, but does not prevent the user
   // from changing its value.
-  $element.addClass('progress-disabled').attr('disabled', true);
+  $(this.element).addClass('progress-disabled').attr('disabled', true);
 
   // Insert progressbar or throbber.
   if (this.progress.type == 'bar') {
@@ -48,34 +46,27 @@ Drupal.ajax.prototype.beforeSend = function (xmlhttprequest, options) {
       progressBar.setProgress(-1, this.progress.message);
     }
     if (this.progress.url) {
-      progressBar.startMonitoring(this.progress.url, this.progress.interval || 500);
+      progressBar.startMonitoring(this.progress.url, this.progress.interval || 1500);
     }
     this.progress.element = $(progressBar.element).addClass('ajax-progress ajax-progress-bar');
     this.progress.object = progressBar;
-    $element.closest('.file-widget,.form-item').after(this.progress.element);
+    $(this.element).after(this.progress.element);
   }
   else if (this.progress.type == 'throbber') {
     this.progress.element = $('<div class="ajax-progress ajax-progress-throbber"><i class="glyphicon glyphicon-refresh glyphicon-spin"></i></div>');
-    if (this.progress.message) {
-      $('.throbber', this.progress.element).after('<div class="message">' + this.progress.message + '</div>');
-    }
-
     // If element is an input type, append after.
-    if ($element.is('input')) {
-      $element.after(this.progress.element);
-    }
-    else if ($element.is('select')) {
-      var $inputGroup = $element.closest('.form-item').find('.input-group-addon, .input-group-btn');
-      if (!$inputGroup.length) {
-        $element.wrap('<div class="input-group">');
-        $inputGroup = $('<span class="input-group-addon">');
-        $element.after($inputGroup);
+    if ($(this.element).is('input')) {
+      if (this.progress.message) {
+        $('.throbber', this.progress.element).after('<div class="message">' + this.progress.message + '</div>');
       }
-      $inputGroup.append(this.progress.element);
+      $(this.element).after(this.progress.element);
     }
-    // Otherwise append the throbber inside the element.
+    // Otherwise inject it inside the element.
     else {
-      $element.append(this.progress.element);
+      if (this.progress.message) {
+        $('.throbber', this.progress.element).append('<div class="message">' + this.progress.message + '</div>');
+      }
+      $(this.element).append(this.progress.element);
     }
   }
 };
