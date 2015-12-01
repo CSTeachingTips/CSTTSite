@@ -17,7 +17,7 @@
     <?php foreach ($items as $row): ?>
       <div class="row">
         <?php foreach ($row['content'] as $column): ?>
-          <div class="col col-md-<?php print $column_type ?>">
+          <div class="col col-md-12">
             <div class="thumbnail">
               <?php print $column['content'] ?>
             </div>
@@ -30,10 +30,10 @@
 
     <div class="row">
       <?php foreach ($items as $column): ?>
-        <div class="col col-md-<?php print $column_type ?>">
+        <div class="col col-md-12">
           <?php foreach ($column['content'] as $row): ?>
        
-            <div class = "thumbnail browseallthumbnail">              
+            <div class = "thumbnail">              
               <?php print $row['content'] ?>
             </div>
            

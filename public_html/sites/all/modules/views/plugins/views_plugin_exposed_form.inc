@@ -207,10 +207,12 @@ class views_plugin_exposed_form extends views_plugin {
       $form['reset'] = array(
         '#value' => $this->options['reset_button_label'],
         '#type' => 'submit',
+        '#name' => 'reset',
       );
     }
 
     $form['submit']['#value'] = $this->options['submit_button'];
+    $form['submit']['#name'] = 'submit';
     // Check if there is exposed sorts for this view
     $exposed_sorts = array();
     foreach ($this->view->sort as $id => $handler) {

@@ -112,10 +112,6 @@ body {
 }
 
 
-.thumbnail {
-	min-height: 200px;
-}
-
 .thumbnail>img {
 	display:block;
 	max-width:100%;
@@ -841,6 +837,31 @@ td {
 .navbar-nav>li:hover>a {
 	color: #000000 !important;
 }
+
 .navbar-brand {
 	margin-top: -1px;
 }
+
+/*Formatting the Similar Tips label */
+#similartips {
+	font-weight:bold;
+	padding-bottom:7px;
+}
+
+/*Reversing order of tipside and sources divs when in mobile */
+
+@media all and (min-width:1000px) {
+	.tipsideMobile {
+		display:none;
+	}
+}
+
+@media all and (max-width:999px) {
+	.tipsideDesktop {
+		display:none;
+	}
+	.tipsideMobile {
+		display:block;
+	}
+}
+

@@ -11,7 +11,7 @@
  */
 ?>
 
-<div id="views-bootstrap-thumbnail-<?php print $id ?>" class="<?php print $classes ?>">
+<div id="views-bootstrap-thumbnail-<?php print $id ?>" class="<?php print $classes ?>" name="tst">
   <?php if ($options['alignment'] == 'horizontal'): ?>
 
     <?php foreach ($items as $row): ?>

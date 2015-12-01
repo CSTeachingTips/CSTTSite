@@ -125,6 +125,7 @@
           <!-- Printing the Copy URL button -->
           <input type="image" class = "copyURL" src="http://csteachingtips.org/images/linkshare.png" value="Copy URL" onclick="linkButton();" style="vertical-align:middle;"/>
           </div>
+
           <!-- Script for making Copy URL box display -->
           <script>
 
@@ -180,35 +181,61 @@
         <!-- Printing the body/additional info field for content type tip -->
         <?php print render($content['body']); ?>
       </div>
-
-
-      <ul>
-        <div class = "col-xs-6 col-md-4 tipside"> 
-	  <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
-          <?php if (isset($content['field_tags'])) {
-            print render($content['field_tags']);
-          }
-          else {
-            print '<div class = "tagslabel"> Tags: </div>';
-          }
-          ?>
-        </div>
-      </ul>
-    </div>
-    <h4><br></h4>
-
-    <div class = "container">
-      <ul class = "sources">
-        <div class="col-xs-6 col-md-4">
+       
+      
+      <div class = "col-xs-12 col-md-4 tipside tipsideDesktop"> 
+	      <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
+        <?php if (isset($content['field_tags'])) {
+          print render($content['field_tags']);
+        }
+        else {
+          print '<div class = "tagslabel"> Tags: </div>';
+        }
+        ?>
+        <br>
+        <div class = "tagslabel"> Similar Tips: </div>     
+          <!-- Printing a Views block configured to show similar tips -->
+          <?php $block = block_load('views','similar_tips-block');
+          $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
+          print drupal_render($dummysearch);
+          ?>       
+       </div>
+       
+      <br> 
+      <div class = "container">
+      <div class = "sources col-md-12">
+          <div class="col-xs-6 col-md-4">
           <!-- Printing the external source field for content type tip -->
           <?php print render($content['field_source']); ?>
-        </div>
+          </div>
 
-        <div class="col-xs-6 col-md-4">
+          <div class="col-xs-6 col-md-4">
           <!-- Printing taxonomy terms from the vocabulary source field for content type tip -->
           <?php print render($content['field_source_taxonomy']); ?>
-        </div>    
-      </ul>
+          </div>    
+      </div>
+      
+    </div>
+    <br>
+
+      <div class = "col-xs-12 col-md-4 tipside tipsideMobile"> 
+        <!-- Printing the tags field for content type tip if the tip has tags, otherwise printing the string Tags -->
+        <?php if (isset($content['field_tags'])) {
+          print render($content['field_tags']);
+        }
+        else {
+          print '<div class = "tagslabel"> Tags: </div>';
+        }
+        ?>
+        <br>
+        <div class = "tagslabel"> Similar Tips: </div>     
+          <!-- Printing a Views block configured to show similar tips -->
+          <?php $block = block_load('views','similar_tips-block');
+          $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
+          print drupal_render($dummysearch);
+          ?>       
+      </div>
+      
     </div>
 
 <h4><br></h4>
@@ -216,22 +243,11 @@
   <?php print render($content['disqus']); ?>
 </div>
 
-<div class ="container">
-  <h1><br></h1>
-</div>
-
-
-
 <div class = "container">
   <div class = "col-md-1">
   </div>
   <div  class = "col-md-10">
-    <h4> Similar Tips </h4>      
-    <!-- Printing a Views block configured to show similar tips -->
-    <?php $block = block_load('views','similar_tips-block');
-    $dummysearch = _block_get_renderable_array(_block_render_blocks(array($block)));
-    print drupal_render($dummysearch);
-    ?>       
+    
   </div>
   <div class = "col-md-1">
   </div>
