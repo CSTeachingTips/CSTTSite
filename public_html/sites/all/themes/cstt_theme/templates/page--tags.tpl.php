@@ -65,7 +65,7 @@
         </div>
       
         <div class = "col-xs-12 col-md-6" align = "center" id = "footerpadding">
-          <p class ="text-muted"> To learn more or report problems with the site, please contact us at <a href = "mailto:admin@csteachingtips.org">admin@csteachingtips.org</a> </p>
+          <p class ="text-muted"> For more information or to report a bug, contact us at <a href = "mailto:admin@csteachingtips.org">admin@csteachingtips.org</a> </p>
 
           <p class="text-muted"> Built with <a href = "http://getbootstrap.com/">Bootstrap</a>.
           						 Footer Icons by <a href = "http://drbl.in/iOiy">Mohammed Alyousfi</a>.  
