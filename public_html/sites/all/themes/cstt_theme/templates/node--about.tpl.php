@@ -81,7 +81,7 @@
       </tr>
       <tr>
         <td><img alt="Arielle Schlesinger" src="http://csteachingtips.org/images/arielleschlesinger.jpg" width="100" height="100" /></td>
-        <td><a href="http://arielleschlesinger.com" target="_blank"><strong>Arielle Schlesinger (Research Project Manager) &#8211; Harvey Mudd College</strong></a>
+        <td><a href="http://arielleschlesinger.com" target="_blank"><strong>Arielle Schlesinger (Research Project Manager) &#8211; Georgia Institute of Technology</strong></a>
         <h6></h6>
         <p>Arielle Schlesinger is the Research Project Manager for CSTeachingTips at Harvey Mudd College. Previously, she collaborated on the DOCC (Distributive Open Collaborative Course) with FemTechNet, a network of scholars whose focus is on feminism, science, media, and technology. Her other research includes feminist programming languages, CS education, and socially conscious science.</p></td>
       </tr>
