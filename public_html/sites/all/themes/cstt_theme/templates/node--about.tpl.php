@@ -81,7 +81,7 @@
       </tr>
       <tr>
         <td><img alt="Arielle Schlesinger" src="http://csteachingtips.org/images/arielleschlesinger.jpg" width="100" height="100" /></td>
-        <td><a href="http://arielleschlesinger.com" target="_blank"><strong>Arielle Schlesinger (Research Project Manager) &#8211; Harvey Mudd College</strong></a>
+        <td><a href="http://arielleschlesinger.com" target="_blank"><strong>Arielle Schlesinger (Research Project Manager) &#8211; Georgia Institute of Technology</strong></a>
         <h6></h6>
         <p>Arielle Schlesinger is the Research Project Manager for CSTeachingTips at Harvey Mudd College. Previously, she collaborated on the DOCC (Distributive Open Collaborative Course) with FemTechNet, a network of scholars whose focus is on feminism, science, media, and technology. Her other research includes feminist programming languages, CS education, and socially conscious science.</p></td>
       </tr>
@@ -178,6 +178,16 @@
         <td><strong><a href="https://sites.google.com/a/eng.ucsd.edu/bsimon/home" target="_blank">Beth Simon  &#8211; University of California, San Diego</a></strong>
         <h6></h6>
         <p>Beth Simon is the Director for the Center for Teaching Development and a Lecturer S.O.E. in the Computer Science and Engineering department at the University of California San Diego. She serves as Co-PI on Computing Principles for All Students’ Success (ComPASS), and is revising the curriculum for lower-division CS courses to attract and retain a broader spectrum of students.</p></td>
+      </tr>
+      <tr>
+        <td><img alt="Leslie Aaronson" src="https://pbs.twimg.com/profile_images/378800000605420701/8bc62ebf5d8e9b261c3c2065e4a5f4e5_400x400.jpeg" width="100" height="100" />
+        </td>
+        <td>
+         <strong><a target="_blank">Leslie Aaronson  &#8211; Foshay Learning Center's Technology Academy</a></strong>
+          <h6></h6>
+          <p>Leslie Aaronson is the Lead Teacher and Coordinator of Foshay Learning Center’s Technology Academy. In 2012 she was awarded Teacher of the Year by LAUSD for her work. She has written several articles and given keynote addresses about how she prepares her students for the careers of the future. Leslie sits on the advisory board for NCWIT’s K-12 Alliance, the Computer Science Department of El Camino College, and the Girls Academic Leadership Academy.
+          </p>
+        </td>
       </tr>
     </table>
   </div>
