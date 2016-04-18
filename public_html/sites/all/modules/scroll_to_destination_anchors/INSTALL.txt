@@ -1,0 +1,8 @@
+**Installation:
+1. Unpack the Scroll to destination anchors folder and contents in the
+   appropriate modules directory of your Drupal installation.  This is
+   usually sites/all/modules/
+2. Enable the Scroll to destination anchors module in the administration
+   tools.
+3. Add destination anchor links to the content of your website. The format
+   of these is <a href="#id_of_where_you_want_to_scroll">Click here</a>

@@ -1,0 +1,43 @@
+<?php
+/** 
+ * @file
+ * Limits the length of tags and sources
+ */
+
+/**
+ * Implements hook_help().
+ *
+ * Displays help and module information.
+ *
+ * @param path
+ *   Which path of the site we're using to display help
+ * @param arg
+ *   Array that holds the current path as returned from arg() function
+ */
+function views_form_size_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#taxonomy_links":
+      return '<p>' . t("Modifies where taxonomy links point to") . '</p>';
+      break;
+  }
+} 
+
+
+  /**
+   * Implementation of hook_form_alter().
+   *
+   * The function is named modulename_form_alter.
+   * Limits the length of tags and sources that can be found 
+   * on the browse all page
+   */
+  function views_form_size_form_alter(&$form, $form_state, $form_id) {
+    // Normally a switch is used because you may want to alter more than
+    // one form and it is easy to add a new case for each form.
+    if ($form_id == 'views-exposed-form-browse-all-page') {
+      $form['field_source_taxonomy']['#maxlength'] = 5;
+      $form['field_tags']['#maxlength'] = 5; 
+    }
+}
+
+
+

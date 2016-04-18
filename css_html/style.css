@@ -1,0 +1,359 @@
+body {
+	position: relative;
+	color: #495966;
+} 
+
+.jumbotron {
+	background-color: #eee;
+}
+
+.main {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#navbar {
+	min-height: 50px;
+}
+
+.navbar-brand {
+	margin-top: 1px;
+}
+
+#cstt-logo {
+	position: relative;
+	top: -3px;
+}
+
+#cstt-icon {
+	position: relative;
+}
+
+#navlist {
+	position: absolute;
+	width: 115px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.social {
+	max-width: 122px;
+	margin: 0 auto;
+}
+
+.social2 {
+	max-width: 122px;
+	margin: 0 auto;
+	float:right;
+	padding-top:22px;
+	margin-right: 5%;
+}
+
+.sponsors2 {
+	float:left;
+	margin-left: 0%;
+	padding-top: 10px;
+}
+
+#navlist li {
+	list-style: none;
+	position: absolute;
+	top: 0;
+	zoom: 1;
+	transition: all 0.3s;
+	display: inline;
+}
+
+#navlist li, #navlist a {
+	height: 35px;
+	display: block;
+}
+
+#facebook {
+	left: 0px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') 0 0;
+}
+
+#twitter {
+	left: 43px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') -36px 0;
+}
+
+#google {
+	left: 86px;
+	width: 35px;
+	background: url('images/social_media_sprite_light.png') -144px 0;
+}
+
+#facebook:hover {
+	left: 0px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') 0 0;
+}
+
+#twitter:hover {
+	left: 43px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') -36px 0;
+}
+
+#google:hover {
+	left: 86px;
+	width: 35px;
+	background: url('images/social_media_sprite_dark.png') -144px 0;
+}
+
+.thumbnail>img {
+	display:block;
+	max-width:100%;
+}
+
+.thumbnail img {
+	padding-top: 8px;
+}
+
+.thumbnail {
+	background-color: #eee;
+	border:1px solid #ffffff;
+	border-radius:6px;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+a.thumbnail:hover {
+	border-color:#ddd;
+	text-decoration: none;
+}
+
+.caption {
+	height:auto;
+    vertical-align:middle;
+    float:none;
+}
+
+.thumbnail .caption {
+	padding:9px;
+	color: #495966;
+}
+
+#tip {
+	padding-bottom: 15px;
+}
+
+#tag {
+	font-size: 150%;
+}
+
+#category {
+	font-size: 100%;
+}
+
+#extra-tip {
+	min-height: 150px;
+	max-height: 200px;
+	margin: auto;
+	border-color: #fff;
+	background-color: #eee;
+}
+
+#extra-tip:hover {
+	border-color:#ddd;
+}
+
+.extra-tip {
+	padding: auto;
+}
+
+.panel {
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-left: 10px;
+	width: 20%;
+	position: fixed;
+}
+
+.col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
+	position:relative;
+	min-height:1px;
+	padding-left:7px;
+	padding-right:7px;
+}
+
+.btn-default {
+	height: 34px;
+}
+
+.panel-title {
+	color: #495966;
+}
+
+.nobr {
+	white-space:nowrap;
+}
+
+/* CSS for checkboxes on browse all page */
+input[type=checkbox].css-checkbox {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding-top:0;
+	border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:20px;
+	height:15px; 
+	display:block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:1em;
+	font-weight: normal;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -15px;
+}
+
+.css-label{
+	background-image:url(http://csscheckbox.com/checkboxes/lite-gray-check.png);
+
+}
+
+.categories, .tags {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#more_tags {
+	margin-left: -15px;
+}
+
+.category {
+	min-height: 200px;
+	min-width: 180px;
+}
+
+#about-side {
+	border:0px solid transparent;
+	box-shadow:none;
+	margin-top:5px;
+	position:fixed;
+	clear:right;
+	width:15%;
+}
+
+.tables {
+	margin-left:15%;
+	margin-right: 10%;
+	clear:left;
+}
+
+td {
+	padding:10px;
+	vertical-align: top;
+}
+
+a {
+	color:#495966;
+}
+
+a:hover {
+	color:#495966;
+}
+
+#summer-research img {
+	padding:7px;
+}
+
+#summer-research p {
+	padding-top: 10px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+/* For jumps so navbar not in the way */
+.jump:before {
+	display:block;
+	content:"";
+	height:75px;
+	margin-top:-75px;
+}
+
+@media (max-width: 992px) {
+	.panel {
+	width: 95%;
+	position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-side {
+  	position:relative;
+  	margin-left: 4%;
+  	margin-bottom: -2%;
+  	width:100%;
+  }
+  .tables {
+	margin-left:5%;
+	margin-right: 10%;
+	clear:left;
+  }
+  #summer-research img {
+  	width:550;
+  	height:362;
+  }
+  .social2 {
+  	float:none;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 0;
+  	padding-top: 10px;
+  }
+  .sponsors2 {
+  	float:none;
+  	text-align: center;
+  	margin-top:40px;
+  	position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+	#summer-research img {
+		width:640;
+		height:421;
+	}
+}
+
+.managing {
+	background-color: #eac2ba;
+	background-size: auto 10px;
+	background-repeat: no-repeat;
+}
+
+.content {
+	background-color: #b8dbde;
+}
+
+.curriculum {
+	background-color: #e4c3d6;
+	background-size: auto 10px;
+	background-repeat: no-repeat;
+
+}
+
+

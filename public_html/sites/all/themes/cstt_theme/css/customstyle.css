@@ -1,0 +1,867 @@
+body {
+	position: relative;
+} 
+
+.main {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#navbar {
+	min-height: 50px;
+}
+
+.navbar-brand {
+	margin-top: 1px;
+}
+
+#cstt-logo {
+	position: relative;
+	top: -3px;
+}
+
+#cstt-icon {
+	padding-top: 5px;
+	position: relative;
+	top: 20px;
+	margin-top:0px;
+
+}
+
+#cstt-description {
+	font-size: 30px
+}
+
+.descriptionalign {
+	text-align: center;
+	padding-top: 13px;
+	padding-bottom: 0px;
+	margin-bottom: -10px;
+	line-height: 1.4;
+	font-family: "Didot", "Sans-Sarif";
+}
+
+#navlist {
+	position: relative;
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+
+#navlist li {
+	list-style: none;
+	position: absolute;
+	top: 0;
+	zoom: 1;
+	transition: all 0.01s;
+	display: inline;
+}
+
+#navlist li, #navlist a {
+	height: 40px;
+	display: block;
+}
+
+/*Social media icons */
+#facebook {
+	left: 0px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/02_facebook.png') 0 0;
+}
+
+#twitter {
+	left: 43px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/01_twitter.png') -40px 0;
+}
+
+#google {
+	left: 86px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/14_google+.png') -160px 0;
+}
+
+#facebook:hover {
+	left: 0px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/02_facebook_dark.png') 0 0;
+}
+
+#twitter:hover {
+	left: 43px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/01_twitter_dark.png') -40px 0;
+}
+
+#google:hover {
+	left: 86px;
+	width: 40px;
+	background: url('http://csteachingtips.org/images/14_google+_dark.png') -160px 0;
+}
+
+/* End social media icons */
+
+#footerpadding {
+	padding-bottom: 20px;
+}
+
+
+.thumbnail>img {
+	display:block;
+	max-width:100%;
+}
+
+.thumbnail img {
+	padding-top: 8px;
+}
+
+
+a.thumbnail:hover {
+	border-color:#ddd;
+	text-decoration: none;
+}
+
+.caption {
+	height:auto;
+    vertical-align:middle;
+    float:none;
+}
+
+.thumbnail .caption {
+	padding:9px;
+	color: #495966;
+}
+
+
+
+#tag {
+	font-size: 150%;
+}
+
+.panel {
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 250px;
+	width: 95%;
+	position: relative;
+}
+
+
+.views-content {
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left:auto;
+	width: 95%;
+}
+
+.col-xs-2,.col-sm-2,.col-md-2,.col-xs-3,.col-sm-3,.col-md-3,.col-xs-4,.col-sm-4,.col-md-4,.col-xs-5,.col-sm-5,.col-md-5,.col-xs-10,.col-sm-10,.col-md-10 {
+	position:relative;
+	min-height:1px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.panel-title {
+	color: #495966;
+}
+
+/* Styling for the FAQ page */
+.faq {
+	padding-left:30px;
+}
+
+.nobr {
+	white-space:nowrap;
+}
+
+
+.categories, .tags {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#more_tags {
+	margin-left: -15px;
+}
+
+.category {
+	min-height: 200px;
+	min-width: 180px;
+}
+
+#about-side {
+	border:0px solid transparent;
+	box-shadow:none;
+	margin-top:5px;
+	position:fixed;
+	clear:right;
+	width:15%;
+}
+
+.tables {
+	margin-left:15%;
+	margin-right: 10%;
+	clear:left;
+}
+
+td {
+	padding:10px;
+	vertical-align: top;
+}
+
+#summer-research img {
+	padding:7px;
+}
+
+#summer-research p {
+	padding-top: 10px;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.social {
+	left: -85px;
+}
+
+@media all and (max-width: 992px) {
+  .panel {
+	width: 95%;
+	position: relative;
+  }
+  #cstt-description {
+  	left: 0px;
+  }
+  .descriptionalign {
+  	text-align: center;
+  	padding-top: 13px;
+  	padding-bottom:0px;
+  	font-size: 30px;
+  	  }
+  .social {
+ 	 left: 0px;
+  }
+  .support-logos {
+  	text-align:center;
+  }
+  .navbar-header {
+        float: none;
+  }
+  .navbar-toggle {
+        display: block;
+  }
+  .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+        display: none!important;
+  }
+  .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+        float: none;
+  }
+  .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in { 
+        display: block!important;
+  }
+  .collapsing {
+        overflow: hidden!important;
+  }
+  #cstt-description {
+    	text-align: center;
+  }
+  .socialmediabuttons {
+  	text-align: left;
+  	
+  }
+}
+
+@media all and (max-width: 768px) {
+
+.descriptionalign {
+	font-size: 20px;
+}
+  #project-summary:before {
+  	height:0px;
+  	margin-top:0px;
+  }
+
+  #hiddenlink {
+  	display: none;
+  }
+
+  #about-side {
+  	position:relative;
+  	margin-left: 4%;
+  	margin-bottom: -2%;
+  	width:100%;
+  }
+  .tables {
+	margin-left:5%;
+	margin-right: 10%;
+	clear:left;
+  }
+}
+
+@media all and (max-width: 720px) {
+	#about-side {
+		position:relative;
+		margin-left: 4%;
+		margin-bottom: -2%;
+		width:100%;
+	}
+	.tables {
+		margin-left:5%;
+		margin-right: 10%;
+		clear:left;
+	}
+	.panel {
+		width: 95%;
+		position: relative;
+	}
+	#cstt-icon {
+		max-width:422px;
+		max-height:440px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:140px;
+		width:451px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:37px;
+	}
+
+}
+
+
+.contribute {
+	margin-left: 5%;
+}
+
+/* For jumps so navbar not in the way */
+.jump:before {
+	display:block;
+	content:"";
+	height:75px;
+	margin-top:-75px;
+}
+
+/*Padding and text color on browse all page */
+
+
+#sortorder {
+	display:inline;
+	float:right;
+	padding-right: 30px;
+	padding-bottom: 0px;
+}
+
+.views-content {
+	margin-top: 0px;
+}
+
+.moreinfo {
+	margin-left:30px;
+}
+
+/* Making tips uniform size on the browse all page and the tip profile page */
+
+.browseallthumbnail {
+	min-height: 100px;
+}
+
+.browseallthumbnail, .panel-default:not(#about-side) {
+	background-color: #e6f5eb;
+}
+
+/* Style for the nav bar*/
+
+.navbar-default {
+	background-color: #e6f5eb;
+}
+
+/* Style for the background of the tip profile page #f3faf3 */
+.jumbotron {
+	background-color: #E6F5EB;
+	height:auto;
+}
+
+/* Style for the categories page */
+.view-content ul {
+	font-size: 20px;
+}
+
+.view-content ul ul {
+	font-size: 16px;
+}
+
+.view-content ul p {
+	font-size: 16px;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility: hidden;
+}	
+
+/* Theming for fivestar green star on browse all page and tip pages */
+.green-star-browse-all {
+  float: left;
+  padding-left: 12px;
+  padding-bottom: 8px;
+}
+
+.star-img {
+  width: 25px;
+}
+
+.green-star-tip {
+  float: left;
+  display: none;
+}
+
+/* Theming for fivestar description on browse all page and tip pages */
+.fivestar-count {
+  float: left;
+  display: none;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+.fivestar-tip .fivestar-count {
+  height: 25px;
+}
+
+.fivestar-count-items font,
+.fivestar-tip font {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Theming the rate module on tip profile pages*/
+.rate-thumbs-up-btn-up {
+  display: inline-block;
+  background: url(http://www.csteachingtips.org/images/star-1.png) no-repeat 0 0;
+  font-size: 18px;
+  text-indent: -9999px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.rate-thumbs-up-btn-up:hover {
+	display: inline-block;
+	background: url(http://www.csteachingtips.org/images/starhover-1.png) no-repeat 0 0;
+	font-size: 18px;
+	text-indent: -9999px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition:.5s;
+}
+
+.tipside .ratestar {
+	font-size: 18px;
+	font-weight: bold;
+	font-color: #419763;
+	width: 1px;
+}
+
+.hidezero {
+	display: none;
+	float: right;
+	margin-left: 30px;
+}
+
+.tipside .rate-info {
+	padding-left: 7px;
+}
+
+/* Theming the rate module on the browse all page */
+
+.browseallthumbnail {
+	overflow: hidden;
+}
+
+.browseallrate .ratestar {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  width: auto;
+  float: right;
+  padding-bottom: 10px;
+}
+
+.browseallrate .ratestar .rate-info {
+ margin-left:8px;
+}
+
+.browseallrate .ratestar .rate-description {
+  display: none;
+}
+
+.categoriespadding {
+  padding: 8px;
+  color: #58585B;
+  float: left;
+}
+
+.tiptitle {
+  float: left;
+}
+.tagspadding {
+  padding: 8px;
+  padding-bottom: 0px;
+  color: #58585B;
+  float: left;
+}
+
+.tagspadding .a {
+	color: #58585b;
+}
+
+/* Hover for social media sharing buttons */
+
+.twittershare:hover {
+	opacity: 0.8;
+}
+
+.facebookshare:hover{
+	opacity: 0.8;
+}
+
+.googleplusshare:hover{
+	opacity: 0.8;
+}
+
+/*Styling for /random-tip-short */
+
+.randomtip {
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+
+/* Tip profile page */		
+
+.socialmediabuttons {
+	padding-bottom:0px;
+	padding-top: 10px;
+	position: relative;
+}
+
+.colorstripe {
+	background-color: #E6F5EB;
+	height: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#tip {
+	margin-top:60px;
+}
+.tipspace {
+	padding-bottom: 4px;
+}
+.categoriesspacing {
+	padding-bottom: 5px;
+}
+
+/*Font size on the tip profile page */
+
+.field-item ul li {
+	font-size: 18px;
+}
+
+.sources .field-label {
+	font-size: 17px;
+}
+.sources .field-items {
+	font-size: 17px;
+}
+
+.tagslabel {
+	font-weight: bold;
+}
+
+
+/*Share Buttons Formatting */
+#socialtop {
+	display:inline;
+}
+
+#socialbottom {
+	display:inline;
+}
+
+#socialdiv {
+	float:right;
+}
+
+/*Copy URL button and box formatting */
+.copyURL:hover{
+	opacity:0.8;
+}
+
+#urlDiv {
+	display: none;
+	position:absolute;
+	margin-top:42px;
+	padding-right:0.7em;
+}
+
+
+/*Share Button formatting for mobile */
+@media screen and (max-width:392px) {
+	#urlDiv {
+		margin-top:84px;
+		text-align: center;
+	}
+	#urlBox {
+		left:0;
+		right:1%;
+	}
+
+	#socialtop {
+		display:block;
+		padding-bottom:2px;
+	}
+	#socialbottom {
+		display:block;
+	}
+	#socialdiv {
+		float:left;
+		padding-left:50px;
+	}
+}
+
+#urlBox {
+	background-color:white;
+	z-index: 200;
+	border: 1px;
+	border-color: #58585B;
+	border-style: solid;
+	box-shadow:3px 3px 3px #888888;
+	position:relative;
+	border-radius:6px;
+	padding:2px;
+}
+
+
+#url {
+	width:90%;
+}
+
+#close {
+	position:relative;
+	float:right;
+	bottom:6px;
+}
+
+/*Formats central search bar on front page*/
+#views-exposed-form-centralsearch-page {
+	margin:0px;
+	padding:0px;
+
+}
+
+#centralsearch #edit-search-api-views-fulltext-wrapper {
+	margin:0px;
+	padding:0px;
+	width:560px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	margin-top: 180px;
+	z-index:1;
+}
+
+#centralsearch #edit-search-api-views-fulltext {
+	border: 0px;
+	border-radius:0px;
+	height:43px;
+}
+
+
+/*Scales tree and search bar for different screen sizes*/
+@media all and (max-height:930px) {
+	#cstt-icon {
+		max-width:500px;
+		max-height:521px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:160px;
+		width:535px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:40px;
+	}
+
+}
+
+@media all and (max-height:700px) {
+	#cstt-icon {
+		max-width:414px;
+		max-height:432px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:140px;
+		width:445px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:35px;
+	}
+}
+
+@media all and (max-height:598px) {
+	#cstt-icon {
+		max-width:370px;
+		max-height:386px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:120px;
+		width:397px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:35px;
+	}
+
+}
+
+@media all and (max-height:440px) {
+	#cstt-icon {
+		max-width:261px;
+		max-height:272px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:90px;
+		width:280px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:25px;
+	}	
+}
+
+
+@media all and (max-width:560px) {
+	#cstt-icon {
+		max-width:500px;
+		max-height:521px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:160px;
+		width:535px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:40px;
+	}	
+}
+
+@media all and (max-width:520px) {
+	#cstt-icon {
+		max-width:422px;
+		max-height:440px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:140px;
+		width:451px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:37px;
+	}	
+}
+
+@media all and (max-width:440px) {
+	#cstt-icon {
+		max-width:365px;
+		max-height:381px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:120px;
+		width:352px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:35px;
+	}
+}
+
+@media all and (max-width:374px) {
+	#cstt-icon {
+		max-width:261px;
+		max-height:272px;
+	}
+	#centralsearch #edit-search-api-views-fulltext-wrapper {
+		margin-top:90px;
+		width:280px;
+	}
+	#centralsearch #edit-search-api-views-fulltext {
+		height:25px;
+	}	
+}
+
+/* Centering tree and search bar */
+
+#treesearch {
+	text-align:center;
+	position:relative;
+}
+
+/* Navbar highlight */
+
+.navbar-nav>li:hover,
+.navbar-brand:hover {
+	height: 51px;
+	background-color: #9bd9b1 !important;
+}
+
+.navbar-nav>li:hover>a {
+	color: #000000 !important;
+}
+
+.navbar-brand {
+	margin-top: -1px;
+}
+
+/*Formatting the Similar Tips label */
+#similartips {
+	font-weight:bold;
+	padding-bottom:7px;
+}
+
+/*Reversing order of tipside and sources divs when in mobile */
+
+@media all and (min-width:1000px) {
+	.tipsideMobile {
+		display:none;
+	}
+}
+
+@media all and (max-width:999px) {
+	.tipsideDesktop {
+		display:none;
+	}
+	.tipsideMobile {
+		display:block;
+	}
+}
+
