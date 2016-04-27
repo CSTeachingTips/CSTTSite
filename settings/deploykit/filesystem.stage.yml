@@ -1,0 +1,7 @@
+# Host filesystem
+htdocs: htdocs    # document root expected by apache
+htsdocs: htsdocs  # ibid.
+file_owner: aten
+file_group: www-data
+site_directory: cstt.atendesigngroup.com            # typically the same as the domain name
+sites_directory: /var/www

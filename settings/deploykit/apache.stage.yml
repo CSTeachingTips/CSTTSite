@@ -1,0 +1,3 @@
+# Host apache
+htpasswd_user: aten   # usually the short client name
+site_domain: cstt.atendesigngroup.com     # domain name to put in vhost. Should NOT have www.

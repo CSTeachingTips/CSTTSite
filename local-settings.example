@@ -1,0 +1,18 @@
+<?php
+
+$databases['default']['default'] = array(
+      'database' => 'db_name',
+      'username' => 'db_user',
+      'password' => 'db_pass',
+      // --- --- ---
+      'host' => 'localhost',
+      'driver' => 'mysql',
+);
+
+$conf['preprocess_css'] = 0;
+$conf['preprocess_js'] = 0;
+
+$conf['googleanalytics_account'] = '';
+
+$conf['file_private_path'] = 'sites/default/files/private';
+$conf['file_temporary_path'] = 'sites/default/files/private/tmp';

@@ -1,0 +1,7 @@
+# Application
+git_host: git@bitbucket.org   # Name of the git user/organization
+git_org: atendesigngroup      # Name of the git user/organization
+git_repo: cstt                # Name of the git repository, without the '.git' extension
+drupal_root: docroot          # Dir which has index.php
+git_branch: update            # This is the branch that will be deployed to the environment
+max_releases: 10              # Number of past releases to keep

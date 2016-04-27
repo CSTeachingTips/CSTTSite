@@ -1,0 +1,3 @@
+# Host apache
+htpasswd_user:    # usually the short client name
+site_domain:      # domain name to put in vhost. Should NOT have www.
